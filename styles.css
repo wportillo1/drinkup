@@ -1,5 +1,13 @@
-img {
-    position: relative;
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+.bg {
+    background-image: url(https://t4.ftcdn.net/jpg/06/17/41/19/360_F_617411924_XIL2hIV33CBQ8YAPnkcBrLnXUXqffiBr.jpg);
+    height: 50%;
+
+    background-position: center;
     background-repeat: no-repeat;
-    background-size: 100% 100vh;
+    background-size: cover;
 }
