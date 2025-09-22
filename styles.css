@@ -1,5 +1,5 @@
 img {
-    max-width: 100%;
-    height: auto;
-    object-fit: contain;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: 100% 100vh;
 }
