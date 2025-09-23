@@ -64,4 +64,5 @@ h1 , p {
 .active {
     background-color: #141414;
     color: var(--main-color);
+    margin: center;
 }
