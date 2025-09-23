@@ -142,7 +142,6 @@ nav-container .hamburger-lines .line3 {
 .logo {
     position: absolute;
     top: 5px;
-    right: 15px;
     font-size: 1.2rem;
     color: var(--main-color);
     text-align: center;
