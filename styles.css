@@ -1,6 +1,8 @@
 body {
     height: 100%;
     margin: 0;
+    background-color: darkgray;
+
 }
 
 .bg {
@@ -12,9 +14,6 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-}
-body {
-    background-color: darkgray;
 }
 
 h1 {
