@@ -18,13 +18,13 @@ body {
 :root {
     --main-color: white;
     --font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    --background-color: #91C502;
+    --background: darkgray;
 }
 
 h1 , p {
     font-family: var(--font-family);
     color: var(--main-color);
-    background-color: var(--background-color);
+    background: var(--background);
 }
 
 
