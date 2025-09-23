@@ -1,6 +1,8 @@
 body {
     height: 100%;
     margin: 0;
+    background: var(--background);
+
 }
 
 .img {
@@ -24,7 +26,6 @@ body {
 h1 , p {
     font-family: var(--font-family);
     color: var(--main-color);
-    background: var(--background);
 }
 
 
