@@ -6,6 +6,8 @@ body {
 .bg {
     background-image: url(https://thumbs.dreamstime.com/b/two-friends-sharing-colorful-bubble-tea-tapioca-pearls-sunny-day-against-vibrant-blue-sky-perfect-summer-refreshment-330037590.jpg);
     height: 50%;
+    margin: 0px;
+    padding: 0px;
 
     background-position: center;
     background-repeat: no-repeat;
