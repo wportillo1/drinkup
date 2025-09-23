@@ -1,46 +1,29 @@
-body {
-    height: 100%;
-    margin: 0;
-    background: var(--background);
-
-}
-
-.img {
-    background-image: url(https://thumbs.dreamstime.com/b/two-friends-sharing-colorful-bubble-tea-tapioca-pearls-sunny-day-against-vibrant-blue-sky-perfect-summer-refreshment-330037590.jpg);
-    height: 50%;
-    margin: 0px;
-    padding: 0px;
-    border: 0px;
-
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
 :root {
     --main-color: white;
     --font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     --background: darkgray;
 }
 
-h1 , p {
-    font-family: var(--font-family);
-    color: var(--main-color);
-}
-
-/* menu items*/
-/*@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-*/
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+body {
+    height: 100%;
+    margin: 0;
+    background: var(--background);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/*@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+*/
+
 .container {
     max-width: 1050px;
     width: 90%;
-    box-sizing: border-box;
+    margin: auto;
 }
 
 .navbar {
@@ -53,6 +36,10 @@ h1 , p {
     justify-content: space-between;
     align-items: center;
     height: 62px;
+}
+
+.navbar .menu-items {
+    display: flex;
 }
 
 .navbar .nav-container li {
@@ -72,8 +59,8 @@ h1 , p {
     font-weight: bolder;
 }
 
-.nav-container{
-    display:block;
+.nav-container {
+    display: block;
     position: relative;
     height: 60px;
 }
@@ -97,6 +84,7 @@ h1 , p {
     position: absolute;
     top: 17px;
     left: 20px;
+    z-index: 2;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -172,4 +160,21 @@ nav-container .hamburger-lines .line3 {
 
 .nav-container input[type="checkbox"]:checked ~ .logo{
   display: none;
+}
+
+.img {
+    background-image: url(https://thumbs.dreamstime.com/b/two-friends-sharing-colorful-bubble-tea-tapioca-pearls-sunny-day-against-vibrant-blue-sky-perfect-summer-refreshment-330037590.jpg);
+    height: 50%;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1 , p {
+    font-family: var(--font-family);
+    color: var(--main-color);
 }
