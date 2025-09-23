@@ -2,7 +2,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   </head> 
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head> 
 <body>
     <nav>
         <div class="navbar">
@@ -16,7 +17,7 @@
         <div class="logo">
             <h1>Drinks Up!</h1>
         </div>
-        <div class="menu items">
+        <div class="menu-items">
             <li><a href="#">Home</a></li>
             <li><a href="#">Sign Up</a></li>
             <li><a href="#">Menu</a></li>
@@ -25,10 +26,24 @@
             <li><a href="#">Careers</a></li>
             <li><a href="#">Contact Us</a></li>
         </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
     </div>
 </div>
 
 </nav>
+
+<script>
+    function myFunction() {
+        var x = document.getElementById("menu-items");
+        if (x.style.display === "block") {
+            x.style.display = "none";
+        } else {
+            x.style.display = "block";
+        }
+    }
+</script>
 
     <div class="img">
         <img src="https://thumbs.dreamstime.com/b/two-friends-sharing-colorful-bubble-tea-tapioca-pearls-sunny-day-against-vibrant-blue-sky-perfect-summer-refreshment-330037590.jpg"
