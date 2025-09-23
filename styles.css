@@ -24,22 +24,22 @@ body {
     max-width: 1050px;
     width: 90%;
     margin: auto;
-    height: 500px;
     color: var(--main-color);
-    border-radius: 10px;
+    /*border-radius: 10px;*/
 }
 
 .navbar {
-    overflow: hidden;
+    /*overflow: hidden;
     position: relative;
-    background-color: #141414;
+    background-color: #141414;*/
     width: 100%;
     box-shadow: 0 1px 4px rgb(146 161 176 / 15%);
 }
 
 .nav-container {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    gap: 10 px;
     align-items: center;
     height: 62px;
 }
