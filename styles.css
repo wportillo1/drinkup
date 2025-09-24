@@ -169,6 +169,44 @@ h3 {
     width: 0;
 }
 
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -250px;
+  width: 250px;
+  height: 100%;
+  background-color: var(--foreground);
+  color: var(--background);
+  padding-top: 60px;
+  transition: left var (--animation-timing);
+  z-index: 1;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar ul li {
+  padding: 15px 30px;
+}
+
+.sidebar ul li a {
+  color: var(--foreground);
+  text-decoration: none;
+  display: block;
+  transition: background 0.2s
+}
+
+.sidebar ul li a:hover {
+  background: rgb(255,255,255,0.1);
+}
+
+.menu:has(input:checked) + .sidebar {
+  left: 0;
+}
+
 .bobatwo {
     background-image: url(https://thumbs.dreamstime.com/b/two-friends-sharing-colorful-bubble-tea-tapioca-pearls-sunny-day-against-vibrant-blue-sky-perfect-summer-refreshment-330037590.jpg);
     position: relative;
@@ -191,7 +229,7 @@ h3 {
   position: absolute;
   top: 70%;
   left: 10%;
-  transfrom: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   background-color: transparent;
   color: var(--foreground);
