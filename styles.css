@@ -1,50 +1,150 @@
-*, *::after, *::before{
-    box-sizing: border-box;
-}
-
-body{
-    margin: 0px;
-    height: 100%;
-}
-
-:root{
-    --bar-width: 60px;
+:root {
+    --bar-width: 45px;
     --bar-height: 8px;
-    --hamburger-gap: 6px;
+    --hamburger-gap: 9px;
     --foreground: rgb(224, 224, 224);
     --background: rgb(101, 100, 100);
-    --hamburger-margin: 5px;
+    --hamburger-margin: 8px;
     --animation-timing: 200ms ease-in-out;
     --hamburger-height: calc(var(--bar-height) * 3 + var(--hamburger-gap) * 2);
 }
 
-.hamburger-menu{
-    --x-width: calc(var--(hamburger-height) * 1.41421356237)
+*, *::after, *::before{
+  box-sizing:border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+      margin: 0 auto;
+      max-width: 960px;
+      font-family: 'Poppins',
+        sans-serif;
+      line-height: 1em;
+      font-size: 18px;
+      color: var(--background);
+      background-color: var(--foreground);
+}
+
+main {
+      margin: 1em auto;
+      padding: 1em;
+}
+
+h1,
+h2,
+h3 {
+   line-height: 1;
+}
+
+ a {
+    text-decoration: none;
+    color: var(--foreground);
+ }
+
+ a:focus {
+     margin: solid 1px var(--background);
+ }
+
+ a::after {
+     content: "";
+ }
+
+    nav {
+      background-color: #141414;
+      color: var(--foreground);
+      display: flex;
+      justify-content: space-between;
+    }
+
+    nav ul {
+      /* Make the markers disappear */
+      list-style-type: none;
+    }
+
+    nav ul li {
+      /* Puts the elements in a single line */
+      display: inline-block;
+      margin: 0;
+    }
+
+    /* These two lines make the checkbox and the label disappear when we are in desktop mode. */
+    nav input[type="checkbox"],
+    nav label {
+      display: none;
+    }
+
+    /* This start to get interesting: we go into mobile phone mode */
+    @media (max-width: 576px) {
+      /* Here is the magic: if the checkbox is not marked, the adjacent list is not displayed */
+      input[type="checkbox"]:not(:checked) + ul {
+        display: none;
+      }
+
+  nav {
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-left: 0;
+        margin-right: 0;
+      }
+
+      /* Stlying the menu icon, the checkbox stays hidden */
+   nav label {
+        text-align: left;
+        display: none;
+        padding: 0.5em;
+        line-height: 1.5em;
+        align-self: center;
+      }
+
+      /* Because we are in mobile mode, we want to display it as a vertical list */
+      nav ul {
+        display: block;
+      }
+
+      /* We have two lists: the first one are the always visibile items in the 
+        menu bar. The second one is the one that will be hidden */
+      nav ul:last-child {
+        width: 100%;
+        flex-basis: 100%;
+      }
+ nav ul li {
+        margin-bottom: 0;
+        width: 100%;
+        text-align: left;
+        padding: 0.5em;
+      }
+     
+    }
+
+.menu{
+  --x-width: calc(var(--hamburger-height) * 1.41421356237);
 
     display: flex;
     flex-direction: column;
     gap: var(--hamburger-gap);
     width: max-content;
-    position: absolute;
+    position: fixed;
     top: var(--hamburger-margin);
     left: var(--hamburger-margin);
     z-index: 2;
     cursor: pointer;
 }
 
-.hamburger-menu::before, .hamburger-menu::after, .hamburger-menu input{
+.menu::before, .menu::after, .menu input{
     content: "";
     width: var(--bar-width);
     height: var(--bar-height);
     background-color: var(--foreground);
     border-radius: 9999px;
     transform-origin: left center;
-    transition: opacity var(--animation-timing), width var(--animation-timing),
-    rotate var(--animation-timing), translate var(--animation-timing),
-    background-color var(--animation-timing);
+    transition: opacity var(--animation-timing),
+      width var(--animation-timing),
+      rotate var(--animation-timing), 
+      translate var(--animation-timing),
+      background-color var(--animation-timing);
 }
 
-.hamburger-menu input{
+.menu input{
     appearance: none;
     padding: 0px;
     margin: 0px;
@@ -52,26 +152,26 @@ body{
     pointer-events: none;
 }
 
-.hamburger-menu:has(input:checked)::before {
+.menu:has(input:checked)::before {
     rotate: 45deg;
     width: var(--x-width);
     translate: 0 calc(var(--bar-height) / -2);
 }
 
-.hamburger-menu:has(input:checked)::after {
+.menu:has(input:checked)::after {
     rotate: -45deg;
     width: var(--x-width);
     translate: 0 calc(var(--bar-height) / 2);
 }
 
-.hamburger-menu input:checked{
+.menu input:checked{
     opacity: 0;
     width: 0;
 }
 
-
-.img {
+.bobatwo {
     background-image: url(https://thumbs.dreamstime.com/b/two-friends-sharing-colorful-bubble-tea-tapioca-pearls-sunny-day-against-vibrant-blue-sky-perfect-summer-refreshment-330037590.jpg);
+    position: relative;
     height: 50%;
     margin: 0px;
     padding: 0px;
@@ -80,4 +180,30 @@ body{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.bobatwo img {
+  width:100%;
+  height: auto;
+}
+
+.bobatwo .btn {
+  position: absolute;
+  top: 70%;
+  left: 10%;
+  transfrom: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: transparent;
+  color: var(--foreground);
+  font-size: 16px;
+  padding: 12px 20px;
+  border: 2x solid white;
+  cursor: pointer;
+  border-radius: 15px;
+  text-align: center;
+  
+}
+
+.bobatwo .btn:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }

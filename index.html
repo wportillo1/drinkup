@@ -1,49 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <meta http-equiv=“X-UA-Compatible” content=“ie=edge”/>
-    <link rel=“stylesheet” href=“../styles.css”>
-    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
-    <title>Drinks Up!</title>
+  <title>CSS-only hamburger menu</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="../styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
 </head> 
 <body>
-    <nav>
-        <label class="hamburger-menu">
-            <input type="checkbox">
-        </label>
+  <nav>
+    <ul>
+      <li><a href="#">Drinks Up!</a></li>
+    </ul>
+    <label class="menu">
+      <input type="checkbox">
+    </label>
     <aside class="sidebar">
-        <div>
-            <div>Home</div>
-            <div>Sign Up</div>
-            <div>Menu</div>
-            <div>Locations</div>
-            <div>Careers</div>
-            <div>Contact Us</div>
-        </div>
-    </aside>    
-</nav>
-    <div class="img">
-        <img src="https://thumbs.dreamstime.com/b/two-friends-sharing-colorful-bubble-tea-tapioca-pearls-sunny-day-against-vibrant-blue-sky-perfect-summer-refreshment-330037590.jpg"
-        alt="Two friends holding boba tea in the sun" width="100%" height="auto" margin="0">
-    </div>
-<section>
-    <h1> Win Points to Get Free Rewards!</h1>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#sign-up">Sign Up</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#locations">Locations</a></li>
+        <li><a href="#careers">Careers</a></li>
+        <li><a href="#contact-us">Contact Us</a></li>
+      </ul>
+    </aside>
+  </nav>
 
-    <p> 15 points for every $1 Spent</p>
-</section>
+  <div class="bobatwo">
+    <img src="https://thumbs.dreamstime.com/b/two-friends-sharing-colorful-bubble-tea-tapioca-pearls-sunny-day-against-vibrant-blue-sky-perfect-summer-refreshment-330037590.jpg"
+         alt="Two friends holding boba tea in the sun"
+         width="100%" height="auto" style="margin:0;">
+    <button class="btn">Order Now</button>
+  </div>
 
-    <div id="milkshake"></div>
-    <div id="treat"></div>
-    <div id="coffee"></div>
+  <div>
+    <div class="drinkydrink">
+      <img class="milkshake" src="blehbleh">
+      <img class="treat" src="blehbleh">
+      <img class="coffee" src="blehbleh">
+  <section>
+    <h1>Win Points to Get Free Rewards!</h1>
+    <p>15 points for every $1 Spent</p>
+    
+  </section>
+    
+  </div>
+  <div id="milkshake"></div>
+  <div id="treat"></div>
+  <div id="coffee"></div>
 
-<footer> 
-
-    <p> &copy; 2025 Drink Up! All Rights Reserved</p>
-     <!img src="https://www.edigitalagency.com.au/wp-content/uploads/Facebook-icon-white-PNG-large-size.png"
-    alt="Facebook"
-    style="float: right;"-->
-</footer>
+  <footer> 
+    <p>&copy; 2025 Drinks Up! All Rights Reserved</p>
+    <!-- 
+    <img src="https://www.edigitalagency.com.au/wp-content/uploads/Facebook-icon-white-PNG-large-size.png"
+         alt="Facebook" style="float: right;">
+    -->
+  </footer>
 </body>
 </html>
