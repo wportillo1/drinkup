@@ -5,6 +5,7 @@
     --hamburger-gap: 9px;
     --foreground: rgb(224, 224, 224);
     --background: rgb(101, 100, 100);
+    --sidebar-background: #141414;
     --hamburger-margin: 8px;
     --animation-timing: 200ms ease-in-out;
     --hamburger-height: calc(var(--bar-height) * 3 + var(--hamburger-gap) * 2);
@@ -60,45 +61,44 @@ h1 {
      content: "";
  }
 
-    nav {
-      background-color: #141414;
-      color: var(--foreground);
-      display: flex;
-      justify-content: space-between;
-    }
+nav {
+  background-color: var(--sidebar-background);
+  color: var(--foreground);
+  display: flex;
+  justify-content: space-between;
+}
 
-    nav ul {
+nav ul {
       /* Make the markers disappear */
-      list-style-type: none;
-    }
+list-style-type: none;
+}
 
-    nav ul li {
+nav ul li {
       /* Puts the elements in a single line */
-      display: inline-block;
-      margin: 0;
+  display: inline-block;
+  margin: 0;
     }
 
     /* These two lines make the checkbox and the label disappear when we are in desktop mode. */
-    nav input[type="checkbox"],
-    nav label {
-      display: none;
-    }
+nav input[type="checkbox"], nav label {
+  display: none;
+}
 
-    /* This start to get interesting: we go into mobile phone mode */
-    @media (max-width: 576px) {
-      /* Here is the magic: if the checkbox is not marked, the adjacent list is not displayed */
-      input[type="checkbox"]:not(:checked) + ul {
-        display: none;
+/* This start to get interesting: we go into mobile phone mode */
+@media (max-width: 576px) {
+/* Here is the magic: if the checkbox is not marked, the adjacent list is not displayed */
+  input[type="checkbox"]:not(:checked) + ul {
+    display: none;
       }
 
-  nav {
-        flex-direction: row;
-        flex-wrap: wrap;
-        margin-left: 0;
-        margin-right: 0;
-      }
+nav {
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-left: 0;
+  margin-right: 0;
+  }
 
-      /* Stlying the menu icon, the checkbox stays hidden */
+  /* Stlying the menu icon, the checkbox stays hidden */
    nav label {
         text-align: left;
         display: none;
@@ -137,7 +137,7 @@ h1 {
     position: fixed;
     top: var(--hamburger-margin);
     left: var(--hamburger-margin);
-    z-index: 2;
+    z-index: 1;
     cursor: pointer;
 }
 
@@ -186,7 +186,7 @@ h1 {
   left: -250px;
   width: 250px;
   height: 100%;
-  background-color: #141414;
+  background-color: var(--sidebar-background);
   color: var(--foreground);
   padding-top: 60px;
   transition: left var (--animation-timing);
@@ -204,7 +204,7 @@ h1 {
 }
 
 .sidebar ul li a {
-  color: #141414;
+  color: var(--foreground);
   text-decoration: none;
   display: block;
   transition: background 0.2s
