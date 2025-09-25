@@ -1,12 +1,13 @@
 
 :root {
-    --bar-width: 35px;
-    --bar-height: 4px;
-    --hamburger-gap: 6px;
+    --bar-width: 45px;
+    --bar-height: 8px;
+    --hamburger-gap: 9px;
     --foreground: rgb(224, 224, 224);
     --background: rgb(101, 100, 100);
-    --hamburger-margin: 12px;
+    --hamburger-margin: 8px;
     --animation-timing: 200ms ease-in-out;
+    --hamburger-height: calc(var(--bar-height) * 3 + var(--hamburger-gap) * 2);
 }
 
 *, *::after, *::before{
@@ -25,6 +26,7 @@ body {
       background-color: var(--background);
       padding: 20px;
 }
+
 
 main {
       margin: 1em auto;
@@ -58,62 +60,136 @@ h1 {
      content: "";
  }
 
-nav {
-  background-color: #141414;
-  padding: 0.5em 1em;
-  position: relative;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
+    nav {
+      background-color: #141414;
+      color: var(--foreground);
+      display: flex;
+      justify-content: space-between;
+    }
+
+    nav ul {
+      /* Make the markers disappear */
+      list-style-type: none;
+    }
+
+    nav ul li {
+      /* Puts the elements in a single line */
+      display: inline-block;
+      margin: 0;
+    }
+
+    /* These two lines make the checkbox and the label disappear when we are in desktop mode. */
+    nav input[type="checkbox"],
+    nav label {
+      display: none;
+    }
+
+    /* This start to get interesting: we go into mobile phone mode */
+    @media (max-width: 576px) {
+      /* Here is the magic: if the checkbox is not marked, the adjacent list is not displayed */
+      input[type="checkbox"]:not(:checked) + ul {
+        display: none;
+      }
+
+  nav {
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-left: 0;
+        margin-right: 0;
+      }
+
+      /* Stlying the menu icon, the checkbox stays hidden */
+   nav label {
+        text-align: left;
+        display: none;
+        padding: 0.5em;
+        line-height: 1.5em;
+        align-self: center;
+      }
+
+      /* Because we are in mobile mode, we want to display it as a vertical list */
+      nav ul {
+        display: block;
+      }
+
+      /* We have two lists: the first one are the always visibile items in the 
+        menu bar. The second one is the one that will be hidden */
+      nav ul:last-child {
+        width: 100%;
+        flex-basis: 100%;
+      }
+ nav ul li {
+        margin-bottom: 0;
+        width: 100%;
+        text-align: left;
+        padding: 0.5em;
+      }
+     
+    }
+
+.menu{
+  --x-width: calc(var(--hamburger-height) * 1.41421356237);
+
+    display: flex;
+    flex-direction: column;
+    gap: var(--hamburger-gap);
+    width: max-content;
+    position: fixed;
+    top: var(--hamburger-margin);
+    left: var(--hamburger-margin);
+    z-index: 2;
+    cursor: pointer;
 }
 
-/* HAMBURGER ICON */
-.menu {
-  display: flex;
-  flex-direction: column;
-  gap: var(--hamburger-gap);
-  width: max-content;
-  position: fixed;
-  top: var(--hamburger-margin);
-  left: var(--hamburger-margin);
-  z-index: 2;
-  cursor: pointer;
+.menu::before, .menu::after, .menu input{
+    content: "";
+    width: var(--bar-width);
+    height: var(--bar-height);
+    background-color: var(--foreground);
+    border-radius: 9999px;
+    transform-origin: left center;
+    transition: opacity var(--animation-timing),
+      width var(--animation-timing),
+      rotate var(--animation-timing), 
+      translate var(--animation-timing),
+      background-color var(--animation-timing);
 }
 
-.menu input {
-  display: none;
+.menu input{
+    appearance: none;
+    padding: 0px;
+    margin: 0px;
+    outline: none;
+    pointer-events: none;
 }
 
-.menu span {
-  width: var(--bar-width);
-  height: var(--bar-height);
-  background-color: var(--foreground);
-  border-radius: 5px;
-  transition: transform var(--animation-timing), opacity var(--animation-timing);
+.menu:has(input:checked)::before {
+    rotate: 45deg;
+    width: var(--x-width);
+    translate: 0 calc(var(--bar-height) / -2);
 }
 
-/* Transform into "X" */
-.menu input:checked ~ span:nth-child(2) {
-  transform: rotate(45deg) translate(6px, 6px);
-}
-.menu input:checked ~ span:nth-child(3) {
-  opacity: 0;
-}
-.menu input:checked ~ span:nth-child(4) {
-  transform: rotate(-45deg) translate(6px, -6px);
+.menu:has(input:checked)::after {
+    rotate: -45deg;
+    width: var(--x-width);
+    translate: 0 calc(var(--bar-height) / 2);
 }
 
-/* SIDEBAR */
+.menu input:checked{
+    opacity: 0;
+    width: 0;
+}
+
 .sidebar {
   position: fixed;
   top: 0;
   left: -250px;
   width: 250px;
   height: 100%;
-  background-color: #141414; /* DARK NOW */
-  color: var(--foreground);
+  background-color: var(--foreground);
+  color: var(--background);
   padding-top: 60px;
-  transition: left var(--animation-timing);
+  transition: left var (--animation-timing);
   z-index: 1;
 }
 
@@ -131,15 +207,14 @@ nav {
   color: var(--foreground);
   text-decoration: none;
   display: block;
-  transition: background 0.2s;
+  transition: background 0.2s
 }
 
 .sidebar ul li a:hover {
-  background: #333;
+  background: #141414;
 }
 
-/* When checked, slide in sidebar */
-.menu input:checked ~ .sidebar {
+.menu:has(input:checked) + .sidebar {
   left: 0;
 }
 
@@ -182,48 +257,31 @@ nav {
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
-.rewards-section {
-  display: flex;              /* Put images and text side by side */
-  align-items: center;        /* Align vertically */
-  gap: 2rem;                  /* Space between images and text */
-}
-
-.images {
-  position: relative;         /* So children can overlap */
-  width: 150px;               /* Limit the overall image area */
-  height: 150px;
-}
-
-.images img {
-  width: 100px;               /* Make images smaller */
-  position: absolute;         /* Overlap them */
-  border: none;
+.parent {
+  position: relative;
+  top: 0;
+  left: 0;
 }
 
 .milktea {
+  position: relative;
   top: 0;
   left: 0;
-  z-index: 3;
+  border: none;
 }
 
 .treat {
-  top: 20px;
-  left: 20px;
-  z-index: 2;
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  border: none;
 }
 
-.coffee {
-  top: 40px;
-  left: 40px;
-  z-index: 1;
-}
-
-.text h1 {
-  margin: 0 0 10px 0;
-}
-
-.text p {
-  margin: 0;
+.treat {
+  position: absolute;
+  top: 15px;
+  left: 45px;
+  border: none;
 }
 
 .customization {
