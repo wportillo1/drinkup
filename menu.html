@@ -35,6 +35,7 @@
     <!-- Milk Bubble Tea -->
     <fieldset>
       <legend>Milk Bubble Tea</legend>
+
       <div class="drink-option">
         <label><input type="checkbox" name="milk-tea[]" value="original"> Original</label>
         <input type="number" name="original-qty" min="0" max="10" value="0">
@@ -49,29 +50,440 @@
           </label>
           <label>Sweetness:
             <select name="original-sweetness">
-              <option>0%</option><option>25%</option><option>50%</option><option>75%</option><option>100%</option>
+              <option>0%</option>
+              <option>25%</option>
+              <option>50%</option>
+              <option>75%</option>
+              <option>100%</option>
             </select>
           </label>
           <label>Ice:
             <select name="original-ice">
-              <option>No Ice</option><option>Light Ice</option><option>Regular Ice</option><option>Extra Ice</option>
+              <option>No Ice</option>
+              <option>Light Ice</option>
+              <option>Regular Ice</option>
+              <option>Extra Ice</option>
             </select>
           </label>
           <fieldset>
             <legend>Toppings</legend>
+            <label><input type="checkbox" name="original-toppings[]" value="chocolate-drizzle">Chocolate Drizzle</label>
+            <label><input type="checkbox" name="original-toppings[]" value="caramel-drizzle"> Caramel Drizzle</label>
+            <label><input type="checkbox" name="original-toppings[]" value="white-chocolate-dizzle"> White Chocolate Dizzle</label>
             <label><input type="checkbox" name="original-toppings[]" value="tapioca"> Tapioca Boba</label>
-            <label><input type="checkbox" name="original-toppings[]" value="mango"> Mango Boba</label>
             <label><input type="checkbox" name="original-toppings[]" value="strawberry"> Strawberry Boba</label>
+            <label><input type="checkbox" name="original-toppings[]" value="mango"> Mango Boba</label>
+            <label><input type="checkbox" name="original-toppings[]" value="peach"> Peach Boba</label>
+            <label><input type="checkbox" name="original-toppings[]" value="lychee"> Lychee Boba</label>
+            <label><input type="checkbox" name="original-toppings[]" value="passionfruit"> Passionfruit Boba</label>
+            <label><input type="checkbox" name="original-toppings[]" value="kiwi"> Kiwi Boba</label>
+            <label><input type="checkbox" name="original-toppings[]" value="Blueberry"> Blueberry Boba</label>
           </fieldset>
           <fieldset>
             <legend>Cold Foam</legend>
-            <label><input type="checkbox" name="original-coldfoam[]" value="vanilla"> Vanilla</label>
-            <label><input type="checkbox" name="original-coldfoam[]" value="matcha"> Matcha</label>
+            <label><input type="checkbox" name="original-coldfoam[]" value="vanilla">Vanilla</label>
+            <label><input type="checkbox" name="original-coldfoam[]" value="matcha">Matcha</label>
+            <label><input type="checkbox" name="original-coldfoam[]" value="brown-sugar">Brown Sugar</label>
+            <label><input type="checkbox" name="original-coldfoam[]" value="chocolate">Chocolate</label>
+            <label><input type="checkbox" name="original-coldfoam[]" value="raspberry">Raspberry</label>
+            <label><input type="checkbox" name="original-coldfoam[]" value="strawberry"> Strawberry</label>
             <label><input type="checkbox" name="original-coldfoam[]" value="salted-caramel"> Salted Caramel</label>
           </fieldset>
         </div>
       </div>
-      <!-- Repeat this same block for Jasmine Green, Oolong, Rose Oolong, etc. -->
+
+      <div class="drink-option">
+        <label><input type="checkbox" name="milk-tea[]" value="jasmine-green"> Jasmine Green</label>
+        <input type="number" name="jasmine-green-qty" min="0" max="10" value="0">
+        <div class="customization">
+          <label>Size:
+            <select name="jasmine-green-size" required>
+              <option value="">-- Select Size --</option>
+              <option>Small</option>
+              <option>Medium</option>
+              <option>Large</option>
+            </select>
+          </label>
+          <label>Sweetness:
+            <select name="jasmine-green-sweetness">
+              <option>0%</option>
+              <option>25%</option>
+              <option>50%</option>
+              <option>75%</option>
+              <option>100%</option>
+            </select>
+          </label>
+          <label>Ice:
+            <select name="jasmine-green-ice">
+              <option>No Ice</option>
+              <option>Light Ice</option>
+              <option>Regular Ice</option>
+              <option>Extra Ice</option>
+            </select>
+          </label>
+          <fieldset>
+            <legend>Toppings</legend>
+            <label><input type="checkbox" name="jasmine-green-toppings[]" value="chocolate-drizzle">Chocolate Drizzle</label>
+            <label><input type="checkbox" name="jasmine-green-toppings[]" value="caramel-drizzle"> Caramel Drizzle</label>
+            <label><input type="checkbox" name="jasmine-green-toppings[]" value="white-chocolate-dizzle"> White Chocolate Dizzle</label>
+            <label><input type="checkbox" name="jasmine-green-toppings[]" value="tapioca"> Tapioca Boba</label>
+            <label><input type="checkbox" name="jasmine-green-toppings[]" value="strawberry"> Strawberry Boba</label>
+            <label><input type="checkbox" name="jasmine-green-toppings[]" value="mango"> Mango Boba</label>
+            <label><input type="checkbox" name="jasmine-green-toppings[]" value="peach"> Peach Boba</label>
+            <label><input type="checkbox" name="jasmine-green-toppings[]" value="lychee"> Lychee Boba</label>
+            <label><input type="checkbox" name="jasmine-green-toppings[]" value="passionfruit"> Passionfruit Boba</label>
+            <label><input type="checkbox" name="jasmine-green-toppings[]" value="kiwi"> Kiwi Boba</label>
+            <label><input type="checkbox" name="jasmine-green-toppings[]" value="Blueberry"> Blueberry Boba</label>
+          </fieldset>
+          <fieldset>
+            <legend>Cold Foam</legend>
+            <label><input type="checkbox" name="jasmine-green-coldfoam[]" value="vanilla">Vanilla</label>
+            <label><input type="checkbox" name="jasmine-green-coldfoam[]" value="matcha">Matcha</label>
+            <label><input type="checkbox" name="jasmine-green-coldfoam[]" value="brown-sugar">Brown Sugar</label>
+            <label><input type="checkbox" name="jasmine-green-coldfoam[]" value="chocolate">Chocolate</label>
+            <label><input type="checkbox" name="jasmine-green-coldfoam[]" value="raspberry">Raspberry</label>
+            <label><input type="checkbox" name="jasmine-green-coldfoam[]" value="strawberry"> Strawberry</label>
+            <label><input type="checkbox" name="jasmine-green-coldfoam[]" value="salted-caramel"> Salted Caramel</label>
+          </fieldset>
+        </div>
+      </div>
+
+      <div class="drink-option">
+        <label><input type="checkbox" name="milk-tea[]" value="oolong"> Oolong</label>
+        <input type="number" name="oolong-qty" min="0" max="10" value="0">
+        <div class="customization">
+          <label>Size:
+            <select name="oolong-size" required>
+              <option value="">-- Select Size --</option>
+              <option>Small</option>
+              <option>Medium</option>
+              <option>Large</option>
+            </select>
+          </label>
+          <label>Sweetness:
+            <select name="oolong-sweetness">
+              <option>0%</option>
+              <option>25%</option>
+              <option>50%</option>
+              <option>75%</option>
+              <option>100%</option>
+            </select>
+          </label>
+          <label>Ice:
+            <select name="oolong-ice">
+              <option>No Ice</option>
+              <option>Light Ice</option>
+              <option>Regular Ice</option>
+              <option>Extra Ice</option>
+            </select>
+          </label>
+          <fieldset>
+            <legend>Toppings</legend>
+            <label><input type="checkbox" name="oolong-toppings[]" value="chocolate-drizzle">Chocolate Drizzle</label>
+            <label><input type="checkbox" name="oolong-toppings[]" value="caramel-drizzle"> Caramel Drizzle</label>
+            <label><input type="checkbox" name="oolong-toppings[]" value="white-chocolate-dizzle"> White Chocolate Dizzle</label>
+            <label><input type="checkbox" name="oolong-toppings[]" value="tapioca"> Tapioca Boba</label>
+            <label><input type="checkbox" name="oolong-toppings[]" value="strawberry"> Strawberry Boba</label>
+            <label><input type="checkbox" name="oolong-toppings[]" value="mango"> Mango Boba</label>
+            <label><input type="checkbox" name="oolong-toppings[]" value="peach"> Peach Boba</label>
+            <label><input type="checkbox" name="oolong-toppings[]" value="lychee"> Lychee Boba</label>
+            <label><input type="checkbox" name="oolong-toppings[]" value="passionfruit"> Passionfruit Boba</label>
+            <label><input type="checkbox" name="oolong-toppings[]" value="kiwi"> Kiwi Boba</label>
+            <label><input type="checkbox" name="oolong-toppings[]" value="Blueberry"> Blueberry Boba</label>
+          </fieldset>
+          <fieldset>
+            <legend>Cold Foam</legend>
+            <label><input type="checkbox" name="oolong-coldfoam[]" value="vanilla">Vanilla</label>
+            <label><input type="checkbox" name="oolong-coldfoam[]" value="matcha">Matcha</label>
+            <label><input type="checkbox" name="oolong-coldfoam[]" value="brown-sugar">Brown Sugar</label>
+            <label><input type="checkbox" name="oolong-coldfoam[]" value="chocolate">Chocolate</label>
+            <label><input type="checkbox" name="oolong-coldfoam[]" value="raspberry">Raspberry</label>
+            <label><input type="checkbox" name="oolong-coldfoam[]" value="strawberry"> Strawberry</label>
+            <label><input type="checkbox" name="oolong-coldfoam[]" value="salted-caramel"> Salted Caramel</label>
+          </fieldset>
+        </div>
+      </div>
+
+      <div class="drink-option">
+        <label><input type="checkbox" name="milk-tea[]" value="rose-oolong"> Rose Oolong</label>
+        <input type="number" name="rose-oolong-qty" min="0" max="10" value="0">
+        <div class="customization">
+          <label>Size:
+            <select name="rose-oolong-size" required>
+              <option value="">-- Select Size --</option>
+              <option>Small</option>
+              <option>Medium</option>
+              <option>Large</option>
+            </select>
+          </label>
+          <label>Sweetness:
+            <select name="rose-oolong-sweetness">
+              <option>0%</option>
+              <option>25%</option>
+              <option>50%</option>
+              <option>75%</option>
+              <option>100%</option>
+            </select>
+          </label>
+          <label>Ice:
+            <select name="rose-oolong-ice">
+              <option>No Ice</option>
+              <option>Light Ice</option>
+              <option>Regular Ice</option>
+              <option>Extra Ice</option>
+            </select>
+          </label>
+          <fieldset>
+            <legend>Toppings</legend>
+            <label><input type="checkbox" name="rose-oolong-toppings[]" value="chocolate-drizzle">Chocolate Drizzle</label>
+            <label><input type="checkbox" name="rose-oolong-toppings[]" value="caramel-drizzle"> Caramel Drizzle</label>
+            <label><input type="checkbox" name="rose-oolong-toppings[]" value="white-chocolate-dizzle"> White Chocolate Dizzle</label>
+            <label><input type="checkbox" name="rose-oolong-toppings[]" value="tapioca"> Tapioca Boba</label>
+            <label><input type="checkbox" name="rose-oolong-toppings[]" value="strawberry"> Strawberry Boba</label>
+            <label><input type="checkbox" name="rose-oolong-toppings[]" value="mango"> Mango Boba</label>
+            <label><input type="checkbox" name="rose-oolong-toppings[]" value="peach"> Peach Boba</label>
+            <label><input type="checkbox" name="rose-oolong-toppings[]" value="lychee"> Lychee Boba</label>
+            <label><input type="checkbox" name="rose-oolong-toppings[]" value="passionfruit"> Passionfruit Boba</label>
+            <label><input type="checkbox" name="rose-oolong-toppings[]" value="kiwi"> Kiwi Boba</label>
+            <label><input type="checkbox" name="rose-oolong-toppings[]" value="Blueberry"> Blueberry Boba</label>
+          </fieldset>
+          <fieldset>
+            <legend>Cold Foam</legend>
+            <label><input type="checkbox" name="rose-oolong-coldfoam[]" value="vanilla">Vanilla</label>
+            <label><input type="checkbox" name="rose-oolong-coldfoam[]" value="matcha">Matcha</label>
+            <label><input type="checkbox" name="rose-oolong-coldfoam[]" value="brown-sugar">Brown Sugar</label>
+            <label><input type="checkbox" name="rose-oolong-coldfoam[]" value="chocolate">Chocolate</label>
+            <label><input type="checkbox" name="rose-oolong-coldfoam[]" value="raspberry">Raspberry</label>
+            <label><input type="checkbox" name="rose-oolong-coldfoam[]" value="strawberry"> Strawberry</label>
+            <label><input type="checkbox" name="rose-oolong-coldfoam[]" value="salted-caramel"> Salted Caramel</label>
+          </fieldset>
+        </div>
+      </div>
+
+      <div class="drink-option">
+        <label><input type="checkbox" name="milk-tea[]" value="white-peach-oolong"> White Peach Oolong</label>
+        <input type="number" name="white-peach-oolong-qty" min="0" max="10" value="0">
+        <div class="customization">
+          <label>Size:
+            <select name="white-peach-oolong-size" required>
+              <option value="">-- Select Size --</option>
+              <option>Small</option>
+              <option>Medium</option>
+              <option>Large</option>
+            </select>
+          </label>
+          <label>Sweetness:
+            <select name="white-peach-oolong-sweetness">
+              <option>0%</option>
+              <option>25%</option>
+              <option>50%</option>
+              <option>75%</option>
+              <option>100%</option>
+            </select>
+          </label>
+          <label>Ice:
+            <select name="white-peach-oolong-ice">
+              <option>No Ice</option>
+              <option>Light Ice</option>
+              <option>Regular Ice</option>
+              <option>Extra Ice</option>
+            </select>
+          </label>
+          <fieldset>
+            <legend>Toppings</legend>
+            <label><input type="checkbox" name="white-peach-oolong-toppings[]" value="chocolate-drizzle">Chocolate Drizzle</label>
+            <label><input type="checkbox" name="white-peach-oolong-toppings[]" value="caramel-drizzle"> Caramel Drizzle</label>
+            <label><input type="checkbox" name="white-peach-oolong-toppings[]" value="white-chocolate-dizzle"> White Chocolate Dizzle</label>
+            <label><input type="checkbox" name="white-peach-oolong-toppings[]" value="tapioca"> Tapioca Boba</label>
+            <label><input type="checkbox" name="white-peach-oolong-toppings[]" value="strawberry"> Strawberry Boba</label>
+            <label><input type="checkbox" name="white-peach-oolong-toppings[]" value="mango"> Mango Boba</label>
+            <label><input type="checkbox" name="white-peach-oolong-toppings[]" value="peach"> Peach Boba</label>
+            <label><input type="checkbox" name="white-peach-oolong-toppings[]" value="lychee"> Lychee Boba</label>
+            <label><input type="checkbox" name="white-peach-oolong-toppings[]" value="passionfruit"> Passionfruit Boba</label>
+            <label><input type="checkbox" name="white-peach-oolong-toppings[]" value="kiwi"> Kiwi Boba</label>
+            <label><input type="checkbox" name="white-peach-oolong-toppings[]" value="Blueberry"> Blueberry Boba</label>
+          </fieldset>
+          <fieldset>
+            <legend>Cold Foam</legend>
+            <label><input type="checkbox" name="white-peach-oolong-coldfoam[]" value="vanilla">Vanilla</label>
+            <label><input type="checkbox" name="white-peach-oolong-coldfoam[]" value="matcha">Matcha</label>
+            <label><input type="checkbox" name="white-peach-oolong-coldfoam[]" value="brown-sugar">Brown Sugar</label>
+            <label><input type="checkbox" name="white-peach-oolong-coldfoam[]" value="chocolate">Chocolate</label>
+            <label><input type="checkbox" name="white-peach-oolong-coldfoam[]" value="raspberry">Raspberry</label>
+            <label><input type="checkbox" name="white-peach-oolong-coldfoam[]" value="strawberry"> Strawberry</label>
+            <label><input type="checkbox" name="white-peach-oolong-coldfoam[]" value="salted-caramel"> Salted Caramel</label>
+          </fieldset>
+        </div>
+      </div>
+
+      <div class="drink-option">
+        <label><input type="checkbox" name="milk-tea[]" value="sakura-oolona"> Sakura Oolona</label>
+        <input type="number" name="sakura-oolona-qty" min="0" max="10" value="0">
+        <div class="customization">
+          <label>Size:
+            <select name="sakura-oolona-size" required>
+              <option value="">-- Select Size --</option>
+              <option>Small</option>
+              <option>Medium</option>
+              <option>Large</option>
+            </select>
+          </label>
+          <label>Sweetness:
+            <select name="sakura-oolona-sweetness">
+              <option>0%</option>
+              <option>25%</option>
+              <option>50%</option>
+              <option>75%</option>
+              <option>100%</option>
+            </select>
+          </label>
+          <label>Ice:
+            <select name="sakura-oolona-ice">
+              <option>No Ice</option>
+              <option>Light Ice</option>
+              <option>Regular Ice</option>
+              <option>Extra Ice</option>
+            </select>
+          </label>
+          <fieldset>
+            <legend>Toppings</legend>
+            <label><input type="checkbox" name="sakura-oolona-toppings[]" value="chocolate-drizzle">Chocolate Drizzle</label>
+            <label><input type="checkbox" name="sakura-oolona-toppings[]" value="caramel-drizzle"> Caramel Drizzle</label>
+            <label><input type="checkbox" name="sakura-oolona-toppings[]" value="white-chocolate-dizzle"> White Chocolate Dizzle</label>
+            <label><input type="checkbox" name="sakura-oolona-toppings[]" value="tapioca"> Tapioca Boba</label>
+            <label><input type="checkbox" name="sakura-oolona-toppings[]" value="strawberry"> Strawberry Boba</label>
+            <label><input type="checkbox" name="sakura-oolona-toppings[]" value="mango"> Mango Boba</label>
+            <label><input type="checkbox" name="sakura-oolona-toppings[]" value="peach"> Peach Boba</label>
+            <label><input type="checkbox" name="sakura-oolona-toppings[]" value="lychee"> Lychee Boba</label>
+            <label><input type="checkbox" name="sakura-oolona-toppings[]" value="passionfruit"> Passionfruit Boba</label>
+            <label><input type="checkbox" name="sakura-oolona-toppings[]" value="kiwi"> Kiwi Boba</label>
+            <label><input type="checkbox" name="sakura-oolona-toppings[]" value="Blueberry"> Blueberry Boba</label>
+          </fieldset>
+          <fieldset>
+            <legend>Cold Foam</legend>
+            <label><input type="checkbox" name="sakura-oolona-coldfoam[]" value="vanilla">Vanilla</label>
+            <label><input type="checkbox" name="sakura-oolona-coldfoam[]" value="matcha">Matcha</label>
+            <label><input type="checkbox" name="sakura-oolona-coldfoam[]" value="brown-sugar">Brown Sugar</label>
+            <label><input type="checkbox" name="sakura-oolona-coldfoam[]" value="chocolate">Chocolate</label>
+            <label><input type="checkbox" name="sakura-oolona-coldfoam[]" value="raspberry">Raspberry</label>
+            <label><input type="checkbox" name="sakura-oolona-coldfoam[]" value="strawberry"> Strawberry</label>
+            <label><input type="checkbox" name="sakura-oolona-coldfoam[]" value="salted-caramel"> Salted Caramel</label>
+          </fieldset>
+        </div>
+      </div>
+
+      <div class="drink-option">
+        <label><input type="checkbox" name="milk-tea[]" value="matcha"> Matcha</label>
+        <input type="number" name="matcha-qty" min="0" max="10" value="0">
+        <div class="customization">
+          <label>Size:
+            <select name="matcha-size" required>
+              <option value="">-- Select Size --</option>
+              <option>Small</option>
+              <option>Medium</option>
+              <option>Large</option>
+            </select>
+          </label>
+          <label>Sweetness:
+            <select name="matcha-sweetness">
+              <option>0%</option>
+              <option>25%</option>
+              <option>50%</option>
+              <option>75%</option>
+              <option>100%</option>
+            </select>
+          </label>
+          <label>Ice:
+            <select name="matcha-ice">
+              <option>No Ice</option>
+              <option>Light Ice</option>
+              <option>Regular Ice</option>
+              <option>Extra Ice</option>
+            </select>
+          </label>
+          <fieldset>
+            <legend>Toppings</legend>
+            <label><input type="checkbox" name="matcha-toppings[]" value="chocolate-drizzle">Chocolate Drizzle</label>
+            <label><input type="checkbox" name="matcha-toppings[]" value="caramel-drizzle"> Caramel Drizzle</label>
+            <label><input type="checkbox" name="matcha-toppings[]" value="white-chocolate-dizzle"> White Chocolate Dizzle</label>
+            <label><input type="checkbox" name="matcha-toppings[]" value="tapioca"> Tapioca Boba</label>
+            <label><input type="checkbox" name="matcha-toppings[]" value="strawberry"> Strawberry Boba</label>
+            <label><input type="checkbox" name="matcha-toppings[]" value="mango"> Mango Boba</label>
+            <label><input type="checkbox" name="matcha-toppings[]" value="peach"> Peach Boba</label>
+            <label><input type="checkbox" name="matcha-toppings[]" value="lychee"> Lychee Boba</label>
+            <label><input type="checkbox" name="matcha-toppings[]" value="passionfruit"> Passionfruit Boba</label>
+            <label><input type="checkbox" name="matcha-toppings[]" value="kiwi"> Kiwi Boba</label>
+            <label><input type="checkbox" name="matcha-toppings[]" value="Blueberry"> Blueberry Boba</label>
+          </fieldset>
+          <fieldset>
+            <legend>Cold Foam</legend>
+            <label><input type="checkbox" name="matcha-coldfoam[]" value="vanilla">Vanilla</label>
+            <label><input type="checkbox" name="matcha-coldfoam[]" value="matcha">Matcha</label>
+            <label><input type="checkbox" name="matcha-coldfoam[]" value="brown-sugar">Brown Sugar</label>
+            <label><input type="checkbox" name="matcha-coldfoam[]" value="chocolate">Chocolate</label>
+            <label><input type="checkbox" name="matcha-coldfoam[]" value="raspberry">Raspberry</label>
+            <label><input type="checkbox" name="matcha-coldfoam[]" value="strawberry"> Strawberry</label>
+            <label><input type="checkbox" name="matcha-coldfoam[]" value="salted-caramel"> Salted Caramel</label>
+          </fieldset>
+        </div>
+      </div>
+
+      <div class="drink-option">
+        <label><input type="checkbox" name="milk-tea[]" value="taro"> Taro</label>
+        <input type="number" name="taro-qty" min="0" max="10" value="0">
+        <div class="customization">
+          <label>Size:
+            <select name="taro-size" required>
+              <option value="">-- Select Size --</option>
+              <option>Small</option>
+              <option>Medium</option>
+              <option>Large</option>
+            </select>
+          </label>
+          <label>Sweetness:
+            <select name="taro-sweetness">
+              <option>0%</option>
+              <option>25%</option>
+              <option>50%</option>
+              <option>75%</option>
+              <option>100%</option>
+            </select>
+          </label>
+          <label>Ice:
+            <select name="taro-ice">
+              <option>No Ice</option>
+              <option>Light Ice</option>
+              <option>Regular Ice</option>
+              <option>Extra Ice</option>
+            </select>
+          </label>
+          <fieldset>
+            <legend>Toppings</legend>
+            <label><input type="checkbox" name="taro-toppings[]" value="chocolate-drizzle">Chocolate Drizzle</label>
+            <label><input type="checkbox" name="taro-toppings[]" value="caramel-drizzle"> Caramel Drizzle</label>
+            <label><input type="checkbox" name="taro-toppings[]" value="white-chocolate-dizzle"> White Chocolate Dizzle</label>
+            <label><input type="checkbox" name="taro-toppings[]" value="tapioca"> Tapioca Boba</label>
+            <label><input type="checkbox" name="taro-toppings[]" value="strawberry"> Strawberry Boba</label>
+            <label><input type="checkbox" name="taro-toppings[]" value="mango"> Mango Boba</label>
+            <label><input type="checkbox" name="taro-toppings[]" value="peach"> Peach Boba</label>
+            <label><input type="checkbox" name="taro-toppings[]" value="lychee"> Lychee Boba</label>
+            <label><input type="checkbox" name="taro-toppings[]" value="passionfruit"> Passionfruit Boba</label>
+            <label><input type="checkbox" name="taro-toppings[]" value="kiwi"> Kiwi Boba</label>
+            <label><input type="checkbox" name="taro-toppings[]" value="Blueberry"> Blueberry Boba</label>
+          </fieldset>
+          <fieldset>
+            <legend>Cold Foam</legend>
+            <option>No Cold Foam</option>
+            <option>Vanilla Cold Foam</option>
+            <option>Matcha Cold Foam</option>              <option>Decaf</option>
+            <option>Brown Sugar Cold Foam</option>
+            <option>Chocolate Cold Foam</option>
+            <option>Raspberry Cold Foam</option>
+            <option>Salted Caramel Cold Foam</option>
+            <option>Strawberry Cold Foam</option>
+          </fieldset>
+        </div>
+      </div>
     </fieldset>
 
     <!-- Coffees -->
@@ -84,54 +496,583 @@
           <label>Size:
             <select name="latte-size" required>
               <option value="">-- Select Size --</option>
-              <option>Small</option><option>Medium</option><option>Large</option>
+              <option>Small</option>
+              <option>Medium</option>
+              <option>Large</option>
+            </select>
+          </label>
+           <label>Espresso:
+            <select name="latte-espresso">
+              <option>Signature Roast</option>
+              <option>Blonde Espresso</option>
+              <option>Decaf</option>
+              <option>1/2 Decaf</option>
+              <option>1/3 Decaf</option>
+            <option>2/3 Decaf</option>
             </select>
           </label>
           <label>Milk:
             <select name="latte-milk">
-              <option>2%</option><option>Whole</option><option>Nonfat</option>
-              <option>Almond</option><option>Coconut</option><option>Oatmilk</option>
-              <option>Soy</option><option>Heavy Cream</option>
+              <option>2%</option>
+              <option>Whole</option>
+              <option>Nonfat</option>
+              <option>Almond</option>
+              <option>Coconut</option>
+              <option>Oatmilk</option>
+              <option>Soy</option>
+              <option>Heavy Cream</option>
             </select>
           </label>
-          <label>Espresso:
-            <select name="latte-espresso">
-              <option>Signature Roast</option><option>Blonde Espresso</option>
-              <option>Decaf</option><option>Half Decaf</option>
+          <label>Sweetness:
+            <select name="latte-sweetness">
+              <option>0%</option>
+              <option>25%</option>
+              <option>50%</option>
+              <option>75%</option>
+              <option>100%</option>
             </select>
+          </label>
+          <label>Ice:
+            <select name="latte-ice">
+              <option>No Ice</option>
+              <option>Light Ice</option>
+              <option>Regular Ice</option>
+              <option>Extra Ice</option>
+            </select>
+          </label>
+          <label>Cold Foam:
+            <select name="latte-cold-foam">
+            <option>No Cold Foam</option>
+            <option>Vanilla Cold Foam</option>
+            <option>Matcha Cold Foam</option> 
+            <option>Brown Sugar Cold Foam</option>
+            <option>Chocolate Cold Foam</option>
+            <option>Raspberry Cold Foam</option>
+            <option>Salted Caramel Cold Foam</option>
+            <option>Strawberry Cold Foam</option>
+          </select>
           </label>
           <fieldset>
             <legend>Toppings</legend>
-            <label><input type="checkbox" name="latte-toppings[]" value="chocolate-drizzle"> Chocolate Drizzle</label>
+            <label><input type="checkbox" name="latte-toppings[]" value="chocolate-drizzle">Chocolate Drizzle</label>
             <label><input type="checkbox" name="latte-toppings[]" value="caramel-drizzle"> Caramel Drizzle</label>
-            <label><input type="checkbox" name="latte-toppings[]" value="white-chocolate"> White Chocolate</label>
+            <label><input type="checkbox" name="latte-toppings[]" value="white-chocolate-dizzle"> White Chocolate Dizzle</label>
+            <label><input type="checkbox" name="latte-toppings[]" value="tapioca"> Tapioca Boba</label>
+            <label><input type="checkbox" name="latte-toppings[]" value="strawberry"> Strawberry Boba</label>
+            <label><input type="checkbox" name="latte-toppings[]" value="mango"> Mango Boba</label>
+            <label><input type="checkbox" name="latte-toppings[]" value="peach"> Peach Boba</label>
+            <label><input type="checkbox" name="latte-toppings[]" value="lychee"> Lychee Boba</label>
+            <label><input type="checkbox" name="latte-toppings[]" value="passionfruit"> Passionfruit Boba</label>
+            <label><input type="checkbox" name="latte-toppings[]" value="kiwi"> Kiwi Boba</label>
+            <label><input type="checkbox" name="latte-toppings[]" value="Blueberry"> Blueberry Boba</label>
           </fieldset>
         </div>
       </div>
-      <!-- Repeat for Cappuccino, Mocha, etc. -->
+
+      <div class="drink-option">
+        <label><input type="checkbox" name="coffee[]" value="cappuccino"> Cappuccino</label>
+        <input type="number" name="cappuccino-qty" min="0" max="10" value="0">
+        <div class="customization">
+          <label>Size:
+            <select name="cappuccino-size" required>
+              <option value="">-- Select Size --</option>
+              <option>Small</option>
+              <option>Medium</option>
+              <option>Large</option>
+            </select>
+          </label>
+           <label>Espresso:
+            <select name="cappuccino-espresso">
+              <option>Signature Roast</option>
+              <option>Blonde Espresso</option>
+              <option>Decaf</option>
+              <option>1/2 Decaf</option>
+              <option>1/3 Decaf</option>
+            <option>2/3 Decaf</option>
+            </select>
+          </label>
+          <label>Milk:
+            <select name="cappuccino-milk">
+              <option>2%</option>
+              <option>Whole</option>
+              <option>Nonfat</option>
+              <option>Almond</option>
+              <option>Coconut</option>
+              <option>Oatmilk</option>
+              <option>Soy</option>
+              <option>Heavy Cream</option>
+            </select>
+          </label>
+          <label>Sweetness:
+            <select name="cappuccino-sweetness">
+              <option>0%</option>
+              <option>25%</option>
+              <option>50%</option>
+              <option>75%</option>
+              <option>100%</option>
+            </select>
+          </label>
+          <label>Ice:
+            <select name="cappuccino-ice">
+              <option>No Ice</option>
+              <option>Light Ice</option>
+              <option>Regular Ice</option>
+              <option>Extra Ice</option>
+            </select>
+          </label>
+          <label>Cold Foam:
+            <select name="cappuccino-cold-foam">
+            <option>No Cold Foam</option>
+            <option>Vanilla Cold Foam</option>
+            <option>Matcha Cold Foam</option> 
+            <option>Brown Sugar Cold Foam</option>
+            <option>Chocolate Cold Foam</option>
+            <option>Raspberry Cold Foam</option>
+            <option>Salted Caramel Cold Foam</option>
+            <option>Strawberry Cold Foam</option>
+          </select>
+          </label>
+          <fieldset>
+            <legend>Toppings</legend>
+            <label><input type="checkbox" name="cappuccino-toppings[]" value="chocolate-drizzle">Chocolate Drizzle</label>
+            <label><input type="checkbox" name="cappuccino-toppings[]" value="caramel-drizzle"> Caramel Drizzle</label>
+            <label><input type="checkbox" name="cappuccino-toppings[]" value="white-chocolate-dizzle"> White Chocolate Dizzle</label>
+            <label><input type="checkbox" name="cappuccino-toppings[]" value="tapioca"> Tapioca Boba</label>
+            <label><input type="checkbox" name="cappuccino-toppings[]" value="strawberry"> Strawberry Boba</label>
+            <label><input type="checkbox" name="cappuccino-toppings[]" value="mango"> Mango Boba</label>
+            <label><input type="checkbox" name="cappuccino-toppings[]" value="peach"> Peach Boba</label>
+            <label><input type="checkbox" name="cappuccino-toppings[]" value="lychee"> Lychee Boba</label>
+            <label><input type="checkbox" name="cappuccino-toppings[]" value="passionfruit"> Passionfruit Boba</label>
+            <label><input type="checkbox" name="cappuccino-toppings[]" value="kiwi"> Kiwi Boba</label>
+            <label><input type="checkbox" name="cappuccino-toppings[]" value="Blueberry"> Blueberry Boba</label>
+          </fieldset>
+        </div>
+      </div>
+
+      <div class="drink-option">
+        <label><input type="checkbox" name="coffee[]" value="mocha"> Mocha</label>
+        <input type="number" name="mocha-qty" min="0" max="10" value="0">
+        <div class="customization">
+          <label>Size:
+            <select name="mocha-size" required>
+              <option value="">-- Select Size --</option>
+              <option>Small</option>
+              <option>Medium</option>
+              <option>Large</option>
+            </select>
+          </label>
+           <label>Espresso:
+            <select name="mocha-espresso">
+              <option>Signature Roast</option>
+              <option>Blonde Espresso</option>
+              <option>Decaf</option>
+              <option>1/2 Decaf</option>
+              <option>1/3 Decaf</option>
+            <option>2/3 Decaf</option>
+            </select>
+          </label>
+          <label>Milk:
+            <select name="mocha-milk">
+              <option>2%</option>
+              <option>Whole</option>
+              <option>Nonfat</option>
+              <option>Almond</option>
+              <option>Coconut</option>
+              <option>Oatmilk</option>
+              <option>Soy</option>
+              <option>Heavy Cream</option>
+            </select>
+          </label>
+          <label>Sweetness:
+            <select name="mocha-sweetness">
+              <option>0%</option>
+              <option>25%</option>
+              <option>50%</option>
+              <option>75%</option>
+              <option>100%</option>
+            </select>
+          </label>
+          <label>Ice:
+            <select name="mocha-ice">
+              <option>No Ice</option>
+              <option>Light Ice</option>
+              <option>Regular Ice</option>
+              <option>Extra Ice</option>
+            </select>
+          </label>
+          <label>Cold Foam:
+            <select name="mocha-cold-foam">
+            <option>No Cold Foam</option>
+            <option>Vanilla Cold Foam</option>
+            <option>Matcha Cold Foam</option> 
+            <option>Brown Sugar Cold Foam</option>
+            <option>Chocolate Cold Foam</option>
+            <option>Raspberry Cold Foam</option>
+            <option>Salted Caramel Cold Foam</option>
+            <option>Strawberry Cold Foam</option>
+          </select>
+          </label>
+          <fieldset>
+            <legend>Toppings</legend>
+            <label><input type="checkbox" name="mocha-toppings[]" value="chocolate-drizzle">Chocolate Drizzle</label>
+            <label><input type="checkbox" name="mocha-toppings[]" value="caramel-drizzle"> Caramel Drizzle</label>
+            <label><input type="checkbox" name="mocha-toppings[]" value="white-chocolate-dizzle"> White Chocolate Dizzle</label>
+            <label><input type="checkbox" name="mocha-toppings[]" value="tapioca"> Tapioca Boba</label>
+            <label><input type="checkbox" name="mocha-toppings[]" value="strawberry"> Strawberry Boba</label>
+            <label><input type="checkbox" name="mocha-toppings[]" value="mango"> Mango Boba</label>
+            <label><input type="checkbox" name="mocha-toppings[]" value="peach"> Peach Boba</label>
+            <label><input type="checkbox" name="mocha-toppings[]" value="lychee"> Lychee Boba</label>
+            <label><input type="checkbox" name="mocha-toppings[]" value="passionfruit"> Passionfruit Boba</label>
+            <label><input type="checkbox" name="mocha-toppings[]" value="kiwi"> Kiwi Boba</label>
+            <label><input type="checkbox" name="mocha-toppings[]" value="Blueberry"> Blueberry Boba</label>
+          </fieldset>
+        </div>
+      </div>
+
+      <div class="drink-option">
+        <label><input type="checkbox" name="coffee[]" value="espresso-macchiato"> Espresso Macchiato</label>
+        <input type="number" name="espresso-macchiato-qty" min="0" max="10" value="0">
+        <div class="customization">
+          <label>Size:
+            <select name="espresso-macchiato-size" required>
+              <option value="">-- Select Size --</option>
+              <option>Small</option>
+              <option>Medium</option>
+              <option>Large</option>
+            </select>
+          </label>
+           <label>Espresso:
+            <select name="espresso-macchiato-espresso">
+              <option>Signature Roast</option>
+              <option>Blonde Espresso</option>
+              <option>Decaf</option>
+              <option>1/2 Decaf</option>
+              <option>1/3 Decaf</option>
+            <option>2/3 Decaf</option>
+            </select>
+          </label>
+          <label>Milk:
+            <select name="espresso-macchiato-milk">
+              <option>2%</option>
+              <option>Whole</option>
+              <option>Nonfat</option>
+              <option>Almond</option>
+              <option>Coconut</option>
+              <option>Oatmilk</option>
+              <option>Soy</option>
+              <option>Heavy Cream</option>
+            </select>
+          </label>
+          <label>Sweetness:
+            <select name="espresso-macchiato-sweetness">
+              <option>0%</option>
+              <option>25%</option>
+              <option>50%</option>
+              <option>75%</option>
+              <option>100%</option>
+            </select>
+          </label>
+          <label>Ice:
+            <select name="espresso-macchiato-ice">
+              <option>No Ice</option>
+              <option>Light Ice</option>
+              <option>Regular Ice</option>
+              <option>Extra Ice</option>
+            </select>
+          </label>
+          <label>Cold Foam:
+            <select name="espresso-macchiato-cold-foam">
+            <option>No Cold Foam</option>
+            <option>Vanilla Cold Foam</option>
+            <option>Matcha Cold Foam</option> 
+            <option>Brown Sugar Cold Foam</option>
+            <option>Chocolate Cold Foam</option>
+            <option>Raspberry Cold Foam</option>
+            <option>Salted Caramel Cold Foam</option>
+            <option>Strawberry Cold Foam</option>
+          </select>
+          </label>
+          <fieldset>
+            <legend>Toppings</legend>
+            <label><input type="checkbox" name="espresso-macchiato-toppings[]" value="chocolate-drizzle">Chocolate Drizzle</label>
+            <label><input type="checkbox" name="espresso-macchiato-toppings[]" value="caramel-drizzle"> Caramel Drizzle</label>
+            <label><input type="checkbox" name="espresso-macchiato-toppings[]" value="white-chocolate-dizzle"> White Chocolate Dizzle</label>
+            <label><input type="checkbox" name="espresso-macchiato-toppings[]" value="tapioca"> Tapioca Boba</label>
+            <label><input type="checkbox" name="espresso-macchiato-toppings[]" value="strawberry"> Strawberry Boba</label>
+            <label><input type="checkbox" name="espresso-macchiato-toppings[]" value="mango"> Mango Boba</label>
+            <label><input type="checkbox" name="espresso-macchiato-toppings[]" value="peach"> Peach Boba</label>
+            <label><input type="checkbox" name="espresso-macchiato-toppings[]" value="lychee"> Lychee Boba</label>
+            <label><input type="checkbox" name="espresso-macchiato-toppings[]" value="passionfruit"> Passionfruit Boba</label>
+            <label><input type="checkbox" name="espresso-macchiato-toppings[]" value="kiwi"> Kiwi Boba</label>
+            <label><input type="checkbox" name="espresso-macchiato-toppings[]" value="Blueberry"> Blueberry Boba</label>
+          </fieldset>
+        </div>
+      </div>
+
+      <div class="drink-option">
+        <label><input type="checkbox" name="coffee[]" value="caramel-macchiato"> Caramel Macchiato</label>
+        <input type="number" name="caramel-macchiato-qty" min="0" max="10" value="0">
+        <div class="customization">
+          <label>Size:
+            <select name="caramel-macchiato-size" required>
+              <option value="">-- Select Size --</option>
+              <option>Small</option>
+              <option>Medium</option>
+              <option>Large</option>
+            </select>
+          </label>
+           <label>Espresso:
+            <select name="caramel-macchiato-espresso">
+              <option>Signature Roast</option>
+              <option>Blonde Espresso</option>
+              <option>Decaf</option>
+              <option>1/2 Decaf</option>
+              <option>1/3 Decaf</option>
+            <option>2/3 Decaf</option>
+            </select>
+          </label>
+          <label>Milk:
+            <select name="caramel-macchiato-milk">
+              <option>2%</option>
+              <option>Whole</option>
+              <option>Nonfat</option>
+              <option>Almond</option>
+              <option>Coconut</option>
+              <option>Oatmilk</option>
+              <option>Soy</option>
+              <option>Heavy Cream</option>
+            </select>
+          </label>
+          <label>Sweetness:
+            <select name="caramel-macchiato-sweetness">
+              <option>0%</option>
+              <option>25%</option>
+              <option>50%</option>
+              <option>75%</option>
+              <option>100%</option>
+            </select>
+          </label>
+          <label>Ice:
+            <select name="caramel-macchiato-ice">
+              <option>No Ice</option>
+              <option>Light Ice</option>
+              <option>Regular Ice</option>
+              <option>Extra Ice</option>
+            </select>
+          </label>
+          <label>Cold Foam:
+            <select name="caramel-macchiato-cold-foam">
+            <option>No Cold Foam</option>
+            <option>Vanilla Cold Foam</option>
+            <option>Matcha Cold Foam</option> 
+            <option>Brown Sugar Cold Foam</option>
+            <option>Chocolate Cold Foam</option>
+            <option>Raspberry Cold Foam</option>
+            <option>Salted Caramel Cold Foam</option>
+            <option>Strawberry Cold Foam</option>
+          </select>
+          </label>
+          <fieldset>
+            <legend>Toppings</legend>
+            <label><input type="checkbox" name="caramel-macchiato-toppings[]" value="chocolate-drizzle">Chocolate Drizzle</label>
+            <label><input type="checkbox" name="caramel-macchiato-toppings[]" value="caramel-drizzle"> Caramel Drizzle</label>
+            <label><input type="checkbox" name="caramel-macchiato-toppings[]" value="white-chocolate-dizzle"> White Chocolate Dizzle</label>
+            <label><input type="checkbox" name="caramel-macchiato-toppings[]" value="tapioca"> Tapioca Boba</label>
+            <label><input type="checkbox" name="caramel-macchiato-toppings[]" value="strawberry"> Strawberry Boba</label>
+            <label><input type="checkbox" name="caramel-macchiato-toppings[]" value="mango"> Mango Boba</label>
+            <label><input type="checkbox" name="caramel-macchiato-toppings[]" value="peach"> Peach Boba</label>
+            <label><input type="checkbox" name="caramel-macchiato-toppings[]" value="lychee"> Lychee Boba</label>
+            <label><input type="checkbox" name="caramel-macchiato-toppings[]" value="passionfruit"> Passionfruit Boba</label>
+            <label><input type="checkbox" name="caramel-macchiato-toppings[]" value="kiwi"> Kiwi Boba</label>
+            <label><input type="checkbox" name="caramel-macchiato-toppings[]" value="Blueberry"> Blueberry Boba</label>
+          </fieldset>
+        </div>
+      </div>
     </fieldset>
 
     <!-- Teas -->
     <fieldset>
       <legend>Teas</legend>
+
       <div class="drink-option">
         <label><input type="checkbox" name="tea[]" value="black"> Black Tea</label>
         <input type="number" name="black-qty" min="0" max="10" value="0">
         <div class="customization">
-          <label>Sweetness:
-            <select name="black-sweetness">
-              <option>0%</option><option>25%</option><option>50%</option><option>75%</option><option>100%</option>
+            <label>Size:
+            <select name="black-size" required>
+              <option value="">-- Select Size --</option>
+              <option>Small</option>
+              <option>Medium</option>
+              <option>Large</option>
             </select>
           </label>
+          <label>Sweetness:
+            <select name="black-sweetness">
+              <option>0%</option>
+              <option>25%</option>
+              <option>50%</option>
+              <option>75%</option>
+              <option>100%</option>
+            </select>
+          </label>
+
           <label>Ice:
             <select name="black-ice">
-              <option>No Ice</option><option>Light Ice</option><option>Regular Ice</option><option>Extra Ice</option>
+                <option>Steamed</option>
+              <option>No Ice</option>
+              <option>Light Ice</option>
+              <option>Regular Ice</option>
+              <option>Extra Ice</option>
             </select>
+          </label>
+        <label>Cold Foam:
+            <select name="black-cold-foam">
+            <option>No Cold Foam</option>
+            <option>Vanilla Cold Foam</option>
+            <option>Matcha Cold Foam</option> 
+            <option>Brown Sugar Cold Foam</option>
+            <option>Chocolate Cold Foam</option>
+            <option>Raspberry Cold Foam</option>
+            <option>Salted Caramel Cold Foam</option>
+            <option>Strawberry Cold Foam</option>
+          </select>
           </label>
           <fieldset>
             <legend>Toppings</legend>
+            <label><input type="checkbox" name="black-toppings[]" value="chocolate-drizzle">Chocolate Drizzle</label>
+            <label><input type="checkbox" name="black-toppings[]" value="caramel-drizzle"> Caramel Drizzle</label>
+            <label><input type="checkbox" name="black-toppings[]" value="white-chocolate-dizzle"> White Chocolate Dizzle</label>
             <label><input type="checkbox" name="black-toppings[]" value="tapioca"> Tapioca Boba</label>
+            <label><input type="checkbox" name="black-toppings[]" value="strawberry"> Strawberry Boba</label>
+            <label><input type="checkbox" name="black-toppings[]" value="mango"> Mango Boba</label>
+            <label><input type="checkbox" name="black-toppings[]" value="peach"> Peach Boba</label>
             <label><input type="checkbox" name="black-toppings[]" value="lychee"> Lychee Boba</label>
+            <label><input type="checkbox" name="black-toppings[]" value="passionfruit"> Passionfruit Boba</label>
+            <label><input type="checkbox" name="black-toppings[]" value="kiwi"> Kiwi Boba</label>
+            <label><input type="checkbox" name="black-toppings[]" value="Blueberry"> Blueberry Boba</label>
+          </fieldset>
+        </div>
+      </div>
+
+      <div class="drink-option">
+        <label><input type="checkbox" name="tea[]" value="green"> Green Tea</label>
+        <input type="number" name="green-qty" min="0" max="10" value="0">
+        <div class="customization">
+            <label>Size:
+            <select name="green-size" required>
+              <option value="">-- Select Size --</option>
+              <option>Small</option>
+              <option>Medium</option>
+              <option>Large</option>
+            </select>
+          </label>
+          <label>Sweetness:
+            <select name="green-sweetness">
+              <option>0%</option>
+              <option>25%</option>
+              <option>50%</option>
+              <option>75%</option>
+              <option>100%</option>
+            </select>
+          </label>
+
+          <label>Ice:
+            <select name="green-ice">
+                <option>Steamed</option>
+              <option>No Ice</option>
+              <option>Light Ice</option>
+              <option>Regular Ice</option>
+              <option>Extra Ice</option>
+            </select>
+          </label>
+          <label>Cold Foam:
+            <select name="green-cold-foam">
+            <option>No Cold Foam</option>
+            <option>Vanilla Cold Foam</option>
+            <option>Matcha Cold Foam</option> 
+            <option>Brown Sugar Cold Foam</option>
+            <option>Chocolate Cold Foam</option>
+            <option>Raspberry Cold Foam</option>
+            <option>Salted Caramel Cold Foam</option>
+            <option>Strawberry Cold Foam</option>
+          </select>
+          </label>
+
+          <fieldset>
+            <legend>Toppings</legend>
+            <label><input type="checkbox" name="green-toppings[]" value="chocolate-drizzle">Chocolate Drizzle</label>
+            <label><input type="checkbox" name="green-toppings[]" value="caramel-drizzle"> Caramel Drizzle</label>
+            <label><input type="checkbox" name="green-toppings[]" value="white-chocolate-dizzle"> White Chocolate Dizzle</label>
+            <label><input type="checkbox" name="green-toppings[]" value="tapioca"> Tapioca Boba</label>
+            <label><input type="checkbox" name="green-toppings[]" value="strawberry"> Strawberry Boba</label>
+            <label><input type="checkbox" name="green-toppings[]" value="mango"> Mango Boba</label>
+            <label><input type="checkbox" name="green-toppings[]" value="peach"> Peach Boba</label>
+            <label><input type="checkbox" name="green-toppings[]" value="lychee"> Lychee Boba</label>
+            <label><input type="checkbox" name="green-toppings[]" value="passionfruit"> Passionfruit Boba</label>
+            <label><input type="checkbox" name="green-toppings[]" value="kiwi"> Kiwi Boba</label>
+            <label><input type="checkbox" name="green-toppings[]" value="Blueberry"> Blueberry Boba</label>
+          </fieldset>
+        </div>
+      </div>
+
+      <div class="drink-option">
+        <label><input type="checkbox" name="tea[]" value="hibiscus"> Hibiscus Tea</label>
+        <input type="number" name="hibiscus-qty" min="0" max="10" value="0">
+        <div class="customization">
+            <label>Size:
+            <select name="hibiscus-size" required>
+              <option value="">-- Select Size --</option>
+              <option>Small</option>
+              <option>Medium</option>
+              <option>Large</option>
+            </select>
+          </label>
+          <label>Sweetness:
+            <select name="hibiscus-sweetness">
+              <option>0%</option>
+              <option>25%</option>
+              <option>50%</option>
+              <option>75%</option>
+              <option>100%</option>
+            </select>
+          </label>
+
+          <label>Ice:
+            <select name="hibiscus-ice">
+                <option>Steamed</option>
+              <option>No Ice</option>
+              <option>Light Ice</option>
+              <option>Regular Ice</option>
+              <option>Extra Ice</option>
+            </select>
+          </label>
+
+          <label>Cold Foam:
+            <select name="hibiscus-cold-foam">
+            <option>No Cold Foam</option>
+            <option>Vanilla Cold Foam</option>
+            <option>Matcha Cold Foam</option> 
+            <option>Brown Sugar Cold Foam</option>
+            <option>Chocolate Cold Foam</option>
+            <option>Raspberry Cold Foam</option>
+            <option>Salted Caramel Cold Foam</option>
+            <option>Strawberry Cold Foam</option>
+          </select>
+          </label>
+
+          <fieldset>
+            <legend>Toppings</legend>
+            <label><input type="checkbox" name="hibiscus-toppings[]" value="chocolate-drizzle">Chocolate Drizzle</label>
+            <label><input type="checkbox" name="hibiscus-toppings[]" value="caramel-drizzle"> Caramel Drizzle</label>
+            <label><input type="checkbox" name="hibiscus-toppings[]" value="white-chocolate-dizzle"> White Chocolate Dizzle</label>
+            <label><input type="checkbox" name="hibiscus-toppings[]" value="tapioca"> Tapioca Boba</label>
+            <label><input type="checkbox" name="hibiscus-toppings[]" value="strawberry"> Strawberry Boba</label>
+            <label><input type="checkbox" name="hibiscus-toppings[]" value="mango"> Mango Boba</label>
+            <label><input type="checkbox" name="hibiscus-toppings[]" value="peach"> Peach Boba</label>
+            <label><input type="checkbox" name="hibiscus-toppings[]" value="lychee"> Lychee Boba</label>
+            <label><input type="checkbox" name="hibiscus-toppings[]" value="passionfruit"> Passionfruit Boba</label>
+            <label><input type="checkbox" name="hibiscus-toppings[]" value="kiwi"> Kiwi Boba</label>
+            <label><input type="checkbox" name="hibiscus-toppings[]" value="Blueberry"> Blueberry Boba</label>
           </fieldset>
         </div>
       </div>
@@ -139,14 +1080,252 @@
 
     <!-- Refreshers -->
     <fieldset>
-      <legend>Refreshers</legend>
-      <div class="drink-option">
-        <label><input type="checkbox" name="refresher[]" value="strawberry-hibiscus"> Strawberry Hibiscus</label>
+     <div class="drink-option">
+        <label><input type="checkbox" name="refreshers[]" value="strawberry-hibiscus"> Strawberry Hibiscus</label>
         <input type="number" name="strawberry-hibiscus-qty" min="0" max="10" value="0">
+        <div class="customization">
+            <label>Size:
+            <select name="strawberry-hibiscus-size" required>
+              <option value="">-- Select Size --</option>
+              <option>Small</option>
+              <option>Medium</option>
+              <option>Large</option>
+            </select>
+          </label>
+          <label>Sweetness:
+            <select name="strawberry-hibiscus-sweetness">
+              <option>0%</option>
+              <option>25%</option>
+              <option>50%</option>
+              <option>75%</option>
+              <option>100%</option>
+            </select>
+          </label>
+
+          <label>Ice:
+            <select name="strawberry-hibiscus-ice">
+                <option>Steamed</option>
+              <option>No Ice</option>
+              <option>Light Ice</option>
+              <option>Regular Ice</option>
+              <option>Extra Ice</option>
+            </select>
+          </label>
+
+          <label>Cold Foam:
+            <select name="strawberry-hibiscus-cold-foam">
+            <option>No Cold Foam</option>
+            <option>Vanilla Cold Foam</option>
+            <option>Matcha Cold Foam</option> 
+            <option>Brown Sugar Cold Foam</option>
+            <option>Chocolate Cold Foam</option>
+            <option>Raspberry Cold Foam</option>
+            <option>Salted Caramel Cold Foam</option>
+            <option>Strawberry Cold Foam</option>
+          </select>
+          </label>
+
+          <fieldset>
+            <legend>Toppings</legend>
+            <label><input type="checkbox" name="strawberry-hibiscus-toppings[]" value="chocolate-drizzle">Chocolate Drizzle</label>
+            <label><input type="checkbox" name="strawberry-hibiscus-toppings[]" value="caramel-drizzle"> Caramel Drizzle</label>
+            <label><input type="checkbox" name="strawberry-hibiscus-toppings[]" value="white-chocolate-dizzle"> White Chocolate Dizzle</label>
+            <label><input type="checkbox" name="strawberry-hibiscus-toppings[]" value="tapioca"> Tapioca Boba</label>
+            <label><input type="checkbox" name="strawberry-hibiscus-toppings[]" value="strawberry"> Strawberry Boba</label>
+            <label><input type="checkbox" name="strawberry-hibiscus-toppings[]" value="mango"> Mango Boba</label>
+            <label><input type="checkbox" name="strawberry-hibiscus-toppings[]" value="peach"> Peach Boba</label>
+            <label><input type="checkbox" name="strawberry-hibiscus-toppings[]" value="lychee"> Lychee Boba</label>
+            <label><input type="checkbox" name="strawberry-hibiscus-toppings[]" value="passionfruit"> Passionfruit Boba</label>
+            <label><input type="checkbox" name="strawberry-hibiscus-toppings[]" value="kiwi"> Kiwi Boba</label>
+            <label><input type="checkbox" name="strawberry-hibiscus-toppings[]" value="Blueberry"> Blueberry Boba</label>
+          </fieldset>
+        </div>
       </div>
+
       <div class="drink-option">
-        <label><input type="checkbox" name="refresher[]" value="dragonfruit-passionfruit"> Dragonfruit Passionfruit</label>
-        <input type="number" name="dragonfruit-passionfruit-qty" min="0" max="10" value="0">
+        <label><input type="checkbox" name="refreshers[]" value="dragon-passion"> Dragon Passion</label>
+        <input type="number" name="dragon-passion-qty" min="0" max="10" value="0">
+        <div class="customization">
+            <label>Size:
+            <select name="dragon-passion-size" required>
+              <option value="">-- Select Size --</option>
+              <option>Small</option>
+              <option>Medium</option>
+              <option>Large</option>
+            </select>
+          </label>
+          <label>Sweetness:
+            <select name="dragon-passion-sweetness">
+              <option>0%</option>
+              <option>25%</option>
+              <option>50%</option>
+              <option>75%</option>
+              <option>100%</option>
+            </select>
+          </label>
+
+          <label>Ice:
+            <select name="dragon-passion-ice">
+                <option>Steamed</option>
+              <option>No Ice</option>
+              <option>Light Ice</option>
+              <option>Regular Ice</option>
+              <option>Extra Ice</option>
+            </select>
+          </label>
+
+          <label>Cold Foam:
+            <select name="dragon-passion-cold-foam">
+            <option>No Cold Foam</option>
+            <option>Vanilla Cold Foam</option>
+            <option>Matcha Cold Foam</option> 
+            <option>Brown Sugar Cold Foam</option>
+            <option>Chocolate Cold Foam</option>
+            <option>Raspberry Cold Foam</option>
+            <option>Salted Caramel Cold Foam</option>
+            <option>Strawberry Cold Foam</option>
+          </select>
+          </label>
+
+          <fieldset>
+            <legend>Toppings</legend>
+            <label><input type="checkbox" name="dragon-passion-toppings[]" value="chocolate-drizzle">Chocolate Drizzle</label>
+            <label><input type="checkbox" name="dragon-passion-toppings[]" value="caramel-drizzle"> Caramel Drizzle</label>
+            <label><input type="checkbox" name="dragon-passion-toppings[]" value="white-chocolate-dizzle"> White Chocolate Dizzle</label>
+            <label><input type="checkbox" name="dragon-passion-toppings[]" value="tapioca"> Tapioca Boba</label>
+            <label><input type="checkbox" name="dragon-passion-toppings[]" value="strawberry"> Strawberry Boba</label>
+            <label><input type="checkbox" name="dragon-passion-toppings[]" value="mango"> Mango Boba</label>
+            <label><input type="checkbox" name="dragon-passion-toppings[]" value="peach"> Peach Boba</label>
+            <label><input type="checkbox" name="dragon-passion-toppings[]" value="lychee"> Lychee Boba</label>
+            <label><input type="checkbox" name="dragon-passion-toppings[]" value="passionfruit"> Passionfruit Boba</label>
+            <label><input type="checkbox" name="dragon-passion-toppings[]" value="kiwi"> Kiwi Boba</label>
+            <label><input type="checkbox" name="dragon-passion-toppings[]" value="Blueberry"> Blueberry Boba</label>
+          </fieldset>
+        </div>
+      </div>
+
+      <div class="drink-option">
+        <label><input type="checkbox" name="refreshers[]" value="pom-black-mango"> Pomegranate Blackberry Mango</label>
+        <input type="number" name="pom-black-mango-qty" min="0" max="10" value="0">
+        <div class="customization">
+            <label>Size:
+            <select name="pom-black-mango-size" required>
+              <option value="">-- Select Size --</option>
+              <option>Small</option>
+              <option>Medium</option>
+              <option>Large</option>
+            </select>
+          </label>
+          <label>Sweetness:
+            <select name="pom-black-mango-sweetness">
+              <option>0%</option>
+              <option>25%</option>
+              <option>50%</option>
+              <option>75%</option>
+              <option>100%</option>
+            </select>
+          </label>
+
+          <label>Ice:
+            <select name="pom-black-mango-ice">
+                <option>Steamed</option>
+              <option>No Ice</option>
+              <option>Light Ice</option>
+              <option>Regular Ice</option>
+              <option>Extra Ice</option>
+            </select>
+          </label>
+
+          <label>Cold Foam:
+            <select name="pom-black-mango-cold-foam">
+            <option>No Cold Foam</option>
+            <option>Vanilla Cold Foam</option>
+            <option>Matcha Cold Foam</option> 
+            <option>Brown Sugar Cold Foam</option>
+            <option>Chocolate Cold Foam</option>
+            <option>Raspberry Cold Foam</option>
+            <option>Salted Caramel Cold Foam</option>
+            <option>Strawberry Cold Foam</option>
+          </select>
+          </label>
+
+          <fieldset>
+            <legend>Toppings</legend>
+            <label><input type="checkbox" name="pom-black-mango-toppings[]" value="chocolate-drizzle">Chocolate Drizzle</label>
+            <label><input type="checkbox" name="pom-black-mango-toppings[]" value="caramel-drizzle"> Caramel Drizzle</label>
+            <label><input type="checkbox" name="pom-black-mango-toppings[]" value="white-chocolate-dizzle"> White Chocolate Dizzle</label>
+            <label><input type="checkbox" name="pom-black-mango-toppings[]" value="tapioca"> Tapioca Boba</label>
+            <label><input type="checkbox" name="pom-black-mango-toppings[]" value="strawberry"> Strawberry Boba</label>
+            <label><input type="checkbox" name="pom-black-mango-toppings[]" value="mango"> Mango Boba</label>
+            <label><input type="checkbox" name="pom-black-mango-toppings[]" value="peach"> Peach Boba</label>
+            <label><input type="checkbox" name="pom-black-mango-toppings[]" value="lychee"> Lychee Boba</label>
+            <label><input type="checkbox" name="pom-black-mango-toppings[]" value="passionfruit"> Passionfruit Boba</label>
+            <label><input type="checkbox" name="pom-black-mango-toppings[]" value="kiwi"> Kiwi Boba</label>
+            <label><input type="checkbox" name="pom-black-mango-toppings[]" value="Blueberry"> Blueberry Boba</label>
+          </fieldset>
+        </div>
+      </div>
+
+      <div class="drink-option">
+        <label><input type="checkbox" name="refreshers[]" value="blueberry"> Blueberry</label>
+        <input type="number" name="blueberry-qty" min="0" max="10" value="0">
+        <div class="customization">
+            <label>Size:
+            <select name="blueberry-size" required>
+              <option value="">-- Select Size --</option>
+              <option>Small</option>
+              <option>Medium</option>
+              <option>Large</option>
+            </select>
+          </label>
+          <label>Sweetness:
+            <select name="blueberry-sweetness">
+              <option>0%</option>
+              <option>25%</option>
+              <option>50%</option>
+              <option>75%</option>
+              <option>100%</option>
+            </select>
+          </label>
+
+          <label>Ice:
+            <select name="blueberry-ice">
+                <option>Steamed</option>
+              <option>No Ice</option>
+              <option>Light Ice</option>
+              <option>Regular Ice</option>
+              <option>Extra Ice</option>
+            </select>
+          </label>
+
+          <label>Cold Foam:
+            <select name="blueberry-cold-foam">
+            <option>No Cold Foam</option>
+            <option>Vanilla Cold Foam</option>
+            <option>Matcha Cold Foam</option> 
+            <option>Brown Sugar Cold Foam</option>
+            <option>Chocolate Cold Foam</option>
+            <option>Raspberry Cold Foam</option>
+            <option>Salted Caramel Cold Foam</option>
+            <option>Strawberry Cold Foam</option>
+          </select>
+          </label>
+
+          <fieldset>
+            <legend>Toppings</legend>
+            <label><input type="checkbox" name="blueberry-toppings[]" value="chocolate-drizzle">Chocolate Drizzle</label>
+            <label><input type="checkbox" name="blueberry-toppings[]" value="caramel-drizzle"> Caramel Drizzle</label>
+            <label><input type="checkbox" name="blueberry-toppings[]" value="white-chocolate-dizzle"> White Chocolate Dizzle</label>
+            <label><input type="checkbox" name="blueberry-toppings[]" value="tapioca"> Tapioca Boba</label>
+            <label><input type="checkbox" name="blueberry-toppings[]" value="strawberry"> Strawberry Boba</label>
+            <label><input type="checkbox" name="blueberry-toppings[]" value="mango"> Mango Boba</label>
+            <label><input type="checkbox" name="blueberry-toppings[]" value="peach"> Peach Boba</label>
+            <label><input type="checkbox" name="blueberry-toppings[]" value="lychee"> Lychee Boba</label>
+            <label><input type="checkbox" name="blueberry-toppings[]" value="passionfruit"> Passionfruit Boba</label>
+            <label><input type="checkbox" name="blueberry-toppings[]" value="kiwi"> Kiwi Boba</label>
+            <label><input type="checkbox" name="blueberry-toppings[]" value="Blueberry"> Blueberry Boba</label>
+          </fieldset>
+        </div>
       </div>
     </fieldset>
 
@@ -160,6 +1339,14 @@
       <div class="drink-option">
         <label><input type="checkbox" name="treat[]" value="croissant"> Chocolate Croissant</label>
         <input type="number" name="croissant-qty" min="0" max="10" value="0">
+      </div>
+      <div class="drink-option">
+        <label><input type="checkbox" name="treat[]" value="marble-loaf"> Marble Loaf</label>
+        <input type="number" name="marble-loaf-qty" min="0" max="10" value="0">
+      </div>
+      <div class="drink-option">
+        <label><input type="checkbox" name="treat[]" value="cheese-danish"> Cheese Danish</label>
+        <input type="number" name="cheese-danish-qty" min="0" max="10" value="0">
       </div>
     </fieldset>
 
