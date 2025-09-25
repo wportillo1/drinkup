@@ -1,0 +1,1492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Order Now - Drinks Up!</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Place Your Order</h1>
+
+  <form action="#" method="post">
+    
+    <!-- milk bubble tea -->
+    <fieldset>
+      <legend>Milk Bubble Tea</legend>
+
+      <!-- Original -->
+      <label>
+        <input type="checkbox" name="milk-teas[original][selected]" value="yes">
+         Original
+      </label>
+
+      <div class="customization">
+        <label>Size:
+          <select name="milk-tea[original][size]">
+            <option value="small">Small</option>
+            <option value="medium">Medium</option>
+            <option value="large">Large</option>
+          </select>
+        </label>
+
+        <label>Cold Foam:
+            <select multiple name="milk-tea[original][cold-foam]">
+                <option value="vanilla-cold-foam">Vanilla</option>
+                <option value="matcha-cold-foam">Matcha</option>
+                <option value="brown-sugar-cold-foam">Brown Sugar</option>
+                <option value="chocolate-cold-foam">Chocolate</option>
+                <option value="raspberry-cold-foam">Raspberry</option>
+                <option value="salted-caramel-cold-foam">Salted Caramel</option>
+                <option value="strawberry-cold-foam">Strawberry</option>
+            </select>
+        </label>
+
+        <label>Toppings:
+          <select multiple name="milk-tea[original][toppings][]">
+            <option value="chocolate-drizzle">Chocolate Drizzle</option>
+            <option value="caramel-drizzle">Caramel Drizzle</option>
+            <option value="white-chocolate-drizzle">White Chocolate Drizzle</option>
+            <option value="tapioca-boba">Tapioca Boba</option>
+            <option value="mango-popping-boba">Mango Boba</option>
+            <option value="peach-popping-boba">Peach Boba</option>
+            <option value="lychee-popping-boba">Lychee Boba</option>
+            <option value="strawberry-popping-boba">Strawberry Boba</option>
+            <option value="passion-fruit-popping-boba">Passiion Fruit Boba</option>
+            <option value="kiwi-popping-boba">Kiwi Boba</option>
+            <option value="blueberry-popping-boba">Blueberry Boba</option>
+          </select>
+        </label>
+
+        <label>Sweetness:
+          <select name="milk-tea[original][sweetness]">
+            <option value="0">0%</option>
+            <option value="25">25%</option>
+            <option value="50">50%</option>
+            <option value="75">75%</option>
+            <option value="100">100%</option>
+          </select>
+        </label>
+
+        <label>Ice Level:
+          <select name="milk-tea[original][ice]">
+            <option value="no-ice">No Ice</option>
+            <option value="less-ice">Less Ice</option>
+            <option value="extra-ice">Extra Ice</option>
+          </select>
+
+      </div>
+      <hr>
+
+      <!-- jasmine green -->
+      <label>
+        <input type="checkbox" name="milk-tea[jasmine-green][selected]" value="yes">
+        Jasmine Green
+      </label>
+
+      <div class="customization">
+        <label>Size:
+          <select name="milk-tea[jasmine-green][size]">
+            <option value="small">Small</option>
+            <option value="medium">Medium</option>
+            <option value="large">Large</option>
+          </select>
+        </label>
+
+        <label>Cold Foam:
+            <select multiple name="milk-tea[jasmine-green][cold-foam]">
+                <option value="vanilla-cold-foam">Vanilla</option>
+                <option value="matcha-cold-foam">Matcha</option>
+                <option value="brown-sugar-cold-foam">Brown Sugar</option>
+                <option value="chocolate-cold-foam">Chocolate</option>
+                <option value="raspberry-cold-foam">Raspberry</option>
+                <option value="salted-caramel-cold-foam">Salted Caramel</option>
+                <option value="strawberry-cold-foam">Strawberry</option>
+            </select>
+        </label>
+
+        <label>Toppings:
+          <select multiple name="milk-tea[jasmine-green][toppings][]">
+            <option value="chocolate-drizzle">Chocolate Drizzle</option>
+            <option value="caramel-drizzle">Caramel Drizzle</option>
+            <option value="white-chocolate-drizzle">White Chocolate Drizzle</option>
+            <option value="tapioca-boba">Tapioca Boba</option>
+            <option value="mango-popping-boba">Mango Boba</option>
+            <option value="peach-popping-boba">Peach Boba</option>
+            <option value="lychee-popping-boba">Lychee Boba</option>
+            <option value="strawberry-popping-boba">Strawberry Boba</option>
+            <option value="passion-fruit-popping-boba">Passiion Fruit Boba</option>
+            <option value="kiwi-popping-boba">Kiwi Boba</option>
+            <option value="blueberry-popping-boba">Blueberry Boba</option>
+          </select>
+        </label>
+
+        <label>Sweetness:
+          <select name="milk-tea[jasmine-green][sweetness]">
+            <option value="0">0%</option>
+            <option value="25">25%</option>
+            <option value="50">50%</option>
+            <option value="75">75%</option>
+            <option value="100">100%</option>
+          </select>
+        </label>
+
+        <label>Ice Level:
+          <select name="milk-tea[original][ice]">
+            <option value="no-ice">No Ice</option>
+            <option value="less-ice">Less Ice</option>
+            <option value="extra-ice">Extra Ice</option>
+          </select>
+      </div>
+    </fieldset>
+
+          <!-- oolong -->
+      <label>
+        <input type="checkbox" name="milk-teas[oolong][selected]" value="yes">
+         Oolong
+      </label>
+
+      <div class="customization">
+        <label>Size:
+          <select name="milk-tea[oolong][size]">
+            <option value="small">Small</option>
+            <option value="medium">Medium</option>
+            <option value="large">Large</option>
+          </select>
+        </label>
+
+        <label>Cold Foam:
+            <select multiple name="milk-tea[oolong][cold-foam]">
+                <option value="vanilla-cold-foam">Vanilla</option>
+                <option value="matcha-cold-foam">Matcha</option>
+                <option value="brown-sugar-cold-foam">Brown Sugar</option>
+                <option value="chocolate-cold-foam">Chocolate</option>
+                <option value="raspberry-cold-foam">Raspberry</option>
+                <option value="salted-caramel-cold-foam">Salted Caramel</option>
+                <option value="strawberry-cold-foam">Strawberry</option>
+            </select>
+        </label>
+
+        <label>Toppings:
+          <select multiple name="milk-tea[oolong][toppings][]">
+            <option value="chocolate-drizzle">Chocolate Drizzle</option>
+            <option value="caramel-drizzle">Caramel Drizzle</option>
+            <option value="white-chocolate-drizzle">White Chocolate Drizzle</option>
+            <option value="tapioca-boba">Tapioca Boba</option>
+            <option value="mango-popping-boba">Mango Boba</option>
+            <option value="peach-popping-boba">Peach Boba</option>
+            <option value="lychee-popping-boba">Lychee Boba</option>
+            <option value="strawberry-popping-boba">Strawberry Boba</option>
+            <option value="passion-fruit-popping-boba">Passiion Fruit Boba</option>
+            <option value="kiwi-popping-boba">Kiwi Boba</option>
+            <option value="blueberry-popping-boba">Blueberry Boba</option>
+          </select>
+        </label>
+
+        <label>Sweetness:
+          <select name="milk-tea[oolong][sweetness]">
+            <option value="0">0%</option>
+            <option value="25">25%</option>
+            <option value="50">50%</option>
+            <option value="75">75%</option>
+            <option value="100">100%</option>
+          </select>
+        </label>
+
+        <label>Ice Level:
+          <select name="milk-tea[oolong][ice]">
+            <option value="no-ice">No Ice</option>
+            <option value="less-ice">Less Ice</option>
+            <option value="extra-ice">Extra Ice</option>
+          </select>
+
+      </div>
+      <hr>
+
+            <!-- rose oolong -->
+      <label>
+        <input type="checkbox" name="milk-teas[rose-oolong][selected]" value="yes">
+         Rose Oolong
+      </label>
+
+      <div class="customization">
+        <label>Size:
+          <select name="milk-tea[rose-oolong][size]">
+            <option value="small">Small</option>
+            <option value="medium">Medium</option>
+            <option value="large">Large</option>
+          </select>
+        </label>
+
+        <label>Cold Foam:
+            <select multiple name="milk-tea[rose-oolong][cold-foam]">
+                <option value="vanilla-cold-foam">Vanilla</option>
+                <option value="matcha-cold-foam">Matcha</option>
+                <option value="brown-sugar-cold-foam">Brown Sugar</option>
+                <option value="chocolate-cold-foam">Chocolate</option>
+                <option value="raspberry-cold-foam">Raspberry</option>
+                <option value="salted-caramel-cold-foam">Salted Caramel</option>
+                <option value="strawberry-cold-foam">Strawberry</option>
+            </select>
+        </label>
+
+        <label>Toppings:
+          <select multiple name="milk-tea[rose-oolong][toppings][]">
+            <option value="chocolate-drizzle">Chocolate Drizzle</option>
+            <option value="caramel-drizzle">Caramel Drizzle</option>
+            <option value="white-chocolate-drizzle">White Chocolate Drizzle</option>
+            <option value="tapioca-boba">Tapioca Boba</option>
+            <option value="mango-popping-boba">Mango Boba</option>
+            <option value="peach-popping-boba">Peach Boba</option>
+            <option value="lychee-popping-boba">Lychee Boba</option>
+            <option value="strawberry-popping-boba">Strawberry Boba</option>
+            <option value="passion-fruit-popping-boba">Passiion Fruit Boba</option>
+            <option value="kiwi-popping-boba">Kiwi Boba</option>
+            <option value="blueberry-popping-boba">Blueberry Boba</option>
+          </select>
+        </label>
+
+        <label>Sweetness:
+          <select name="milk-tea[rose-oolong][sweetness]">
+            <option value="0">0%</option>
+            <option value="25">25%</option>
+            <option value="50">50%</option>
+            <option value="75">75%</option>
+            <option value="100">100%</option>
+          </select>
+        </label>
+
+        <label>Ice Level:
+          <select name="milk-tea[rose-oolong][ice]">
+            <option value="no-ice">No Ice</option>
+            <option value="less-ice">Less Ice</option>
+            <option value="extra-ice">Extra Ice</option>
+          </select>
+
+      </div>
+      <hr>
+
+            <!--white peach oolong -->
+      <label>
+        <input type="checkbox" name="milk-teas[white-peach-oolong][selected]" value="yes">
+         White Peach Oolong
+      </label>
+
+      <div class="customization">
+        <label>Size:
+          <select name="milk-tea[white-peach-oolong][size]">
+            <option value="small">Small</option>
+            <option value="medium">Medium</option>
+            <option value="large">Large</option>
+          </select>
+        </label>
+
+        <label>Cold Foam:
+            <select multiple name="milk-tea[white-peach-oolong][cold-foam]">
+                <option value="vanilla-cold-foam">Vanilla</option>
+                <option value="matcha-cold-foam">Matcha</option>
+                <option value="brown-sugar-cold-foam">Brown Sugar</option>
+                <option value="chocolate-cold-foam">Chocolate</option>
+                <option value="raspberry-cold-foam">Raspberry</option>
+                <option value="salted-caramel-cold-foam">Salted Caramel</option>
+                <option value="strawberry-cold-foam">Strawberry</option>
+            </select>
+        </label>
+
+        <label>Toppings:
+          <select multiple name="milk-tea[white-peach-oolong][toppings][]">
+            <option value="chocolate-drizzle">Chocolate Drizzle</option>
+            <option value="caramel-drizzle">Caramel Drizzle</option>
+            <option value="white-chocolate-drizzle">White Chocolate Drizzle</option>
+            <option value="tapioca-boba">Tapioca Boba</option>
+            <option value="mango-popping-boba">Mango Boba</option>
+            <option value="peach-popping-boba">Peach Boba</option>
+            <option value="lychee-popping-boba">Lychee Boba</option>
+            <option value="strawberry-popping-boba">Strawberry Boba</option>
+            <option value="passion-fruit-popping-boba">Passiion Fruit Boba</option>
+            <option value="kiwi-popping-boba">Kiwi Boba</option>
+            <option value="blueberry-popping-boba">Blueberry Boba</option>
+          </select>
+        </label>
+
+        <label>Sweetness:
+          <select name="milk-tea[white-peach-oolong][sweetness]">
+            <option value="0">0%</option>
+            <option value="25">25%</option>
+            <option value="50">50%</option>
+            <option value="75">75%</option>
+            <option value="100">100%</option>
+          </select>
+        </label>
+
+        <label>Ice Level:
+          <select name="milk-tea[white-peach-oolong][ice]">
+            <option value="no-ice">No Ice</option>
+            <option value="less-ice">Less Ice</option>
+            <option value="extra-ice">Extra Ice</option>
+          </select>
+
+      </div>
+      <hr>
+
+            <!-- sakura -->
+      <label>
+        <input type="checkbox" name="milk-teas[sakura-oolona][selected]" value="yes">
+         Sakura Oolona
+      </label>
+
+      <div class="customization">
+        <label>Size:
+          <select name="milk-tea[sakura-oolona][size]">
+            <option value="small">Small</option>
+            <option value="medium">Medium</option>
+            <option value="large">Large</option>
+          </select>
+        </label>
+
+        <label>Cold Foam:
+            <select multiple name="milk-tea[sakura-oolona][cold-foam]">
+                <option value="vanilla-cold-foam">Vanilla</option>
+                <option value="matcha-cold-foam">Matcha</option>
+                <option value="brown-sugar-cold-foam">Brown Sugar</option>
+                <option value="chocolate-cold-foam">Chocolate</option>
+                <option value="raspberry-cold-foam">Raspberry</option>
+                <option value="salted-caramel-cold-foam">Salted Caramel</option>
+                <option value="strawberry-cold-foam">Strawberry</option>
+            </select>
+        </label>
+
+        <label>Toppings:
+          <select multiple name="milk-tea[sakura-oolona][toppings][]">
+            <option value="chocolate-drizzle">Chocolate Drizzle</option>
+            <option value="caramel-drizzle">Caramel Drizzle</option>
+            <option value="white-chocolate-drizzle">White Chocolate Drizzle</option>
+            <option value="tapioca-boba">Tapioca Boba</option>
+            <option value="mango-popping-boba">Mango Boba</option>
+            <option value="peach-popping-boba">Peach Boba</option>
+            <option value="lychee-popping-boba">Lychee Boba</option>
+            <option value="strawberry-popping-boba">Strawberry Boba</option>
+            <option value="passion-fruit-popping-boba">Passiion Fruit Boba</option>
+            <option value="kiwi-popping-boba">Kiwi Boba</option>
+            <option value="blueberry-popping-boba">Blueberry Boba</option>
+          </select>
+        </label>
+
+        <label>Sweetness:
+          <select name="milk-tea[sakura-oolona][sweetness]">
+            <option value="0">0%</option>
+            <option value="25">25%</option>
+            <option value="50">50%</option>
+            <option value="75">75%</option>
+            <option value="100">100%</option>
+          </select>
+        </label>
+
+        <label>Ice Level:
+          <select name="milk-tea[sakura-oolona][ice]">
+            <option value="no-ice">No Ice</option>
+            <option value="less-ice">Less Ice</option>
+            <option value="extra-ice">Extra Ice</option>
+          </select>
+
+      </div>
+      <hr>
+
+            <!-- taro -->
+      <label>
+        <input type="checkbox" name="milk-teas[taro][selected]" value="yes">
+         Oolong
+      </label>
+
+      <div class="customization">
+        <label>Size:
+          <select name="milk-tea[taro][size]">
+            <option value="small">Small</option>
+            <option value="medium">Medium</option>
+            <option value="large">Large</option>
+          </select>
+        </label>
+
+        <label>Cold Foam:
+            <select multiple name="milk-tea[taro][cold-foam]">
+                <option value="vanilla-cold-foam">Vanilla</option>
+                <option value="matcha-cold-foam">Matcha</option>
+                <option value="brown-sugar-cold-foam">Brown Sugar</option>
+                <option value="chocolate-cold-foam">Chocolate</option>
+                <option value="raspberry-cold-foam">Raspberry</option>
+                <option value="salted-caramel-cold-foam">Salted Caramel</option>
+                <option value="strawberry-cold-foam">Strawberry</option>
+            </select>
+        </label>
+
+        <label>Toppings:
+          <select multiple name="milk-tea[taro][toppings][]">
+            <option value="chocolate-drizzle">Chocolate Drizzle</option>
+            <option value="caramel-drizzle">Caramel Drizzle</option>
+            <option value="white-chocolate-drizzle">White Chocolate Drizzle</option>
+            <option value="tapioca-boba">Tapioca Boba</option>
+            <option value="mango-popping-boba">Mango Boba</option>
+            <option value="peach-popping-boba">Peach Boba</option>
+            <option value="lychee-popping-boba">Lychee Boba</option>
+            <option value="strawberry-popping-boba">Strawberry Boba</option>
+            <option value="passion-fruit-popping-boba">Passiion Fruit Boba</option>
+            <option value="kiwi-popping-boba">Kiwi Boba</option>
+            <option value="blueberry-popping-boba">Blueberry Boba</option>
+          </select>
+        </label>
+
+        <label>Sweetness:
+          <select name="milk-tea[taro][sweetness]">
+            <option value="0">0%</option>
+            <option value="25">25%</option>
+            <option value="50">50%</option>
+            <option value="75">75%</option>
+            <option value="100">100%</option>
+          </select>
+        </label>
+
+        <label>Ice Level:
+          <select name="milk-tea[taro][ice]">
+            <option value="no-ice">No Ice</option>
+            <option value="less-ice">Less Ice</option>
+            <option value="extra-ice">Extra Ice</option>
+          </select>
+
+      </div>
+      <hr>
+
+            <!-- matcha  -->
+      <label>
+        <input type="checkbox" name="milk-teas[matcha][selected]" value="yes">
+         Matcha
+      </label>
+
+      <div class="customization">
+        <label>Size:
+          <select name="milk-tea[matcha][size]">
+            <option value="small">Small</option>
+            <option value="medium">Medium</option>
+            <option value="large">Large</option>
+          </select>
+        </label>
+
+        <label>Cold Foam:
+            <select multiple name="milk-tea[matcha][cold-foam]">
+                <option value="vanilla-cold-foam">Vanilla</option>
+                <option value="matcha-cold-foam">Matcha</option>
+                <option value="brown-sugar-cold-foam">Brown Sugar</option>
+                <option value="chocolate-cold-foam">Chocolate</option>
+                <option value="raspberry-cold-foam">Raspberry</option>
+                <option value="salted-caramel-cold-foam">Salted Caramel</option>
+                <option value="strawberry-cold-foam">Strawberry</option>
+            </select>
+        </label>
+
+        <label>Toppings:
+          <select multiple name="milk-tea[matcha][toppings][]">
+            <option value="chocolate-drizzle">Chocolate Drizzle</option>
+            <option value="caramel-drizzle">Caramel Drizzle</option>
+            <option value="white-chocolate-drizzle">White Chocolate Drizzle</option>
+            <option value="tapioca-boba">Tapioca Boba</option>
+            <option value="mango-popping-boba">Mango Boba</option>
+            <option value="peach-popping-boba">Peach Boba</option>
+            <option value="lychee-popping-boba">Lychee Boba</option>
+            <option value="strawberry-popping-boba">Strawberry Boba</option>
+            <option value="passion-fruit-popping-boba">Passiion Fruit Boba</option>
+            <option value="kiwi-popping-boba">Kiwi Boba</option>
+            <option value="blueberry-popping-boba">Blueberry Boba</option>
+          </select>
+        </label>
+
+        <label>Sweetness:
+          <select name="milk-tea[matcha][sweetness]">
+            <option value="0">0%</option>
+            <option value="25">25%</option>
+            <option value="50">50%</option>
+            <option value="75">75%</option>
+            <option value="100">100%</option>
+          </select>
+        </label>
+
+        <label>Ice Level:
+          <select name="milk-tea[matcha][ice]">
+            <option value="no-ice">No Ice</option>
+            <option value="less-ice">Less Ice</option>
+            <option value="extra-ice">Extra Ice</option>
+          </select>
+
+      </div>
+      <hr>
+
+    <br>
+
+    <!-- COFFEES -->
+    <fieldset>
+      <legend>Coffees</legend>
+
+      <!--latte-->
+      <label>
+        <input type="checkbox" name="coffees[latte][selected]" value="yes">
+        Latte
+      </label>
+
+      <div class="customization">
+        <label>Size:
+          <select name="coffees[latte][size]">
+            <option value="small">Small</option>
+            <option value="medium">Medium</option>
+            <option value="large">Large</option>
+          </select>
+        </label>
+
+        <label>Sweetness:
+          <select name="coffees[latte][sweetness]">
+            <option value="0">0%</option>
+            <option value="25">25%</option>
+            <option value="50">50%</option>
+            <option value="75">75%</option>
+            <option value="100">100%</option>
+          </select>
+        </label>
+
+        <label>Ice Level:
+          <select name="coffees[latte][ice]">
+            <option value="hot">Hot</option>
+            <option value="less-ice">Less Ice</option>
+            <option value="extra-ice">Extra Ice</option>
+          </select>
+        </label>
+
+        <label>Milk:
+            <select name="coffees[latte][milk]">
+                <option value="two-percent-milk">2% Milk</option>
+                <option value="almond-milk">Almond</option>
+                <option value="coconut-milk">Coconut</option>
+                <option value="heavy-cream-milk">Heavy Cream</option>
+                <option value="nonfat-milk">Nonfat Milk</option>
+                <option value="oatmilk">Oatmilk</option>
+                <option value="soy-milk">Soy</option>
+                <option value="whole-milk">Whole Milk</option>
+            </select>
+        </label>
+
+        <label>Espresso Options:
+            <select name="coffees[latte][espresso]">
+            <option value="half-decaf">1/2 Decaf</option>
+            <option value="third-decaf">1/3 Decaf</option>
+            <option value="two-thirds-decaf">2/3 Decaf</option>
+            <option value="blonde-expresso">Blonde Espresso</option>
+            <option value="decaf-expresso-roast">Decaf Espresso Roast</option>
+            <option value="signarture-expresso">Signature Espresso</option>
+            </select>
+        </label>
+
+        <label>Cold Foam:
+            <select multiple name="coffees[latte][cold-foam]">
+                <option value="vanilla-cold-foam">Vanilla</option>
+                <option value="matcha-cold-foam">Matcha</option>
+                <option value="brown-sugar-cold-foam">Brown Sugar</option>
+                <option value="chocolate-cold-foam">Chocolate</option>
+                <option value="raspberry-cold-foam">Raspberry</option>
+                <option value="salted-caramel-cold-foam">Salted Caramel</option>
+                <option value="strawberry-cold-foam">Strawberry</option>
+            </select>
+        </label>
+
+        <label>Toppings:
+          <select multiple name="coffees[latte][toppings][]">
+            <option value="caramel-drizzle">Caramel Drizzle</option>
+            <option value="white-chocolate-drizzle"> Matcha Cold Foam</option>
+            <option value="dark-chocolate-drizzle">Tapioca Boba</option>
+            <option value="honey-drizzle">Honey Drizzle</option>
+            <option value="coconut-flakes">Coconut Flakes</option>
+            <option value="almond-flakes">Almond Flakes</option>
+            <option value="toffee-bits">Toffee Bits</option>
+            <option value="cinnamon-powder">Cinnamon Powder</option>
+            <option value="cocoa-powder">Cocoa Powder</option>
+          </select>
+        </label>
+      </div>
+      <hr>
+
+        
+<!--cappucino-->
+      <label>
+        <input type="checkbox" name="coffees[cappucino][selected]" value="yes">
+        Cappucino
+      </label>
+
+      <div class="customization">
+        <label>Size:
+          <select name="coffees[cappucino][size]">
+            <option value="small">Small</option>
+            <option value="medium">Medium</option>
+            <option value="large">Large</option>
+          </select>
+        </label>
+
+        <label>Sweetness:
+          <select name="coffees[cappucino][sweetness]">
+            <option value="0">0%</option>
+            <option value="25">25%</option>
+            <option value="50">50%</option>
+            <option value="75">75%</option>
+            <option value="100">100%</option>
+          </select>
+        </label>
+
+        <label>Ice Level:
+          <select name="coffees[cappucino][ice]">
+            <option value="hot">Hot</option>
+            <option value="less-ice">Less Ice</option>
+            <option value="extra-ice">Extra Ice</option>
+          </select>
+        </label>
+
+        <label>Milk:
+            <select name="coffees[cappucino][milk]">
+                <option value="two-percent-milk">2% Milk</option>
+                <option value="almond-milk">Almond</option>
+                <option value="coconut-milk">Coconut</option>
+                <option value="heavy-cream-milk">Heavy Cream</option>
+                <option value="nonfat-milk">Nonfat Milk</option>
+                <option value="oatmilk">Oatmilk</option>
+                <option value="soy-milk">Soy</option>
+                <option value="whole-milk">Whole Milk</option>
+            </select>
+        </label>
+
+        <label>Espresso Options:
+            <select name="coffees[cappucino][espresso]">
+            <option value="half-decaf">1/2 Decaf</option>
+            <option value="third-decaf">1/3 Decaf</option>
+            <option value="two-thirds-decaf">2/3 Decaf</option>
+            <option value="blonde-expresso">Blonde Espresso</option>
+            <option value="decaf-expresso-roast">Decaf Espresso Roast</option>
+            <option value="signarture-expresso">Signature Espresso</option>
+            </select>
+        </label>
+
+        <label>Cold Foam:
+            <select multiple name="coffees[cappucino][cold-foam]">
+                <option value="vanilla-cold-foam">Vanilla</option>
+                <option value="matcha-cold-foam">Matcha</option>
+                <option value="brown-sugar-cold-foam">Brown Sugar</option>
+                <option value="chocolate-cold-foam">Chocolate</option>
+                <option value="raspberry-cold-foam">Raspberry</option>
+                <option value="salted-caramel-cold-foam">Salted Caramel</option>
+                <option value="strawberry-cold-foam">Strawberry</option>
+            </select>
+        </label>
+
+        <label>Toppings:
+          <select multiple name="coffees[cappucino][toppings][]">
+            <option value="caramel-drizzle">Caramel Drizzle</option>
+            <option value="white-chocolate-drizzle"> Matcha Cold Foam</option>
+            <option value="dark-chocolate-drizzle">Tapioca Boba</option>
+            <option value="honey-drizzle">Honey Drizzle</option>
+            <option value="coconut-flakes">Coconut Flakes</option>
+            <option value="almond-flakes">Almond Flakes</option>
+            <option value="toffee-bits">Toffee Bits</option>
+            <option value="cinnamon-powder">Cinnamon Powder</option>
+            <option value="cocoa-powder">Cocoa Powder</option>
+          </select>
+        </label>
+        </label>
+      </div>
+      <hr>
+
+<!--mocha-->
+      <label>
+        <input type="checkbox" name="coffees[mocha][selected]" value="yes">
+        Mocha
+      </label>
+
+      <div class="customization">
+        <label>Size:
+          <select name="coffees[mocha][size]">
+            <option value="small">Small</option>
+            <option value="medium">Medium</option>
+            <option value="large">Large</option>
+          </select>
+        </label>
+
+        <label>Sweetness:
+          <select name="coffees[mocha][sweetness]">
+            <option value="0">0%</option>
+            <option value="25">25%</option>
+            <option value="50">50%</option>
+            <option value="75">75%</option>
+            <option value="100">100%</option>
+          </select>
+        </label>
+
+        <label>Ice Level:
+          <select name="coffees[mocha][ice]">
+            <option value="hot">Hot</option>
+            <option value="less-ice">Less Ice</option>
+            <option value="extra-ice">Extra Ice</option>
+          </select>
+        </label>
+
+        <label>Milk:
+            <select name="coffees[mocha][milk]">
+                <option value="two-percent-milk">2% Milk</option>
+                <option value="almond-milk">Almond</option>
+                <option value="coconut-milk">Coconut</option>
+                <option value="heavy-cream-milk">Heavy Cream</option>
+                <option value="nonfat-milk">Nonfat Milk</option>
+                <option value="oatmilk">Oatmilk</option>
+                <option value="soy-milk">Soy</option>
+                <option value="whole-milk">Whole Milk</option>
+            </select>
+        </label>
+
+        <label>Espresso Options:
+            <select name="coffees[mocha][espresso]">
+            <option value="half-decaf">1/2 Decaf</option>
+            <option value="third-decaf">1/3 Decaf</option>
+            <option value="two-thirds-decaf">2/3 Decaf</option>
+            <option value="blonde-expresso">Blonde Espresso</option>
+            <option value="decaf-expresso-roast">Decaf Espresso Roast</option>
+            <option value="signarture-expresso">Signature Espresso</option>
+            </select>
+        </label>
+
+        <label>Cold Foam:
+            <select multiple name="coffees[cappucino][cold-foam]">
+                <option value="vanilla-cold-foam">Vanilla</option>
+                <option value="matcha-cold-foam">Matcha</option>
+                <option value="brown-sugar-cold-foam">Brown Sugar</option>
+                <option value="chocolate-cold-foam">Chocolate</option>
+                <option value="raspberry-cold-foam">Raspberry</option>
+                <option value="salted-caramel-cold-foam">Salted Caramel</option>
+                <option value="strawberry-cold-foam">Strawberry</option>
+            </select>
+        </label>
+
+        <label>Toppings:
+          <select multiple name="coffees[cappucino][toppings][]">
+            <option value="caramel-drizzle">Caramel Drizzle</option>
+            <option value="white-chocolate-drizzle"> Matcha Cold Foam</option>
+            <option value="dark-chocolate-drizzle">Tapioca Boba</option>
+            <option value="honey-drizzle">Honey Drizzle</option>
+            <option value="coconut-flakes">Coconut Flakes</option>
+            <option value="almond-flakes">Almond Flakes</option>
+            <option value="toffee-bits">Toffee Bits</option>
+            <option value="cinnamon-powder">Cinnamon Powder</option>
+            <option value="cocoa-powder">Cocoa Powder</option>
+          </select>
+        </label>
+        </label>
+      </div>
+      <hr>
+
+      <!--esspresso machhiato-->
+      <label>
+        <input type="checkbox" name="coffees[espresso-macchiato][selected]" value="yes">
+        Espresso Macchiato
+      </label>
+
+      <div class="customization">
+        <label>Size:
+          <select name="coffees[espresso-macchiato][size]">
+            <option value="solo">Solo</option>
+            <option value="doppio">Doppio</option>
+            <option value="triple">Triple</option>
+            <option value="quad">Quad</option>
+          </select>
+        </label>
+
+        <label>Sweetness:
+          <select name="coffees[espresso-macchiato][sweetness]">
+            <option value="0">0%</option>
+            <option value="25">25%</option>
+            <option value="50">50%</option>
+            <option value="75">75%</option>
+            <option value="100">100%</option>
+          </select>
+        </label>
+
+        <label>Ice Level:
+          <select name="coffees[espresso-macchiato][ice]">
+            <option value="hot">Hot</option>
+            <option value="less-ice">Less Ice</option>
+            <option value="extra-ice">Extra Ice</option>
+          </select>
+        </label>
+
+        <label>Milk:
+            <select name="coffees[espresso-macchiato][milk]">
+                <option value="two-percent-milk">2% Milk</option>
+                <option value="almond-milk">Almond</option>
+                <option value="coconut-milk">Coconut</option>
+                <option value="heavy-cream-milk">Heavy Cream</option>
+                <option value="nonfat-milk">Nonfat Milk</option>
+                <option value="oatmilk">Oatmilk</option>
+                <option value="soy-milk">Soy</option>
+                <option value="whole-milk">Whole Milk</option>
+            </select>
+        </label>
+
+        <label>Espresso Options:
+            <select name="coffees[espresso-macchiato][espresso]">
+            <option value="half-decaf">1/2 Decaf</option>
+            <option value="third-decaf">1/3 Decaf</option>
+            <option value="two-thirds-decaf">2/3 Decaf</option>
+            <option value="blonde-expresso">Blonde Espresso</option>
+            <option value="decaf-expresso-roast">Decaf Espresso Roast</option>
+            <option value="signarture-expresso">Signature Espresso</option>
+            </select>
+        </label>
+
+        <label>Cold Foam:
+            <select multiple name="coffees[espresso-macchiato][cold-foam]">
+                <option value="vanilla-cold-foam">Vanilla</option>
+                <option value="matcha-cold-foam">Matcha</option>
+                <option value="brown-sugar-cold-foam">Brown Sugar</option>
+                <option value="chocolate-cold-foam">Chocolate</option>
+                <option value="raspberry-cold-foam">Raspberry</option>
+                <option value="salted-caramel-cold-foam">Salted Caramel</option>
+                <option value="strawberry-cold-foam">Strawberry</option>
+            </select>
+        </label>
+
+        <label>Toppings:
+          <select multiple name="coffees[espresso-macchiato][toppings][]">
+            <option value="caramel-drizzle">Caramel Drizzle</option>
+            <option value="white-chocolate-drizzle"> Matcha Cold Foam</option>
+            <option value="dark-chocolate-drizzle">Tapioca Boba</option>
+            <option value="honey-drizzle">Honey Drizzle</option>
+            <option value="coconut-flakes">Coconut Flakes</option>
+            <option value="almond-flakes">Almond Flakes</option>
+            <option value="toffee-bits">Toffee Bits</option>
+            <option value="cinnamon-powder">Cinnamon Powder</option>
+            <option value="cocoa-powder">Cocoa Powder</option>
+          </select>
+        </label>
+      </div>
+      <hr>
+
+    <!--caramel machhiato-->
+      <label>
+        <input type="checkbox" name="coffees[caramel-macchiato][selected]" value="yes">
+        Espresso Macchiato
+      </label>
+
+      <div class="customization">
+        <label>Size:
+          <select name="coffees[caramel-macchiato][size]">
+            <option value="small">Small</option>
+            <option value="Medium">Regular</option>
+            <option value="large">Large</option>
+          </select>
+        </label>
+
+        <label>Sweetness:
+          <select name="coffees[caramel-macchiato][sweetness]">
+            <option value="0">0%</option>
+            <option value="25">25%</option>
+            <option value="50">50%</option>
+            <option value="75">75%</option>
+            <option value="100">100%</option>
+          </select>
+        </label>
+
+        <label>Ice Level:
+          <select name="coffees[caramel-macchiato][ice]">
+            <option value="hot">Hot</option>
+            <option value="less-ice">Less Ice</option>
+            <option value="extra-ice">Extra Ice</option>
+          </select>
+        </label>
+
+        <label>Milk:
+            <select name="coffees[caramel-macchiato][milk]">
+                <option value="two-percent-milk">2% Milk</option>
+                <option value="almond-milk">Almond</option>
+                <option value="coconut-milk">Coconut</option>
+                <option value="heavy-cream-milk">Heavy Cream</option>
+                <option value="nonfat-milk">Nonfat Milk</option>
+                <option value="oatmilk">Oatmilk</option>
+                <option value="soy-milk">Soy</option>
+                <option value="whole-milk">Whole Milk</option>
+            </select>
+        </label>
+
+        <label>Espresso Options:
+            <select name="coffees[caramel-macchiato][espresso]">
+            <option value="half-decaf">1/2 Decaf</option>
+            <option value="third-decaf">1/3 Decaf</option>
+            <option value="two-thirds-decaf">2/3 Decaf</option>
+            <option value="blonde-expresso">Blonde Espresso</option>
+            <option value="decaf-expresso-roast">Decaf Espresso Roast</option>
+            <option value="signarture-expresso">Signature Espresso</option>
+            </select>
+        </label>
+
+        <label>Cold Foam:
+            <select multiple name="coffees[caramel-macchiato][cold-foam]">
+                <option value="vanilla-cold-foam">Vanilla</option>
+                <option value="matcha-cold-foam">Matcha</option>
+                <option value="brown-sugar-cold-foam">Brown Sugar</option>
+                <option value="chocolate-cold-foam">Chocolate</option>
+                <option value="raspberry-cold-foam">Raspberry</option>
+                <option value="salted-caramel-cold-foam">Salted Caramel</option>
+                <option value="strawberry-cold-foam">Strawberry</option>
+            </select>
+        </label>
+
+        <label>Toppings:
+          <select multiple name="coffees[caramel-macchiato][toppings][]">
+            <option value="caramel-drizzle">Caramel Drizzle</option>
+            <option value="white-chocolate-drizzle"> Matcha Cold Foam</option>
+            <option value="dark-chocolate-drizzle">Tapioca Boba</option>
+            <option value="honey-drizzle">Honey Drizzle</option>
+            <option value="coconut-flakes">Coconut Flakes</option>
+            <option value="almond-flakes">Almond Flakes</option>
+            <option value="toffee-bits">Toffee Bits</option>
+            <option value="cinnamon-powder">Cinnamon Powder</option>
+            <option value="cocoa-powder">Cocoa Powder</option>
+          </select>
+        </label>
+      </div>
+      <hr>
+
+    
+
+    </fieldset>
+
+    <br>
+
+    <!--tea -->
+    <fieldset>
+      <legend>Tea</legend>
+
+      <!-- black -->
+      <label>
+        <input type="checkbox" name="teas[black][selected]" value="yes">
+         Black
+      </label>
+
+      <div class="customization">
+        <label>Size:
+          <select name="tea[black][size]">
+            <option value="small">Small</option>
+            <option value="medium">Medium</option>
+            <option value="large">Large</option>
+          </select>
+        </label>
+
+        <label>Toppings:
+          <select multiple name="tea[black][toppings][]">
+            <option value="caramel-drizzle">Caramel Drizzle</option>
+            <option value="white-chocolate-drizzle"> Matcha Cold Foam</option>
+            <option value="dark-chocolate-drizzle">Tapioca Boba</option>
+            <option value="honey-drizzle">Honey Drizzle</option>
+            <option value="coconut-flakes">Coconut Flakes</option>
+            <option value="almond-flakes">Almond Flakes</option>
+            <option value="toffee-bits">Toffee Bits</option>
+            <option value="cinnamon-powder">Cinnamon Powder</option>
+            <option value="cocoa-powder">Cocoa Powder</option>
+          </select>
+        </label>
+
+        <label>Sweetness:
+          <select name="tea[black][sweetness]">
+            <option value="0">0%</option>
+            <option value="25">25%</option>
+            <option value="50">50%</option>
+            <option value="75">75%</option>
+            <option value="100">100%</option>
+          </select>
+        </label>
+
+        <label>Ice Level:
+          <select name="tea[original][ice]">
+            <option value="no-ice">No Ice</option>
+            <option value="less-ice">Less Ice</option>
+            <option value="extra-ice">Extra Ice</option>
+          </select>
+
+           <label>Add In:
+            <select name="tea[black][milk]">
+                <option value="two-percent-milk">2% Milk</option>
+                <option value="almond-milk">Almond</option>
+                <option value="coconut-milk">Coconut</option>
+                <option value="heavy-cream-milk">Heavy Cream</option>
+                <option value="nonfat-milk">Nonfat Milk</option>
+                <option value="oatmilk">Oatmilk</option>
+                <option value="soy-milk">Soy</option>
+                <option value="whole-milk">Whole Milk</option>
+            </select>
+        </label>
+
+      </div>
+      <hr>
+      
+      <!-- chai tea latte -->
+      <label>
+        <input type="checkbox" name="teas[chai-latte][selected]" value="yes">
+         Chai Tea Latte
+      </label>
+
+      <div class="customization">
+        <label>Size:
+          <select name="tea[chai-latte][size]">
+            <option value="small">Small</option>
+            <option value="medium">Medium</option>
+            <option value="large">Large</option>
+          </select>
+        </label>
+
+        <label>Toppings:
+          <select multiple name="tea[chai-latte][toppings][]">
+            <option value="caramel-drizzle">Caramel Drizzle</option>
+            <option value="white-chocolate-drizzle"> Matcha Cold Foam</option>
+            <option value="dark-chocolate-drizzle">Tapioca Boba</option>
+            <option value="honey-drizzle">Honey Drizzle</option>
+            <option value="coconut-flakes">Coconut Flakes</option>
+            <option value="almond-flakes">Almond Flakes</option>
+            <option value="toffee-bits">Toffee Bits</option>
+            <option value="cinnamon-powder">Cinnamon Powder</option>
+            <option value="cocoa-powder">Cocoa Powder</option>
+          </select>
+        </label>
+
+        <label>Sweetness:
+          <select name="tea[chai-latte][sweetness]">
+            <option value="0">0%</option>
+            <option value="25">25%</option>
+            <option value="50">50%</option>
+            <option value="75">75%</option>
+            <option value="100">100%</option>
+          </select>
+        </label>
+
+        <label>Ice Level:
+          <select name="tea[chai-latte][ice]">
+            <option value="no-ice">No Ice</option>
+            <option value="less-ice">Less Ice</option>
+            <option value="extra-ice">Extra Ice</option>
+          </select>
+
+           <label>Add In:
+            <select name="tea[chai-latte][milk]">
+                <option value="two-percent-milk">2% Milk</option>
+                <option value="almond-milk">Almond</option>
+                <option value="coconut-milk">Coconut</option>
+                <option value="heavy-cream-milk">Heavy Cream</option>
+                <option value="nonfat-milk">Nonfat Milk</option>
+                <option value="oatmilk">Oatmilk</option>
+                <option value="soy-milk">Soy</option>
+                <option value="whole-milk">Whole Milk</option>
+            </select>
+        </label>
+
+      </div>
+      <hr>
+
+      <!-- green -->
+      <label>
+        <input type="checkbox" name="teas[green][selected]" value="yes">
+         Chai Tea Latte
+      </label>
+
+      <div class="customization">
+        <label>Size:
+          <select name="tea[green][size]">
+            <option value="small">Small</option>
+            <option value="medium">Medium</option>
+            <option value="large">Large</option>
+          </select>
+        </label>
+
+        <label>Toppings:
+          <select multiple name="tea[green][toppings][]">
+            <option value="caramel-drizzle">Caramel Drizzle</option>
+            <option value="white-chocolate-drizzle"> Matcha Cold Foam</option>
+            <option value="dark-chocolate-drizzle">Tapioca Boba</option>
+            <option value="honey-drizzle">Honey Drizzle</option>
+            <option value="coconut-flakes">Coconut Flakes</option>
+            <option value="almond-flakes">Almond Flakes</option>
+            <option value="toffee-bits">Toffee Bits</option>
+            <option value="cinnamon-powder">Cinnamon Powder</option>
+            <option value="cocoa-powder">Cocoa Powder</option>
+          </select>
+        </label>
+
+        <label>Sweetness:
+          <select name="tea[green][sweetness]">
+            <option value="0">0%</option>
+            <option value="25">25%</option>
+            <option value="50">50%</option>
+            <option value="75">75%</option>
+            <option value="100">100%</option>
+          </select>
+        </label>
+
+        <label>Ice Level:
+          <select name="tea[green][ice]">
+            <option value="no-ice">No Ice</option>
+            <option value="less-ice">Less Ice</option>
+            <option value="extra-ice">Extra Ice</option>
+          </select>
+
+           <label>Add In:
+            <select name="tea[green][milk]">
+                <option value="two-percent-milk">2% Milk</option>
+                <option value="almond-milk">Almond</option>
+                <option value="coconut-milk">Coconut</option>
+                <option value="heavy-cream-milk">Heavy Cream</option>
+                <option value="nonfat-milk">Nonfat Milk</option>
+                <option value="oatmilk">Oatmilk</option>
+                <option value="soy-milk">Soy</option>
+                <option value="whole-milk">Whole Milk</option>
+            </select>
+        </label>
+
+      </div>
+      <hr>
+
+      <!-- hibiscus -->
+      <label>
+        <input type="checkbox" name="teas[hibiscus][selected]" value="yes">
+         Hibiscus
+      </label>
+
+      <div class="customization">
+        <label>Size:
+          <select name="tea[hibiscus][size]">
+            <option value="small">Small</option>
+            <option value="medium">Medium</option>
+            <option value="large">Large</option>
+          </select>
+        </label>
+
+        <label>Toppings:
+          <select multiple name="tea[hibiscus][toppings][]">
+            <option value="caramel-drizzle">Caramel Drizzle</option>
+            <option value="white-chocolate-drizzle"> Matcha Cold Foam</option>
+            <option value="dark-chocolate-drizzle">Tapioca Boba</option>
+            <option value="honey-drizzle">Honey Drizzle</option>
+            <option value="coconut-flakes">Coconut Flakes</option>
+            <option value="almond-flakes">Almond Flakes</option>
+            <option value="toffee-bits">Toffee Bits</option>
+            <option value="cinnamon-powder">Cinnamon Powder</option>
+            <option value="cocoa-powder">Cocoa Powder</option>
+          </select>
+        </label>
+
+        <label>Sweetness:
+          <select name="tea[hibiscus][sweetness]">
+            <option value="0">0%</option>
+            <option value="25">25%</option>
+            <option value="50">50%</option>
+            <option value="75">75%</option>
+            <option value="100">100%</option>
+          </select>
+        </label>
+
+        <label>Ice Level:
+          <select name="tea[hibiscus][ice]">
+            <option value="no-ice">No Ice</option>
+            <option value="less-ice">Less Ice</option>
+            <option value="extra-ice">Extra Ice</option>
+          </select>
+        </label>
+
+           <label>Add In:
+            <select name="tea[hibiscus][milk]">
+                <option value="two-percent-milk">2% Milk</option>
+                <option value="almond-milk">Almond</option>
+                <option value="coconut-milk">Coconut</option>
+                <option value="heavy-cream-milk">Heavy Cream</option>
+                <option value="nonfat-milk">Nonfat Milk</option>
+                <option value="oatmilk">Oatmilk</option>
+                <option value="soy-milk">Soy</option>
+                <option value="whole-milk">Whole Milk</option>
+            </select>
+        </label>
+
+      </div>
+      <hr>
+
+    <br>
+
+    <fieldset>
+      <legend>Refreshers</legend>
+
+      <!-- strawberry hibiscus -->
+      <label>
+        <input type="checkbox" name="refreshers[strawberry-hibiscus][selected]" value="yes">
+         Strawberry Hibiscus
+      </label>
+
+      <div class="customization">
+        <label>Size:
+          <select name="refreshers[strawberry-hibiscus][size]">
+            <option value="small">Small</option>
+            <option value="medium">Medium</option>
+            <option value="large">Large</option>
+          </select>
+        </label>
+
+        <label>Cold Foam:
+            <select name="refreshers[strawberry-hibiscus][cold-foam]">
+            <option value="vanilla-cold-foam">Vanilla</option>
+                <option value="matcha-cold-foam">Matcha</option>
+                <option value="brown-sugar-cold-foam">Brown Sugar</option>
+                <option value="chocolate-cold-foam">Chocolate</option>
+                <option value="raspberry-cold-foam">Raspberry</option>
+                <option value="salted-caramel-cold-foam">Salted Caramel</option>
+                <option value="strawberry-cold-foam">Strawberry</option>
+            </select>
+        </label>
+
+        <label>Toppings:
+          <select multiple name="refreshers[strawberry-hibiscus][toppings][]">
+            <option value="chocolate-drizzle">Chocolate Drizzle</option>
+            <option value="caramel-drizzle">Caramel Drizzle</option>
+            <option value="white-chocolate-drizzle">White Chocolate Drizzle</option>
+            <option value="tapioca-boba">Tapioca Boba</option>
+            <option value="mango-popping-boba">Mango Boba</option>
+            <option value="peach-popping-boba">Peach Boba</option>
+            <option value="lychee-popping-boba">Lychee Boba</option>
+            <option value="strawberry-popping-boba">Strawberry Boba</option>
+            <option value="passion-fruit-popping-boba">Passiion Fruit Boba</option>
+            <option value="kiwi-popping-boba">Kiwi Boba</option>
+            <option value="blueberry-popping-boba">Blueberry Boba</option>
+          </select>
+        </label>
+<label>Sweetness:
+          <select name="refreshers[strawberry-hibiscus][sweetness]">
+            <option value="0">0%</option>
+            <option value="25">25%</option>
+            <option value="50">50%</option>
+            <option value="75">75%</option>
+            <option value="100">100%</option>
+          </select>
+        </label>
+
+        <label>Ice Level:
+          <select name="refreshers[strawberry-hibiscus][ice]">
+            <option value="no-ice">No Ice</option>
+            <option value="less-ice">Less Ice</option>
+            <option value="extra-ice">Extra Ice</option>
+          </select>
+        </label>
+
+      </div>
+      <hr>
+
+      <!-- dragonfruit passionfruit -->
+      <label>
+        <input type="checkbox" name="refreshers[dragon-passion][selected]" value="yes">
+         Dragon Passion
+      </label>
+
+      <div class="customization">
+        <label>Size:
+          <select name="refreshers[dragon-passion][size]">
+            <option value="small">Small</option>
+            <option value="medium">Medium</option>
+            <option value="large">Large</option>
+          </select>
+        </label>
+
+        <label>Cold Foam:
+            <select name="refreshers[dragon-passion][cold-foam]">
+            <option value="vanilla-cold-foam">Vanilla</option>
+                <option value="matcha-cold-foam">Matcha</option>
+                <option value="brown-sugar-cold-foam">Brown Sugar</option>
+                <option value="chocolate-cold-foam">Chocolate</option>
+                <option value="raspberry-cold-foam">Raspberry</option>
+                <option value="salted-caramel-cold-foam">Salted Caramel</option>
+                <option value="strawberry-cold-foam">Strawberry</option>
+            </select>
+        </label>
+
+        <label>Toppings:
+          <select multiple name="refreshers[dragon-passion][toppings][]">
+            <option value="chocolate-drizzle">Chocolate Drizzle</option>
+            <option value="caramel-drizzle">Caramel Drizzle</option>
+            <option value="white-chocolate-drizzle">White Chocolate Drizzle</option>
+            <option value="tapioca-boba">Tapioca Boba</option>
+            <option value="mango-popping-boba">Mango Boba</option>
+            <option value="peach-popping-boba">Peach Boba</option>
+            <option value="lychee-popping-boba">Lychee Boba</option>
+            <option value="strawberry-popping-boba">Strawberry Boba</option>
+            <option value="passion-fruit-popping-boba">Passiion Fruit Boba</option>
+            <option value="kiwi-popping-boba">Kiwi Boba</option>
+            <option value="blueberry-popping-boba">Blueberry Boba</option>
+          </select>
+        </label>
+<label>Sweetness:
+          <select name="refreshers[dragon-passion][sweetness]">
+            <option value="0">0%</option>
+            <option value="25">25%</option>
+            <option value="50">50%</option>
+            <option value="75">75%</option>
+            <option value="100">100%</option>
+          </select>
+        </label>
+
+        <label>Ice Level:
+          <select name="refreshers[dragon-passion][ice]">
+            <option value="no-ice">No Ice</option>
+            <option value="less-ice">Less Ice</option>
+            <option value="extra-ice">Extra Ice</option>
+          </select>
+        </label>
+
+      </div>
+      <hr>
+
+      <!-- blackberry mango -->
+      <label>
+        <input type="checkbox" name="refreshers[blackberry-mango][selected]" value="yes">
+         Blackberry Mango
+      </label>
+
+      <div class="customization">
+        <label>Size:
+          <select name="refreshers[blackberry-mango][size]">
+            <option value="small">Small</option>
+            <option value="medium">Medium</option>
+            <option value="large">Large</option>
+          </select>
+        </label>
+
+        <label>Cold Foam:
+            <select name="refreshers[blackberry-mango][cold-foam]">
+            <option value="vanilla-cold-foam">Vanilla</option>
+                <option value="matcha-cold-foam">Matcha</option>
+                <option value="brown-sugar-cold-foam">Brown Sugar</option>
+                <option value="chocolate-cold-foam">Chocolate</option>
+                <option value="raspberry-cold-foam">Raspberry</option>
+                <option value="salted-caramel-cold-foam">Salted Caramel</option>
+                <option value="strawberry-cold-foam">Strawberry</option>
+            </select>
+        </label>
+
+        <label>Toppings:
+          <select multiple name="refreshers[blackberry-mango][toppings][]">
+            <option value="chocolate-drizzle">Chocolate Drizzle</option>
+            <option value="caramel-drizzle">Caramel Drizzle</option>
+            <option value="white-chocolate-drizzle">White Chocolate Drizzle</option>
+            <option value="tapioca-boba">Tapioca Boba</option>
+            <option value="mango-popping-boba">Mango Boba</option>
+            <option value="peach-popping-boba">Peach Boba</option>
+            <option value="lychee-popping-boba">Lychee Boba</option>
+            <option value="strawberry-popping-boba">Strawberry Boba</option>
+            <option value="passion-fruit-popping-boba">Passiion Fruit Boba</option>
+            <option value="kiwi-popping-boba">Kiwi Boba</option>
+            <option value="blueberry-popping-boba">Blueberry Boba</option>
+          </select>
+        </label>
+<label>Sweetness:
+          <select name="refreshers[blackberry-mango][sweetness]">
+            <option value="0">0%</option>
+            <option value="25">25%</option>
+            <option value="50">50%</option>
+            <option value="75">75%</option>
+            <option value="100">100%</option>
+          </select>
+        </label>
+
+        <label>Ice Level:
+          <select name="refreshers[blackberry-mango][ice]">
+            <option value="no-ice">No Ice</option>
+            <option value="less-ice">Less Ice</option>
+            <option value="extra-ice">Extra Ice</option>
+          </select>
+        </label>
+
+      </div>
+      <hr>
+
+      <!--  pomegranate -->
+      <label>
+        <input type="checkbox" name="refreshers[pomegranate][selected]" value="yes">
+        Pomegrante
+      </label>
+
+      <div class="customization">
+        <label>Size:
+          <select name="refreshers[pomegranate][size]">
+            <option value="small">Small</option>
+            <option value="medium">Medium</option>
+            <option value="large">Large</option>
+          </select>
+        </label>
+
+        <label>Cold Foam:
+            <select name="refreshers[pomegranate][cold-foam]">
+            <option value="vanilla-cold-foam">Vanilla</option>
+                <option value="matcha-cold-foam">Matcha</option>
+                <option value="brown-sugar-cold-foam">Brown Sugar</option>
+                <option value="chocolate-cold-foam">Chocolate</option>
+                <option value="raspberry-cold-foam">Raspberry</option>
+                <option value="salted-caramel-cold-foam">Salted Caramel</option>
+                <option value="strawberry-cold-foam">Strawberry</option>
+            </select>
+        </label>
+
+        <label>Toppings:
+          <select multiple name="refreshers[pomegranate][toppings][]">
+            <option value="chocolate-drizzle">Chocolate Drizzle</option>
+            <option value="caramel-drizzle">Caramel Drizzle</option>
+            <option value="white-chocolate-drizzle">White Chocolate Drizzle</option>
+            <option value="tapioca-boba">Tapioca Boba</option>
+            <option value="mango-popping-boba">Mango Boba</option>
+            <option value="peach-popping-boba">Peach Boba</option>
+            <option value="lychee-popping-boba">Lychee Boba</option>
+            <option value="strawberry-popping-boba">Strawberry Boba</option>
+            <option value="passion-fruit-popping-boba">Passiion Fruit Boba</option>
+            <option value="kiwi-popping-boba">Kiwi Boba</option>
+            <option value="blueberry-popping-boba">Blueberry Boba</option>
+          </select>
+        </label>
+<label>Sweetness:
+          <select name="refreshers[pomegranate][sweetness]">
+            <option value="0">0%</option>
+            <option value="25">25%</option>
+            <option value="50">50%</option>
+            <option value="75">75%</option>
+            <option value="100">100%</option>
+          </select>
+        </label>
+
+        <label>Ice Level:
+          <select name="refreshers[pomegranate][ice]">
+            <option value="no-ice">No Ice</option>
+            <option value="less-ice">Less Ice</option>
+            <option value="extra-ice">Extra Ice</option>
+          </select>
+        </label>
+
+      </div>
+      <hr>
+
+    </fieldset>
+
+    <br>
+
+    <fieldset>
+      <legend>Sweet Treat</legend>
+
+      <label><input type="checkbox" name="treat" value="marble-loaf">Marble Loaf</label><br>
+      <label><input type="checkbox" name="treat" value="chocolate-croissant">Chocolate Croissant</label><br>
+      <label><input type="checkbox" name="treat" value="cheese-danish">Marble Loaf</label><br>
+      label><input type="checkbox" name="treat" value="bagel">Bagel</label><br>
+
+    </fieldset>
+    <br>
+
+
+    <!-- SUBMIT -->
+    <button type="submit">Submit Order</button>
+  </form>
+
+</body>
+</html>
