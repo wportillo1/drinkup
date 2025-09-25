@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Order Now - Drinks Up!</title>
+  <title>Menu - Drinks Up!</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -19,10 +19,12 @@
         <input type="checkbox" name="milk-teas[original][selected]" value="yes">
          Original
       </label>
-
+      
       <div class="customization">
+        <ul>
         <label>Size:
-          <select name="milk-tea[original][size]">
+          <select name="milk-teas[original][size]" required>
+            <option value="">--Select Size --</option>
             <option value="small">Small</option>
             <option value="medium">Medium</option>
             <option value="large">Large</option>
@@ -30,7 +32,7 @@
         </label>
 
         <label>Cold Foam:
-            <select multiple name="milk-tea[original][cold-foam]">
+            <select multiple name="milk-teas[original][cold-foam]">
                 <option value="vanilla-cold-foam">Vanilla</option>
                 <option value="matcha-cold-foam">Matcha</option>
                 <option value="brown-sugar-cold-foam">Brown Sugar</option>
@@ -42,7 +44,7 @@
         </label>
 
         <label>Toppings:
-          <select multiple name="milk-tea[original][toppings][]">
+          <select multiple name="milk-teas[original][toppings][]">
             <option value="chocolate-drizzle">Chocolate Drizzle</option>
             <option value="caramel-drizzle">Caramel Drizzle</option>
             <option value="white-chocolate-drizzle">White Chocolate Drizzle</option>
@@ -58,7 +60,7 @@
         </label>
 
         <label>Sweetness:
-          <select name="milk-tea[original][sweetness]">
+          <select name="milk-teas[original][sweetness]">
             <option value="0">0%</option>
             <option value="25">25%</option>
             <option value="50">50%</option>
@@ -68,24 +70,27 @@
         </label>
 
         <label>Ice Level:
-          <select name="milk-tea[original][ice]">
+          <select name="milk-teas[original][ice]">
             <option value="no-ice">No Ice</option>
             <option value="less-ice">Less Ice</option>
             <option value="extra-ice">Extra Ice</option>
           </select>
-
+          </label>
+        </ul>
       </div>
       <hr>
 
       <!-- jasmine green -->
       <label>
-        <input type="checkbox" name="milk-tea[jasmine-green][selected]" value="yes">
+        <input type="checkbox" name="milk-teas[jasmine-green][selected]" value="yes">
         Jasmine Green
       </label>
 
       <div class="customization">
+        <ul>
         <label>Size:
-          <select name="milk-tea[jasmine-green][size]">
+          <select name="milk-teas[jasmine-green][size]" required>
+            <option value="">-- Select Size --</option>
             <option value="small">Small</option>
             <option value="medium">Medium</option>
             <option value="large">Large</option>
@@ -93,7 +98,7 @@
         </label>
 
         <label>Cold Foam:
-            <select multiple name="milk-tea[jasmine-green][cold-foam]">
+            <select multiple name="milk-teas[jasmine-green][cold-foam]">
                 <option value="vanilla-cold-foam">Vanilla</option>
                 <option value="matcha-cold-foam">Matcha</option>
                 <option value="brown-sugar-cold-foam">Brown Sugar</option>
@@ -105,7 +110,7 @@
         </label>
 
         <label>Toppings:
-          <select multiple name="milk-tea[jasmine-green][toppings][]">
+          <select multiple name="milk-teas[jasmine-green][toppings][]">
             <option value="chocolate-drizzle">Chocolate Drizzle</option>
             <option value="caramel-drizzle">Caramel Drizzle</option>
             <option value="white-chocolate-drizzle">White Chocolate Drizzle</option>
@@ -121,7 +126,7 @@
         </label>
 
         <label>Sweetness:
-          <select name="milk-tea[jasmine-green][sweetness]">
+          <select name="milk-teas[jasmine-green][sweetness]">
             <option value="0">0%</option>
             <option value="25">25%</option>
             <option value="50">50%</option>
@@ -131,11 +136,13 @@
         </label>
 
         <label>Ice Level:
-          <select name="milk-tea[original][ice]">
+          <select name="milk-teas[original][ice]">
             <option value="no-ice">No Ice</option>
             <option value="less-ice">Less Ice</option>
             <option value="extra-ice">Extra Ice</option>
           </select>
+        </label>
+        </ul>
       </div>
     </fieldset>
 
@@ -146,8 +153,10 @@
       </label>
 
       <div class="customization">
+        <ul>
         <label>Size:
-          <select name="milk-tea[oolong][size]">
+          <select name="milk-teas[oolong][size]" required>
+            <option value="">-- Select Size --</option>
             <option value="small">Small</option>
             <option value="medium">Medium</option>
             <option value="large">Large</option>
@@ -155,7 +164,7 @@
         </label>
 
         <label>Cold Foam:
-            <select multiple name="milk-tea[oolong][cold-foam]">
+            <select multiple name="milk-teas[oolong][cold-foam]">
                 <option value="vanilla-cold-foam">Vanilla</option>
                 <option value="matcha-cold-foam">Matcha</option>
                 <option value="brown-sugar-cold-foam">Brown Sugar</option>
@@ -167,7 +176,7 @@
         </label>
 
         <label>Toppings:
-          <select multiple name="milk-tea[oolong][toppings][]">
+          <select multiple name="milk-teas[oolong][toppings][]">
             <option value="chocolate-drizzle">Chocolate Drizzle</option>
             <option value="caramel-drizzle">Caramel Drizzle</option>
             <option value="white-chocolate-drizzle">White Chocolate Drizzle</option>
@@ -183,7 +192,7 @@
         </label>
 
         <label>Sweetness:
-          <select name="milk-tea[oolong][sweetness]">
+          <select name="milk-teas[oolong][sweetness]">
             <option value="0">0%</option>
             <option value="25">25%</option>
             <option value="50">50%</option>
@@ -193,11 +202,13 @@
         </label>
 
         <label>Ice Level:
-          <select name="milk-tea[oolong][ice]">
+          <select name="milk-teas[oolong][ice]">
             <option value="no-ice">No Ice</option>
             <option value="less-ice">Less Ice</option>
             <option value="extra-ice">Extra Ice</option>
           </select>
+        </label>
+        </ul>
 
       </div>
       <hr>
@@ -209,8 +220,10 @@
       </label>
 
       <div class="customization">
+        <ul>
         <label>Size:
-          <select name="milk-tea[rose-oolong][size]">
+          <select name="milk-teas[rose-oolong][size]" required>
+            <option value="">-- Select Size --</option>
             <option value="small">Small</option>
             <option value="medium">Medium</option>
             <option value="large">Large</option>
@@ -218,7 +231,7 @@
         </label>
 
         <label>Cold Foam:
-            <select multiple name="milk-tea[rose-oolong][cold-foam]">
+            <select multiple name="milk-teas[rose-oolong][cold-foam]">
                 <option value="vanilla-cold-foam">Vanilla</option>
                 <option value="matcha-cold-foam">Matcha</option>
                 <option value="brown-sugar-cold-foam">Brown Sugar</option>
@@ -230,7 +243,7 @@
         </label>
 
         <label>Toppings:
-          <select multiple name="milk-tea[rose-oolong][toppings][]">
+          <select multiple name="milk-teas[rose-oolong][toppings][]">
             <option value="chocolate-drizzle">Chocolate Drizzle</option>
             <option value="caramel-drizzle">Caramel Drizzle</option>
             <option value="white-chocolate-drizzle">White Chocolate Drizzle</option>
@@ -246,7 +259,7 @@
         </label>
 
         <label>Sweetness:
-          <select name="milk-tea[rose-oolong][sweetness]">
+          <select name="milk-teas[rose-oolong][sweetness]">
             <option value="0">0%</option>
             <option value="25">25%</option>
             <option value="50">50%</option>
@@ -256,11 +269,13 @@
         </label>
 
         <label>Ice Level:
-          <select name="milk-tea[rose-oolong][ice]">
+          <select name="milk-teas[rose-oolong][ice]">
             <option value="no-ice">No Ice</option>
             <option value="less-ice">Less Ice</option>
             <option value="extra-ice">Extra Ice</option>
           </select>
+        </label>
+    </ul>
 
       </div>
       <hr>
@@ -272,8 +287,10 @@
       </label>
 
       <div class="customization">
+        <ul>
         <label>Size:
-          <select name="milk-tea[white-peach-oolong][size]">
+          <select name="milk-teas[white-peach-oolong][size]" required>
+            <option value="">-- Select Size --</option>
             <option value="small">Small</option>
             <option value="medium">Medium</option>
             <option value="large">Large</option>
@@ -281,7 +298,7 @@
         </label>
 
         <label>Cold Foam:
-            <select multiple name="milk-tea[white-peach-oolong][cold-foam]">
+            <select multiple name="milk-teas[white-peach-oolong][cold-foam]">
                 <option value="vanilla-cold-foam">Vanilla</option>
                 <option value="matcha-cold-foam">Matcha</option>
                 <option value="brown-sugar-cold-foam">Brown Sugar</option>
@@ -293,7 +310,7 @@
         </label>
 
         <label>Toppings:
-          <select multiple name="milk-tea[white-peach-oolong][toppings][]">
+          <select multiple name="milk-teas[white-peach-oolong][toppings][]">
             <option value="chocolate-drizzle">Chocolate Drizzle</option>
             <option value="caramel-drizzle">Caramel Drizzle</option>
             <option value="white-chocolate-drizzle">White Chocolate Drizzle</option>
@@ -309,7 +326,7 @@
         </label>
 
         <label>Sweetness:
-          <select name="milk-tea[white-peach-oolong][sweetness]">
+          <select name="milk-teas[white-peach-oolong][sweetness]">
             <option value="0">0%</option>
             <option value="25">25%</option>
             <option value="50">50%</option>
@@ -319,11 +336,13 @@
         </label>
 
         <label>Ice Level:
-          <select name="milk-tea[white-peach-oolong][ice]">
+          <select name="milk-teas[white-peach-oolong][ice]">
             <option value="no-ice">No Ice</option>
             <option value="less-ice">Less Ice</option>
             <option value="extra-ice">Extra Ice</option>
           </select>
+        </label>
+        </ul>
 
       </div>
       <hr>
@@ -335,8 +354,10 @@
       </label>
 
       <div class="customization">
+        <ul>
         <label>Size:
-          <select name="milk-tea[sakura-oolona][size]">
+          <select name="milk-teas[sakura-oolona][size]" required>
+            <option value="">-- Select Size --</option>
             <option value="small">Small</option>
             <option value="medium">Medium</option>
             <option value="large">Large</option>
@@ -344,7 +365,7 @@
         </label>
 
         <label>Cold Foam:
-            <select multiple name="milk-tea[sakura-oolona][cold-foam]">
+            <select multiple name="milk-teas[sakura-oolona][cold-foam]">
                 <option value="vanilla-cold-foam">Vanilla</option>
                 <option value="matcha-cold-foam">Matcha</option>
                 <option value="brown-sugar-cold-foam">Brown Sugar</option>
@@ -356,7 +377,7 @@
         </label>
 
         <label>Toppings:
-          <select multiple name="milk-tea[sakura-oolona][toppings][]">
+          <select multiple name="milk-teas[sakura-oolona][toppings][]">
             <option value="chocolate-drizzle">Chocolate Drizzle</option>
             <option value="caramel-drizzle">Caramel Drizzle</option>
             <option value="white-chocolate-drizzle">White Chocolate Drizzle</option>
@@ -372,7 +393,7 @@
         </label>
 
         <label>Sweetness:
-          <select name="milk-tea[sakura-oolona][sweetness]">
+          <select name="milk-teas[sakura-oolona][sweetness]">
             <option value="0">0%</option>
             <option value="25">25%</option>
             <option value="50">50%</option>
@@ -382,11 +403,13 @@
         </label>
 
         <label>Ice Level:
-          <select name="milk-tea[sakura-oolona][ice]">
+          <select name="milk-teas[sakura-oolona][ice]">
             <option value="no-ice">No Ice</option>
             <option value="less-ice">Less Ice</option>
             <option value="extra-ice">Extra Ice</option>
           </select>
+        </label>
+        </ul>
 
       </div>
       <hr>
@@ -398,8 +421,10 @@
       </label>
 
       <div class="customization">
+        <ul>
         <label>Size:
-          <select name="milk-tea[taro][size]">
+          <select name="milk-teas[taro][size]" required>
+            <option value="">-- Select Size --</option>
             <option value="small">Small</option>
             <option value="medium">Medium</option>
             <option value="large">Large</option>
@@ -407,7 +432,7 @@
         </label>
 
         <label>Cold Foam:
-            <select multiple name="milk-tea[taro][cold-foam]">
+            <select multiple name="milk-teas[taro][cold-foam]">
                 <option value="vanilla-cold-foam">Vanilla</option>
                 <option value="matcha-cold-foam">Matcha</option>
                 <option value="brown-sugar-cold-foam">Brown Sugar</option>
@@ -419,7 +444,7 @@
         </label>
 
         <label>Toppings:
-          <select multiple name="milk-tea[taro][toppings][]">
+          <select multiple name="milk-teas[taro][toppings][]">
             <option value="chocolate-drizzle">Chocolate Drizzle</option>
             <option value="caramel-drizzle">Caramel Drizzle</option>
             <option value="white-chocolate-drizzle">White Chocolate Drizzle</option>
@@ -435,7 +460,7 @@
         </label>
 
         <label>Sweetness:
-          <select name="milk-tea[taro][sweetness]">
+          <select name="milk-teas[taro][sweetness]">
             <option value="0">0%</option>
             <option value="25">25%</option>
             <option value="50">50%</option>
@@ -445,11 +470,13 @@
         </label>
 
         <label>Ice Level:
-          <select name="milk-tea[taro][ice]">
+          <select name="milk-teas[taro][ice]">
             <option value="no-ice">No Ice</option>
             <option value="less-ice">Less Ice</option>
             <option value="extra-ice">Extra Ice</option>
           </select>
+        </label>
+        </ul>
 
       </div>
       <hr>
@@ -461,8 +488,10 @@
       </label>
 
       <div class="customization">
+        <ul>
         <label>Size:
-          <select name="milk-tea[matcha][size]">
+          <select name="milk-teas[matcha][size]" required>
+            <option value="">-- Select Size --</option>
             <option value="small">Small</option>
             <option value="medium">Medium</option>
             <option value="large">Large</option>
@@ -470,7 +499,7 @@
         </label>
 
         <label>Cold Foam:
-            <select multiple name="milk-tea[matcha][cold-foam]">
+            <select multiple name="milk-teas[matcha][cold-foam]">
                 <option value="vanilla-cold-foam">Vanilla</option>
                 <option value="matcha-cold-foam">Matcha</option>
                 <option value="brown-sugar-cold-foam">Brown Sugar</option>
@@ -482,7 +511,7 @@
         </label>
 
         <label>Toppings:
-          <select multiple name="milk-tea[matcha][toppings][]">
+          <select multiple name="milk-teas[matcha][toppings][]">
             <option value="chocolate-drizzle">Chocolate Drizzle</option>
             <option value="caramel-drizzle">Caramel Drizzle</option>
             <option value="white-chocolate-drizzle">White Chocolate Drizzle</option>
@@ -498,7 +527,7 @@
         </label>
 
         <label>Sweetness:
-          <select name="milk-tea[matcha][sweetness]">
+          <select name="milk-teas[matcha][sweetness]">
             <option value="0">0%</option>
             <option value="25">25%</option>
             <option value="50">50%</option>
@@ -508,11 +537,13 @@
         </label>
 
         <label>Ice Level:
-          <select name="milk-tea[matcha][ice]">
+          <select name="milk-teas[matcha][ice]">
             <option value="no-ice">No Ice</option>
             <option value="less-ice">Less Ice</option>
             <option value="extra-ice">Extra Ice</option>
           </select>
+        </label>
+        </ul>
 
       </div>
       <hr>
@@ -531,7 +562,9 @@
 
       <div class="customization">
         <label>Size:
-          <select name="coffees[latte][size]">
+        <ul>
+          <select name="coffees[latte][size]" required>
+            <option value="">-- Select Size --</option>
             <option value="small">Small</option>
             <option value="medium">Medium</option>
             <option value="large">Large</option>
@@ -605,6 +638,8 @@
             <option value="cocoa-powder">Cocoa Powder</option>
           </select>
         </label>
+    </ul>  
+
       </div>
       <hr>
 
@@ -616,8 +651,10 @@
       </label>
 
       <div class="customization">
+        <ul>
         <label>Size:
-          <select name="coffees[cappucino][size]">
+          <select name="coffees[cappucino][size]" required>
+            <option value="">-- Select Size --</option>
             <option value="small">Small</option>
             <option value="medium">Medium</option>
             <option value="large">Large</option>
@@ -691,7 +728,7 @@
             <option value="cocoa-powder">Cocoa Powder</option>
           </select>
         </label>
-        </label>
+        </ul>
       </div>
       <hr>
 
@@ -702,8 +739,10 @@
       </label>
 
       <div class="customization">
+        <ul>
         <label>Size:
-          <select name="coffees[mocha][size]">
+          <select name="coffees[mocha][size]" required>
+            <option value="">-- Select Size --</option>
             <option value="small">Small</option>
             <option value="medium">Medium</option>
             <option value="large">Large</option>
@@ -711,7 +750,7 @@
         </label>
 
         <label>Sweetness:
-          <select name="coffees[mocha][sweetness]">
+          <select name="coffees[mocha][sweetness]" required>
             <option value="0">0%</option>
             <option value="25">25%</option>
             <option value="50">50%</option>
@@ -753,7 +792,7 @@
         </label>
 
         <label>Cold Foam:
-            <select multiple name="coffees[cappucino][cold-foam]">
+            <select multiple name="coffees[mocha][cold-foam]">
                 <option value="vanilla-cold-foam">Vanilla</option>
                 <option value="matcha-cold-foam">Matcha</option>
                 <option value="brown-sugar-cold-foam">Brown Sugar</option>
@@ -765,7 +804,7 @@
         </label>
 
         <label>Toppings:
-          <select multiple name="coffees[cappucino][toppings][]">
+          <select multiple name="coffees[mocha][toppings][]">
             <option value="caramel-drizzle">Caramel Drizzle</option>
             <option value="white-chocolate-drizzle"> Matcha Cold Foam</option>
             <option value="dark-chocolate-drizzle">Tapioca Boba</option>
@@ -777,7 +816,7 @@
             <option value="cocoa-powder">Cocoa Powder</option>
           </select>
         </label>
-        </label>
+    </ul>
       </div>
       <hr>
 
@@ -788,8 +827,10 @@
       </label>
 
       <div class="customization">
+        <ul>
         <label>Size:
-          <select name="coffees[espresso-macchiato][size]">
+          <select name="coffees[espresso-macchiato][size]" required>
+            <option value="">-- Select Size --</option>
             <option value="solo">Solo</option>
             <option value="doppio">Doppio</option>
             <option value="triple">Triple</option>
@@ -864,6 +905,7 @@
             <option value="cocoa-powder">Cocoa Powder</option>
           </select>
         </label>
+        </ul>
       </div>
       <hr>
 
@@ -874,8 +916,10 @@
       </label>
 
       <div class="customization">
+        <ul>
         <label>Size:
-          <select name="coffees[caramel-macchiato][size]">
+          <select name="coffees[caramel-macchiato][size]" required>
+            <option value="">-- Select Size --</option>
             <option value="small">Small</option>
             <option value="Medium">Regular</option>
             <option value="large">Large</option>
@@ -949,6 +993,7 @@
             <option value="cocoa-powder">Cocoa Powder</option>
           </select>
         </label>
+        </ul>
       </div>
       <hr>
 
@@ -969,8 +1014,10 @@
       </label>
 
       <div class="customization">
+        <ul>
         <label>Size:
-          <select name="tea[black][size]">
+          <select name="teas[black][size]" required>
+            <option value="">-- Select Size --</option>
             <option value="small">Small</option>
             <option value="medium">Medium</option>
             <option value="large">Large</option>
@@ -978,7 +1025,7 @@
         </label>
 
         <label>Toppings:
-          <select multiple name="tea[black][toppings][]">
+          <select multiple name="teas[black][toppings][]">
             <option value="caramel-drizzle">Caramel Drizzle</option>
             <option value="white-chocolate-drizzle"> Matcha Cold Foam</option>
             <option value="dark-chocolate-drizzle">Tapioca Boba</option>
@@ -992,7 +1039,7 @@
         </label>
 
         <label>Sweetness:
-          <select name="tea[black][sweetness]">
+          <select name="teas[black][sweetness]">
             <option value="0">0%</option>
             <option value="25">25%</option>
             <option value="50">50%</option>
@@ -1002,14 +1049,14 @@
         </label>
 
         <label>Ice Level:
-          <select name="tea[original][ice]">
+          <select name="teas[original][ice]">
             <option value="no-ice">No Ice</option>
             <option value="less-ice">Less Ice</option>
             <option value="extra-ice">Extra Ice</option>
           </select>
 
            <label>Add In:
-            <select name="tea[black][milk]">
+            <select name="teas[black][milk]">
                 <option value="two-percent-milk">2% Milk</option>
                 <option value="almond-milk">Almond</option>
                 <option value="coconut-milk">Coconut</option>
@@ -1020,8 +1067,8 @@
                 <option value="whole-milk">Whole Milk</option>
             </select>
         </label>
-
-      </div>
+    </ul>
+    </div>
       <hr>
       
       <!-- chai tea latte -->
@@ -1031,8 +1078,10 @@
       </label>
 
       <div class="customization">
+        <ul>
         <label>Size:
-          <select name="tea[chai-latte][size]">
+          <select name="teas[chai-latte][size]" required>
+            <option value="">-- Select Size --</option>
             <option value="small">Small</option>
             <option value="medium">Medium</option>
             <option value="large">Large</option>
@@ -1040,7 +1089,7 @@
         </label>
 
         <label>Toppings:
-          <select multiple name="tea[chai-latte][toppings][]">
+          <select multiple name="teas[chai-latte][toppings][]">
             <option value="caramel-drizzle">Caramel Drizzle</option>
             <option value="white-chocolate-drizzle"> Matcha Cold Foam</option>
             <option value="dark-chocolate-drizzle">Tapioca Boba</option>
@@ -1054,7 +1103,7 @@
         </label>
 
         <label>Sweetness:
-          <select name="tea[chai-latte][sweetness]">
+          <select name="teas[chai-latte][sweetness]">
             <option value="0">0%</option>
             <option value="25">25%</option>
             <option value="50">50%</option>
@@ -1064,14 +1113,14 @@
         </label>
 
         <label>Ice Level:
-          <select name="tea[chai-latte][ice]">
+          <select name="teas[chai-latte][ice]">
             <option value="no-ice">No Ice</option>
             <option value="less-ice">Less Ice</option>
             <option value="extra-ice">Extra Ice</option>
           </select>
 
            <label>Add In:
-            <select name="tea[chai-latte][milk]">
+            <select name="teas[chai-latte][milk]">
                 <option value="two-percent-milk">2% Milk</option>
                 <option value="almond-milk">Almond</option>
                 <option value="coconut-milk">Coconut</option>
@@ -1082,6 +1131,7 @@
                 <option value="whole-milk">Whole Milk</option>
             </select>
         </label>
+    </ul>
 
       </div>
       <hr>
@@ -1093,8 +1143,10 @@
       </label>
 
       <div class="customization">
+        <ul>
         <label>Size:
-          <select name="tea[green][size]">
+          <select name="teas[green][size]" required>
+            <option value="">-- Select Size --</option>
             <option value="small">Small</option>
             <option value="medium">Medium</option>
             <option value="large">Large</option>
@@ -1102,7 +1154,7 @@
         </label>
 
         <label>Toppings:
-          <select multiple name="tea[green][toppings][]">
+          <select multiple name="teas[green][toppings][]">
             <option value="caramel-drizzle">Caramel Drizzle</option>
             <option value="white-chocolate-drizzle"> Matcha Cold Foam</option>
             <option value="dark-chocolate-drizzle">Tapioca Boba</option>
@@ -1116,7 +1168,7 @@
         </label>
 
         <label>Sweetness:
-          <select name="tea[green][sweetness]">
+          <select name="teas[green][sweetness]">
             <option value="0">0%</option>
             <option value="25">25%</option>
             <option value="50">50%</option>
@@ -1126,14 +1178,14 @@
         </label>
 
         <label>Ice Level:
-          <select name="tea[green][ice]">
+          <select name="teas[green][ice]">
             <option value="no-ice">No Ice</option>
             <option value="less-ice">Less Ice</option>
             <option value="extra-ice">Extra Ice</option>
           </select>
 
            <label>Add In:
-            <select name="tea[green][milk]">
+            <select name="teas[green][milk]">
                 <option value="two-percent-milk">2% Milk</option>
                 <option value="almond-milk">Almond</option>
                 <option value="coconut-milk">Coconut</option>
@@ -1144,7 +1196,7 @@
                 <option value="whole-milk">Whole Milk</option>
             </select>
         </label>
-
+    </ul>
       </div>
       <hr>
 
@@ -1155,8 +1207,11 @@
       </label>
 
       <div class="customization">
+
+        <ul>
         <label>Size:
-          <select name="tea[hibiscus][size]">
+          <select name="teas[hibiscus][size]" required>
+            <option value="">-- Select Size --</option>
             <option value="small">Small</option>
             <option value="medium">Medium</option>
             <option value="large">Large</option>
@@ -1164,7 +1219,7 @@
         </label>
 
         <label>Toppings:
-          <select multiple name="tea[hibiscus][toppings][]">
+          <select multiple name="teas[hibiscus][toppings][]">
             <option value="caramel-drizzle">Caramel Drizzle</option>
             <option value="white-chocolate-drizzle"> Matcha Cold Foam</option>
             <option value="dark-chocolate-drizzle">Tapioca Boba</option>
@@ -1178,7 +1233,7 @@
         </label>
 
         <label>Sweetness:
-          <select name="tea[hibiscus][sweetness]">
+          <select name="teas[hibiscus][sweetness]">
             <option value="0">0%</option>
             <option value="25">25%</option>
             <option value="50">50%</option>
@@ -1188,15 +1243,15 @@
         </label>
 
         <label>Ice Level:
-          <select name="tea[hibiscus][ice]">
+          <select name="teas[hibiscus][ice]">
             <option value="no-ice">No Ice</option>
             <option value="less-ice">Less Ice</option>
             <option value="extra-ice">Extra Ice</option>
           </select>
         </label>
 
-           <label>Add In:
-            <select name="tea[hibiscus][milk]">
+        <label>Add In:
+            <select name="teas[hibiscus][milk]">
                 <option value="two-percent-milk">2% Milk</option>
                 <option value="almond-milk">Almond</option>
                 <option value="coconut-milk">Coconut</option>
@@ -1207,7 +1262,7 @@
                 <option value="whole-milk">Whole Milk</option>
             </select>
         </label>
-
+</ul>
       </div>
       <hr>
 
@@ -1223,8 +1278,10 @@
       </label>
 
       <div class="customization">
+        <ul>
         <label>Size:
-          <select name="refreshers[strawberry-hibiscus][size]">
+          <select name="refreshers[strawberry-hibiscus][size]" required>
+            <option value="">-- Select Size --</option>
             <option value="small">Small</option>
             <option value="medium">Medium</option>
             <option value="large">Large</option>
@@ -1258,7 +1315,8 @@
             <option value="blueberry-popping-boba">Blueberry Boba</option>
           </select>
         </label>
-<label>Sweetness:
+        
+        <label>Sweetness:
           <select name="refreshers[strawberry-hibiscus][sweetness]">
             <option value="0">0%</option>
             <option value="25">25%</option>
@@ -1275,7 +1333,7 @@
             <option value="extra-ice">Extra Ice</option>
           </select>
         </label>
-
+    </ul>
       </div>
       <hr>
 
@@ -1286,8 +1344,10 @@
       </label>
 
       <div class="customization">
+        <ul>
         <label>Size:
-          <select name="refreshers[dragon-passion][size]">
+          <select name="refreshers[dragon-passion][size]" required>
+            <option value="">-- Select Size --</option>
             <option value="small">Small</option>
             <option value="medium">Medium</option>
             <option value="large">Large</option>
@@ -1321,7 +1381,7 @@
             <option value="blueberry-popping-boba">Blueberry Boba</option>
           </select>
         </label>
-<label>Sweetness:
+    <label>Sweetness:
           <select name="refreshers[dragon-passion][sweetness]">
             <option value="0">0%</option>
             <option value="25">25%</option>
@@ -1338,7 +1398,7 @@
             <option value="extra-ice">Extra Ice</option>
           </select>
         </label>
-
+    </ul>
       </div>
       <hr>
 
@@ -1349,8 +1409,10 @@
       </label>
 
       <div class="customization">
+        <ul>
         <label>Size:
-          <select name="refreshers[blackberry-mango][size]">
+          <select name="refreshers[blackberry-mango][size]" required>
+            <option value="">-- Select Size --</option>
             <option value="small">Small</option>
             <option value="medium">Medium</option>
             <option value="large">Large</option>
@@ -1384,7 +1446,8 @@
             <option value="blueberry-popping-boba">Blueberry Boba</option>
           </select>
         </label>
-<label>Sweetness:
+
+        <label>Sweetness:
           <select name="refreshers[blackberry-mango][sweetness]">
             <option value="0">0%</option>
             <option value="25">25%</option>
@@ -1401,7 +1464,7 @@
             <option value="extra-ice">Extra Ice</option>
           </select>
         </label>
-
+</ul>
       </div>
       <hr>
 
@@ -1412,8 +1475,10 @@
       </label>
 
       <div class="customization">
+        <ul>
         <label>Size:
-          <select name="refreshers[pomegranate][size]">
+          <select name="refreshers[pomegranate][size]" required>
+            <option value="">-- Select Size --</option>
             <option value="small">Small</option>
             <option value="medium">Medium</option>
             <option value="large">Large</option>
@@ -1447,7 +1512,8 @@
             <option value="blueberry-popping-boba">Blueberry Boba</option>
           </select>
         </label>
-<label>Sweetness:
+
+        <label>Sweetness:
           <select name="refreshers[pomegranate][sweetness]">
             <option value="0">0%</option>
             <option value="25">25%</option>
@@ -1464,7 +1530,7 @@
             <option value="extra-ice">Extra Ice</option>
           </select>
         </label>
-
+</ul>
       </div>
       <hr>
 
@@ -1474,12 +1540,12 @@
 
     <fieldset>
       <legend>Sweet Treat</legend>
-
-      <label><input type="checkbox" name="treat" value="marble-loaf">Marble Loaf</label><br>
-      <label><input type="checkbox" name="treat" value="chocolate-croissant">Chocolate Croissant</label><br>
-      <label><input type="checkbox" name="treat" value="cheese-danish">Marble Loaf</label><br>
-      label><input type="checkbox" name="treat" value="bagel">Bagel</label><br>
-
+      <ul>
+        <label><input type="checkbox" name="treat" value="marble-loaf">Marble Loaf</label><br>
+         <label><input type="checkbox" name="treat" value="chocolate-croissant">Chocolate Croissant</label><br>
+        <label><input type="checkbox" name="treat" value="cheese-danish">Marble Loaf</label><br>
+        <label><input type="checkbox" name="treat" value="bagel">Bagel</label><br>
+    </ul>
     </fieldset>
     <br>
 
