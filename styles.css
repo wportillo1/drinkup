@@ -22,8 +22,8 @@ body {
         sans-serif;
       line-height: 1em;
       font-size: 18px;
-      color: var(--background);
-      background-color: var(--foreground);
+      color: var(--foreground);
+      background-color: var(--background);
       padding: 2rem
 }
 
