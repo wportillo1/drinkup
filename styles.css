@@ -24,7 +24,7 @@ body {
       font-size: 18px;
       color: var(--foreground);
       background-color: var(--background);
-      padding: 2rem
+      padding: 20px;
 }
 
 
@@ -41,6 +41,10 @@ h3 {
 
 h1 + p{
   border-top: 5px;
+}
+
+h1 {
+  text-align: center;
 }
 
  a {
@@ -260,50 +264,40 @@ h1 + p{
     }
 
 form {
-    max-width: 800px;
-      margin: auto;
-     display: flex;
-      flex-direction: column;
-      gap: 2rem;
-    }
-    fieldset {
-      border: 2px solid #ccc;
-      border-radius: 8px;
-      padding: 1rem;
-      background: #fff;
-    }
-    legend {
-      font-weight: 600;
-      font-size: 1.2rem;
-      padding: 0 0.5rem;
-    }
-    .drink-option {
-      margin: 0.5rem 0;
-    }
-    .customization {
-      margin-left: 1.5rem;
-      margin-top: 1rem;
-      padding: 0.8rem;
-      border-left: 3px solid #ddd;
-      background: #fafafa;
-    }
-    label {
-      display: block;
-      margin: 0.3rem 0;
-    }
-    select, input[type="checkbox"] {
-      margin-top: 0.2rem;
-    }
-    button {
-      align-self: center;
-      padding: 0.7rem 1.5rem;
-      font-size: 1rem;
-      border: none;
-      border-radius: 6px;
-      background: #4CAF50;
-      color: #fff;
-      cursor: pointer;
-    }
-    button:hover {
-      background: #43a047;
-    }
+   border: 2px solid var(--background);
+   border-radius: 10px;
+   padding: 15px;
+}
+fieldset {
+  border: 2px solid #333; 
+  border-radius: 10px; 
+  padding: 15px; 
+}
+legend { 
+  font-weight: bold; 
+}
+.drink-option {
+  margin-bottom: 1em; 
+}
+.customization { margin-left: 1em; margin-top: 0.5em; padding-left: 0.5em; border-left: 2px solid #ccc; }
+label {
+   display: block; 
+   margin: 4px 0; 
+}
+input[type="number"] {
+   width: 60px; 
+  }
+button {
+   display: block; 
+   margin: 20px auto; 
+   padding: 10px 20px; 
+   font-size: 16px; 
+   background: #333; 
+   color: white; 
+   border: none; 
+   border-radius: 5px; 
+   cursor: pointer; 
+}
+button:hover {
+ background: #555; 
+}
