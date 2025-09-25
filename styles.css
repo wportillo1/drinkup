@@ -211,7 +211,7 @@ h1 {
 }
 
 .sidebar ul li a:hover {
-  background: rgb(255,255,255,0.1);
+  background: #141414;
 }
 
 .menu:has(input:checked) + .sidebar {
@@ -257,6 +257,33 @@ h1 {
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
+.parent {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.milktea {
+  position: relative;
+  top: 0;
+  left: 0;
+  border: none;
+}
+
+.treat {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  border: none;
+}
+
+.treat {
+  position: absolute;
+  top: 15px;
+  left: 45px;
+  border: none;
+}
+
 .customization {
       margin-left: 20px;
       margin-bottom: 10px;
@@ -268,25 +295,31 @@ form {
    border-radius: 10px;
    padding: 15px;
 }
+
 fieldset {
   border: 2px solid #333; 
   border-radius: 10px; 
   padding: 15px; 
 }
+
 legend { 
   font-weight: bold; 
 }
+
 .drink-option {
   margin-bottom: 1em; 
 }
+
 .customization { margin-left: 1em; margin-top: 0.5em; padding-left: 0.5em; border-left: 2px solid #ccc; }
 label {
    display: block; 
    margin: 4px 0; 
 }
+
 input[type="number"] {
    width: 60px; 
   }
+
 button {
    display: block; 
    margin: 20px auto; 
@@ -298,6 +331,7 @@ button {
    border-radius: 5px; 
    cursor: pointer; 
 }
+
 button:hover {
  background: #555; 
 }
