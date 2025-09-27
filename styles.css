@@ -149,6 +149,19 @@ nav input[type="checkbox"], nav label {
   cursor: pointer;
 }
 
+.hamburger-menu:has(input:checked) {
+  --foreground: rgb(224, 224, 224);
+  --background: #141414;
+}
+
+.hamburger-menu:has(input:focus-visible)::before,
+.hamburger-menu:has(input:focus-visible)::after,
+.hamburger-menu input:focus-visible {
+  border: 1px solid var(--background);
+  box box-shadow: 0 0 0 1px var(--foreground);
+}
+
+
 .hamburger-menu::before, 
 .hamburger-menu::after, 
 .hamburger-menu input{
@@ -191,7 +204,16 @@ nav input[type="checkbox"], nav label {
 }
 
 .sidebar {
-  position: fixed;
+  transition: var(--animation-timing);
+  translate: -100%;
+  padding: 0.5rem 1rem;
+  padding-top: calc(var(--hamburger-height) + var(--hamburger-margin) + 1rem);
+  background-color: var(--sidebar-background);
+  color: var(--background);
+  max-width: 10rem;
+  min-height: 100vh;
+
+  /*position: fixed;
   top: 0;
   left: -250px;
   width: 250px;
@@ -200,7 +222,7 @@ nav input[type="checkbox"], nav label {
   color: var(--foreground);
   padding-top: 60px;
   transition: left var (--animation-timing);
-  z-index: 1;
+  z-index: 1;*/
 }
 
 .sidebar ul {
@@ -225,6 +247,7 @@ nav input[type="checkbox"], nav label {
 }
 
 .hamburger-menu:has(input:checked) + .sidebar {
+  translate: 0;
   left: 0;
 }
 
