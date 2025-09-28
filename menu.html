@@ -172,6 +172,7 @@
             <label><input type="checkbox" name="jasmine-green-toppings[]" value="kiwi"> Kiwi Boba</label>
             <label><input type="checkbox" name="jasmine-green-toppings[]" value="Blueberry"> Blueberry Boba</label>
           </fieldset>
+          <button type="button" onclick="removeCustomization('original')">Remove</button>
         </div>
       </div>
 
@@ -183,7 +184,7 @@
             <input type="number" name="oolong-qty" min="0" max="15" value="0">
           </label>
         
-          <label>Size:
+          <label>Size: <span style="color:red">*</span>
             <select name="oolong-size" required>
               <option value="">-- Select Size --</option>
               <option>Small</option>
@@ -251,7 +252,7 @@
             <input type="number" name="rose-oolong-qty" min="0" max="15" value="0">
           </label>
 
-          <label>Size:
+          <label>Size: <span style="color:red">*</span>
             <select name="rose-oolong-size" required>
               <option value="">-- Select Size --</option>
               <option>Small</option>
@@ -320,7 +321,7 @@
             <input type="number" name="white-peach-oolong-qty" min="0" max="15" value="0">
           </label>
 
-          <label>Size:
+          <label>Size: <span style="color:red">*</span>
             <select name="white-peach-oolong-size" required>
               <option value="">-- Select Size --</option>
               <option>Small</option>
@@ -389,7 +390,7 @@
             <input type="number" name="sakura-oolona-qty" min="0" max="15" value="0">
           </label>
          
-          <label>Size:
+          <label>Size: <span style="color:red">*</span>
             <select name="sakura-oolona-size" required>
               <option value="">-- Select Size --</option>
               <option>Small</option>
@@ -457,7 +458,7 @@
             <input type="number" name="matcha-qty" min="0" max="15" value="0">
           </label>
           
-          <label>Size:
+          <label>Size: <span style="color:red">*</span>
             <select name="matcha-size" required>
               <option value="">-- Select Size --</option>
               <option>Small</option>
@@ -525,7 +526,7 @@
             <input type="number" name="taro-qty" min="0" max="15" value="0">
           </label>
 
-          <label>Size:
+          <label>Size: <span style="color:red">*</span>
             <select name="taro-size" required>
               <option value="">-- Select Size --</option>
               <option>Small</option>
@@ -598,7 +599,7 @@
             <input type="number" name="latte-qty" min="0" max="15" value="0">
           </label>
 
-          <label>Size:
+          <label>Size: <span style="color:red">*</span>
             <select name="latte-size" required>
               <option value="">-- Select Size --</option>
               <option>Small</option>
@@ -689,7 +690,7 @@
             <input type="number" name="cappucino-qty" min="0" max="15" value="0">
           </label>
 
-          <label>Size:
+          <label>Size: <span style="color:red">*</span>
             <select name="cappuccino-size" required>
               <option value="">-- Select Size --</option>
               <option>Small</option>
@@ -780,7 +781,7 @@
             <input type="number" name="mocha-qty" min="0" max="15" value="0">
           </label>
 
-          <label>Size:
+          <label>Size: <span style="color:red">*</span>
             <select name="mocha-size" required>
               <option value="">-- Select Size --</option>
               <option>Small</option>
@@ -831,6 +832,7 @@
               <option>Extra Ice</option>
             </select>
           </label>
+
           <label>Cold Foam:
             <select name="mocha-cold-foam">
             <option>No Cold Foam</option>
@@ -869,7 +871,8 @@
             Quantity:
             <input type="number" name="espresso-macchiato-qty" min="0" max="15" value="0">
           </label>
-          <label>Size:
+
+          <label>Size: <span style="color:red">*</span>
             <select name="espresso-macchiato-size" required>
               <option value="">-- Select Size --</option>
               <option>Small</option>
@@ -959,7 +962,7 @@
             Quantity:
             <input type="number" name="caramel-macchiato-qty" min="0" max="15" value="0">
           </label>
-          <label>Size:
+          <label>Size: <span style="color:red">*</span>
             <select name="caramel-macchiato-size" required>
               <option value="">-- Select Size --</option>
               <option>Small</option>
@@ -1055,7 +1058,7 @@
             <input type="number" name="black-qty" min="0" max="15" value="0">
           </label>
             
-          <label>Size:
+          <label>Size: <span style="color:red">*</span>
             <select name="black-size" required>
               <option value="">-- Select Size --</option>
               <option>Small</option>
@@ -1122,7 +1125,8 @@
             Quantity:
             <input type="number" name="green-qty" min="0" max="15" value="0">
           </label>
-            <label>Size:
+
+            <label>Size: <span style="color:red">*</span>
             <select name="green-size" required>
               <option value="">-- Select Size --</option>
               <option>Small</option>
@@ -1189,7 +1193,8 @@
             Quantity:
             <input type="number" name="hibiscus-qty" min="0" max="15" value="0">
           </label>
-            <label>Size:
+
+            <label>Size: <span style="color:red">*</span>
             <select name="hibiscus-size" required>
               <option value="">-- Select Size --</option>
               <option>Small</option>
@@ -1260,7 +1265,8 @@
             Quantity:
             <input type="number" name="strawberry-hibiscus-qty" min="0" max="15" value="0">
           </label>
-            <label>Size:
+
+            <label>Size: <span style="color:red">*</span>
             <select name="strawberry-hibiscus-size" required>
               <option value="">-- Select Size --</option>
               <option>Small</option>
@@ -1326,7 +1332,8 @@
             Quantity:
             <input type="number" name="dragon-passion-qty" min="0" max="15" value="0">
           </label>    
-        <label>Size:
+
+        <label>Size: <span style="color:red">*</span>
             <select name="dragon-passion-size" required>
               <option value="">-- Select Size --</option>
               <option>Small</option>
@@ -1392,7 +1399,8 @@
             Quantity:
             <input type="number" name="pom-black-mango-qty" min="0" max="15" value="0">
           </label>    
-            <label>Size:
+
+            <label>Size: <span style="color:red">*</span>
             <select name="pom-black-mango-size" required>
               <option value="">-- Select Size --</option>
               <option>Small</option>
@@ -1458,7 +1466,8 @@
             Quantity:
             <input type="number" name="blueberry-qty" min="0" max="15" value="0">
           </label>  
-            <label>Size:
+
+            <label>Size: <span style="color:red">*</span>
             <select name="blueberry-size" required>
               <option value="">-- Select Size --</option>
               <option>Small</option>
