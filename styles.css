@@ -208,7 +208,7 @@ nav input[type="checkbox"], nav label {
   top: 0;
   left: 0;
 
-  transition: translate /*left*/ var(--animation-timing);
+  transition: left var(--animation-timing);
   translate: -100%;
   padding: 0.5rem 1rem;
   padding-top: calc(var(--hamburger-height) + var(--hamburger-margin) + 1rem);
