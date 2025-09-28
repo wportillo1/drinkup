@@ -256,6 +256,12 @@ nav input[type="checkbox"], nav label {
   left: 0;
 }
 
+#menu-toggle:checked ~ .sidebar {
+  translate: 0;
+  left: 0;
+}
+
+
 .bobatwo {
   background-image: url(https://thumbs.dreamstime.com/b/two-friends-sharing-colorful-bubble-tea-tapioca-pearls-sunny-day-against-vibrant-blue-sky-perfect-summer-refreshment-330037590.jpg);
   position: relative;
