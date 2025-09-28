@@ -239,7 +239,7 @@ nav input[type="checkbox"], nav label {
   color: var(--foreground);
   text-decoration: none;
   display: block;
-  transition: background 0.2s
+  transition: background 0.2s;
 }
 
 .sidebar ul li a:hover {
