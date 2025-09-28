@@ -404,3 +404,27 @@ button {
 button:hover {
   box-shadow: var(--button-box-shadow);
 }
+
+.collapsible {
+  background-color: var(--sidebar-background);
+  color: var(--foreground);
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 14px;
+}
+
+.active, .collapsible:hover {
+  background-color: (var(--background));
+}
+
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-in-out;
+  background-color: var(--foreground);
+}

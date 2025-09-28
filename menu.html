@@ -72,6 +72,7 @@ function removeCustomization(drink) {
       <!--ORIGINAL-->
 
       <!--collapsible button hopefully-->
+      <div class="drink-option">
       <button type="button" class="drink-option" onclick="toggleCustomization('original')">Original</button>
         
       <div id="original-customization" class="customization hidden">
@@ -89,6 +90,24 @@ function removeCustomization(drink) {
             </select>
           </label>
 
+          <button type="button" class="sub-toggle" onclick="toggleSubmenu('original-ice')">Ice Options</button>
+          <div class="content">
+            <button class="collapsible">Ice Options</button>
+            <div class="content">
+
+              <select name="original-ice">
+              <option>Regular Ice</option>
+              <option>No Ice</option>
+              <option>Light Ice</option>
+              <option>Extra Ice</option>
+              </select>
+
+            </div>
+          </div>
+
+          <!--
+          <fieldset id="original-ice" class="hidden">
+            <legend>Ice</legend>
           <label>Ice:
             <select name="original-ice">
               <option>Regular Ice</option>
@@ -96,6 +115,7 @@ function removeCustomization(drink) {
               <option>Light Ice</option>
               <option>Extra Ice</option>
             </select>
+          </label> -->
 
           <label>Sweetness:
             <select name="original-sweetness">
