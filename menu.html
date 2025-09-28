@@ -8,6 +8,36 @@
   <link rel="stylesheet" href="styles.css">
   <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
 </head> 
+<script>
+function toggleCustomization(drink) {
+  const section = document.getElementById(drink + '-customization');
+  const qtyInput = section.querySelector('input[type="number"]');
+
+  if (section.classList.contains('hidden')) {
+    // Show customization + set min to 1
+    section.classList.remove('hidden');
+    qtyInput.min = 1;
+    if (parseInt(qtyInput.value) < 1) {
+      qtyInput.value = 1;
+    }
+  } else {
+    // Hide customization + reset min back to 0
+    section.classList.add('hidden');
+    qtyInput.min = 0;
+    qtyInput.value = 0;
+  }
+}
+
+function removeCustomization(drink) {
+  const section = document.getElementById(drink + '-customization');
+  const qtyInput = section.querySelector('input[type="number"]');
+
+  section.classList.add('hidden');
+  qtyInput.min = 0;
+  qtyInput.value = 0;
+}
+</script>
+
 <body>
   <nav>
     <ul>
