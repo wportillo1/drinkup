@@ -90,8 +90,6 @@ function removeCustomization(drink) {
             </select>
           </label>
 
-          <button type="button" class="sub-toggle" onclick="toggleSubmenu('original-ice')">Ice Options</button>
-          <div class="content">
             <button class="collapsible">Ice Options</button>
             <div class="content">
 
@@ -117,7 +115,8 @@ function removeCustomization(drink) {
             </select>
           </label> -->
 
-          <label>Sweetness:
+            <button class="collapsible">Sweetness Options</button>
+            <div class="content">
             <select name="original-sweetness">
               <option>100%</option>
               <option>75%</option>
@@ -125,9 +124,12 @@ function removeCustomization(drink) {
               <option>25%</option>
               <option>0%</option>
             </select>
-          </label>
+            </div>
+          </div>
 
-          <label>Cold Foam:
+            <button class="collapsible">Cold Foam</button>
+            <div class="content">
+
             <select name="original-cold-foam">
             <option>No Cold Foam</option>
             <option>Vanilla Cold Foam</option>
@@ -137,10 +139,12 @@ function removeCustomization(drink) {
             <option>Raspberry Cold Foam</option>
             <option>Salted Caramel Cold Foam</option>
             <option>Strawberry Cold Foam</option>
-          </select>
-          </label>
+            </select>
+            </div>
+          </div>
 
-          <fieldset>
+          <button class="collapsible">+ Toppings</button>
+          <fieldset id="original-toppings" class="hidden">
             <legend>Toppings</legend>
             <label><input type="checkbox" name="original-toppings[]" value="chocolate-drizzle">Chocolate Drizzle</label>
             <label><input type="checkbox" name="original-toppings[]" value="caramel-drizzle"> Caramel Drizzle</label>
@@ -176,7 +180,9 @@ function removeCustomization(drink) {
             </select>
           </label>
 
-          <label>Ice:
+          <button class="collapsible">Ice Options</button>
+            <div class="content">
+            <label>Ice:
             <select name="jasmine-green-ice">
               <option>Regular Ice</option>
               <option>No Ice</option>
@@ -185,6 +191,8 @@ function removeCustomization(drink) {
             </select>
           </label>
 
+          <button class="collapsible">Sweetness</button>
+            <div class="content">
           <label>Sweetness:
             <select name="jasmine-green-sweetness">
               <option>100%</option>
@@ -194,7 +202,10 @@ function removeCustomization(drink) {
               <option>0%</option>
             </select>
           </label>
+            </div>
 
+          <button class="collapsible">Cold Foam</button>
+            <div class="content">
           <label>Cold Foam:
             <select name="jasmine-green-cold-foam">
             <option>No Cold Foam</option>
@@ -207,8 +218,10 @@ function removeCustomization(drink) {
             <option>Strawberry Cold Foam</option>
           </select>
           </label>
+            </div>
 
-          <fieldset>
+            <button class="collapsible">Ice Options</button>
+          <fieldset id="jasmine-green-toppings" class="hidden">
             <legend>Toppings</legend>
             <label><input type="checkbox" name="jasmine-green-toppings[]" value="chocolate-drizzle">Chocolate Drizzle</label>
             <label><input type="checkbox" name="jasmine-green-toppings[]" value="caramel-drizzle"> Caramel Drizzle</label>
@@ -242,6 +255,8 @@ function removeCustomization(drink) {
             </select>
           </label>
 
+          <button class="collapsible">Ice Options</button>
+            <div class="content">
           <label>Ice:
             <select name="oolong-ice">
               <option>Regular Ice</option>
@@ -250,7 +265,10 @@ function removeCustomization(drink) {
               <option>Extra Ice</option>
             </select>
           </label>
+            </div>
 
+            <button class="collapsible">Sweetness</button>
+            <div class="content">
           <label>Sweetness:
             <select name="oolong-sweetness">
               <option>100%</option>
@@ -260,6 +278,7 @@ function removeCustomization(drink) {
               <option>0%</option>
             </select>
           </label>
+          </div>
 
           <label>Cold Foam:
             <select name="oolong-cold-foam">
