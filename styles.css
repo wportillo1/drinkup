@@ -428,3 +428,9 @@ button:hover {
   transition: max-height 0.2s ease-in-out;
   background-color: var(--foreground);
 }
+
+footer {
+  font-size: xx-small;
+  background-color: var(--sidebar-background);
+  color: var(--foreground);
+}
