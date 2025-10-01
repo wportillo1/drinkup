@@ -330,6 +330,12 @@ nav input[type="checkbox"], nav label {
   border: none;
 }
 
+table {
+  border: none;
+  text-align: center;
+  justify-content: space-between;
+}
+
 .customization {
   margin-left: 20px;
   margin-bottom: 10px;
