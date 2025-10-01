@@ -70,6 +70,7 @@ nav {
   color: var(--foreground);
   display: flex;
   justify-content: space-between;
+  margin-top: 0;
 }
 
 
