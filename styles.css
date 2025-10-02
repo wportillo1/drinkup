@@ -303,11 +303,10 @@ nav input[type="checkbox"], nav label {
   cursor: pointer;
   border-radius: 15px;
   text-align: center;
-  
+  border: solid var(--foreground);
 }
 
 .bobatwo .btn:hover {
-  border: solid var(--foreground);
   box-shadow: var(--button-box-shadow);
 }
 
