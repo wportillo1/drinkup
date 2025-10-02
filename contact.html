@@ -27,8 +27,33 @@
     </aside>
   </nav>
     <!--get in touch paragraph-->
-    
+    <h1>Tell us what's wrong?</h1>
+    <p>Question, suggestion or comment to leave? Please let us know! Someone from our team will reach out to you soon!</p>
     <!--FORM-->
+    <form action="my_account.html" method="post">
+
+    <p>
+      <label for="name">First Name:</label>
+      <input type="text" name="firstName" id="firstName" maxlength="50" required>
+    </p>
+
+    <p>
+      <label for="name">Last Name:</label>
+      <input type="text" name="lastName" id="firstName" maxlength="50" required>
+    </p>
+
+    <p>
+      <label for="emailAddr">Email Address:</label>
+      <input type="email" name="emailAddr" id="emailAddr" required>
+    </p>
+    <p> 
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="4" cols="50" placeholder="Tell us what's on your mind..."></textarea>
+    </p>
+    <p>
+    <input type="submit">
+    </p>
+  </form>
     <!--first name-->
     <!--last name-->
     <!--reason-->
