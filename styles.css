@@ -81,10 +81,12 @@ nav {
   color: var(--foreground);
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 100%;
   margin: 0;
   left: 0;
   right: 0;
+  position: relative;
 }
 
 
@@ -162,7 +164,7 @@ nav input[type="checkbox"], nav label {
   position: absolute;
   top: var(--hamburger-margin);
   left: var(--hamburger-margin);
-  z-index: 2;
+  z-index: 100;
   cursor: pointer;
 
   background-color: var(--sidebar-background);
@@ -198,24 +200,27 @@ nav input[type="checkbox"], nav label {
     background-color var(--animation-timing);
 }
 
-.hamburger-menu input{
+.hamburger-menu input {
   appearance: none;
   padding: 0px;
   margin: 0px;
   outline: none;
   pointer-events: none;
+  display: none;
 }
 
 .bar1, .bar2, .bar3 { 
-  width: 25px;
-  height: 3px;
+  width: var(--bar-width);
+  height: var(--hamburger-height);
   background-color: var(--foreground); 
+  margin: 5x 0;
   border-radius: 2px; 
   transition: 0.3s; 
+  transform-origin: center;
 }
 
 .hamburger-menu input:checked ~ .bar1 {
-  transform: rotate(45deg) translate(5px, 5px);
+  transform: rotate(45deg) translate(6px, 6px);
 }
 
 .hamburger-menu input:checked ~ .bar2 {
@@ -229,7 +234,9 @@ nav input[type="checkbox"], nav label {
 .sidebar {
   position: fixed;
   top: 0;
-  left: 0;
+  left: -250px;
+  width: 250px;
+  height: 100%;
 
   transition: left var(--animation-timing);
   translate: -100%;
@@ -237,8 +244,6 @@ nav input[type="checkbox"], nav label {
   padding-top: calc(var(--hamburger-height) + var(--hamburger-margin) + 1rem);
   background-color: var(--sidebar-background);
   color: var(--foreground);
-  max-width: 12rem;
-  min-height: 100vh;
   z-index: 2;
 
   /*position: fixed;
@@ -260,7 +265,7 @@ nav input[type="checkbox"], nav label {
 }
 
 .sidebar ul li {
-  padding: 15px 30px;
+  padding: 15px 20px;
 }
 
 .sidebar ul li a {
