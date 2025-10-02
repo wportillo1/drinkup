@@ -449,3 +449,11 @@ footer {
   padding: 10px;
   margin-top: auto;
 }
+
+footer img {
+  width: 30px;      /* pick a consistent size */
+  height: 30px;     /* force same height */
+  object-fit: contain; /* keeps the logo’s proportions */
+  margin: 0 8px;    /* space between icons */
+  vertical-align: middle; /* aligns icons nicely with text */
+}
