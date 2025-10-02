@@ -308,6 +308,9 @@ nav input[type="checkbox"], nav label {
   border-radius: 15px;
   text-align: center;
   border: solid var(--foreground);
+
+  width: 50px;
+  height: auto;
 }
 
 .bobatwo .btn:hover {
