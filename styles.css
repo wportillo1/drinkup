@@ -19,7 +19,7 @@
 }
 
 body {
-  margin: 0 auto;
+  margin: 0;
   max-width: 100%;
   font-family: 'Poppins',
   sans-serif;
@@ -27,7 +27,6 @@ body {
   font-size: 18px;
   color: var(--foreground);
   background-color: var(--background);
-  padding: 20px;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -36,7 +35,7 @@ body {
 
 main {
   margin: 1em auto;
-  padding: 1em;
+  padding: 20px;
   flex: 1;
 }
 
@@ -51,6 +50,11 @@ h1 + p{
 }
 
 h1 {
+  text-align: center;
+}
+
+.text h1 {
+  width: 100%;
   text-align: center;
 }
 
@@ -148,13 +152,18 @@ nav input[type="checkbox"], nav label {
 
   display: flex;
   flex-direction: column;
+  justify-content: center;
   gap: var(--hamburger-gap);
+  padding: 10px;
   width: max-content;
   position: absolute;
   top: var(--hamburger-margin);
   left: var(--hamburger-margin);
   z-index: 2;
   cursor: pointer;
+
+  background-color: var(--sidebar-background);
+  border-radius: 5px;
 }
 
 .hamburger-menu:has(input:checked) {
@@ -194,21 +203,16 @@ nav input[type="checkbox"], nav label {
   pointer-events: none;
 }
 
-.hamburger-menu:has(input:checked)::before {
-  rotate: 45deg;
-  width: var(--x-width);
-  translate: 0 calc(var(--bar-height) / -2);
+.hamburger-menu input:checked ~ .bar1 {
+  transform: rotate(45deg) translate(5px, 5px);
 }
 
-.hamburger-menu:has(input:checked)::after {
-  rotate: -45deg;
-  width: var(--x-width);
-  translate: 0 calc(var(--bar-height) / 2);
-}
-
-.hamburger-menu input:checked{
+.hamburger-menu input:checked ~ .bar2 {
   opacity: 0;
-  width: 0;
+}
+
+.hamburger-menu input:checked ~ .bar3 {
+  transform: rotate(-45deg) translate(6px, -6px);
 }
 
 .sidebar {
@@ -310,31 +314,15 @@ nav input[type="checkbox"], nav label {
   box-shadow: var(--button-box-shadow);
 }
 
-.parent {
-  position: relative;
-  top: 0;
-  left: 0;
+.images {
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px;
 }
 
-.milktea {
-  position: relative;
-  top: 0;
-  left: 0;
-  border: none;
-}
-
-.treat {
-  position: absolute;
-  top: 30px;
-  left: 30px;
-  border: none;
-}
-
-.treat {
-  position: absolute;
-  top: 15px;
-  left: 45px;
-  border: none;
+.images img {
+  max-width: 150px;
+  height: auto;
 }
 
 table {
