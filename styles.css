@@ -23,13 +23,14 @@ body {
   max-width: 100%;
   font-family: 'Poppins',
   sans-serif;
-  line-height: 1em;
   font-size: 18px;
   color: var(--foreground);
   background-color: var(--background);
   height: 100%;
   display: flex;
   flex-direction: column;
+
+  /*  line-height: 1em;*/
 }
 
 
@@ -51,6 +52,7 @@ h1 + p{
 
 h1 {
   text-align: center;
+  margin: 20px 0;
 }
 
 .text h1 {
@@ -203,6 +205,14 @@ nav input[type="checkbox"], nav label {
   pointer-events: none;
 }
 
+.bar1, .bar2, .bar3 { 
+  width: 25px;
+  height: 3px;
+  background-color: var(--foreground); 
+  border-radius: 2px; 
+  transition: 0.3s; 
+}
+
 .hamburger-menu input:checked ~ .bar1 {
   transform: rotate(45deg) translate(5px, 5px);
 }
@@ -291,6 +301,7 @@ nav input[type="checkbox"], nav label {
 .bobatwo img {
   width:100%;
   height: auto;
+  display: block;
 }
 
 .bobatwo .btn {
@@ -308,9 +319,6 @@ nav input[type="checkbox"], nav label {
   border-radius: 15px;
   text-align: center;
   border: solid var(--foreground);
-
-  width: 50px;
-  height: auto;
 }
 
 .bobatwo .btn:hover {
@@ -321,6 +329,7 @@ nav input[type="checkbox"], nav label {
   display: flex;
   justify-content: flex-start;
   gap: 20px;
+  margin-top: 20px;
 }
 
 .images img {
@@ -442,9 +451,9 @@ footer {
 }
 
 footer img {
-  width: 30px;      /* pick a consistent size */
-  height: 30px;     /* force same height */
+  width: 20px;      /* pick a consistent size */
+  height: 20px;     /* force same height */
   object-fit: contain; /* keeps the logo’s proportions */
-  margin: 0 8px;    /* space between icons */
+  margin: 0 5px;    /* space between icons */
   vertical-align: middle; /* aligns icons nicely with text */
 }
