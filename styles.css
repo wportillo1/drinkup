@@ -217,6 +217,26 @@ nav input[type="checkbox"], nav label {
     background-color var(--animation-timing);
 }*/
 
+.hamburger-menu::before,
+.hamburger-menu::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: var(--bar-width);
+  height: var(--bar-height);
+  background: var(--foreground);
+  border-radius: 2px;
+  transition: var(--animation-timing);
+}
+
+.hamburger-menu::before {
+  top: calc(-1 * (var(--hamburger-gap) + var(--hamburger-height)));
+}
+
+.hamburger-menu::after {
+  top: calc((var(--hamburger-gap) + var(--hamburger-height)));
+}
+
 .hamburger-menu input {
   appearance: none;
   padding: 0px;
@@ -226,7 +246,23 @@ nav input[type="checkbox"], nav label {
   display: none;
 }
 
-.bar1, .bar2, .bar3 { 
+#menu-toggle {
+  display: none;
+}
+
+#menu-toggle:checked + .hamburger-menu {
+  background: transparent;
+}
+
+#menu-toggle:checked + .hamburger::before {
+  transform: rotate(45deg) translate(6px, 6px);
+}
+
+#menu-toggle:checked + .hamburger::after {
+  transform: rotate(-45deg) translate(6px, -6px);
+}
+
+/*.bar1, .bar2, .bar3 { 
   width: var(--bar-width);
   height: var(--bar-height);
   background-color: var(--foreground); 
@@ -235,7 +271,6 @@ nav input[type="checkbox"], nav label {
   transition: 0.3s; 
   transform-origin: center;
 }
-
 .hamburger-menu input:checked ~ .bar1 {
   transform: rotate(45deg) translate(6px, 6px);
 }
@@ -246,7 +281,7 @@ nav input[type="checkbox"], nav label {
 
 .hamburger-menu input:checked ~ .bar3 {
   transform: rotate(-45deg) translate(6px, -6px);
-}
+}*/
 
 .sidebar {
   position: fixed;
