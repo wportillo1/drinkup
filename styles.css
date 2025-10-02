@@ -44,6 +44,7 @@ h1,
 h2,
 h3 {
    line-height: 1;
+   color: var(--foreground);
 }
 
 h1 + p{
@@ -356,7 +357,8 @@ form {
 fieldset {
   border: 2px solid var(--foreground); 
   border-radius: 10px; 
-  padding: 15px; 
+  padding: 10px; 
+  margin: 10px 0;
 }
 
 legend { 
@@ -365,6 +367,17 @@ legend {
 
 .drink-option {
   margin-bottom: 1em; 
+  padding: 10px 15px;
+  font-size: 16px;
+  background: var(--background);
+  color: var(--foreground);
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.drink-option:hover {
+  box-shadow: var(--button-box-shadow);
 }
 
 .hidden {
@@ -373,12 +386,19 @@ legend {
 
 .customization { 
   margin-left: 1em; 
-  margin-top: 10px; 
-  padding-left: 10px; 
+  padding: 12px; 
   border: 1px dashed var(--foreground);
   border-radius: 8px;
   border-left: none; 
-  background: #141414;
+  background: var(--sidebar-background);
+
+  /*  margin-top: 10px; 
+*/
+}
+
+.customization label {
+  display: block;
+  margin: 6px 0;
 }
 
 .customization button {
@@ -391,24 +411,23 @@ legend {
   cursor: pointer;
 }
 
-label {
-  display: block; 
-  margin: 4px 0; 
+select, input[type="number"] {
+  margin-top: 5px;
 }
 
 input[type="number"] {
    width: 60px; 
   }
 
-button {
+.remove-btn {
   display: block; 
-  margin: 20px auto; 
-  padding: 10px 20px; 
+  margin: 10px auto; 
+  padding: 6px 12px; 
   font-size: 16px; 
   background: transparent; 
   color: var(--foreground); 
-  border: var(--foreground); 
-  border-radius: 5px; 
+  border: none; 
+  border-radius: 6px; 
   cursor: pointer; 
 }
 
@@ -417,27 +436,35 @@ button:hover {
 }
 
 .collapsible {
-  background-color: var(--sidebar-background);
+  background-color: var(--sidebar-background, #333);
   color: var(--foreground);
   cursor: pointer;
-  padding: 18px;
+  padding: 8px;
   width: 100%;
   border: none;
   text-align: left;
   outline: none;
   font-size: 14px;
+  margin: 5px 0;
+  border-radius: 4px;
 }
 
-.active, .collapsible:hover {
+.collapsible.active, .collapsible:hover {
   background-color: (var(--background));
 }
 
 .content {
-  padding: 0 18px;
+  padding: 0 12px;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-in-out;
   background-color: var(--foreground);
+  border-radius: 4px;
+}
+
+.active + .content {
+  max-height: 500px;
+  padding: 10px;
 }
 
 footer {
