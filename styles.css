@@ -638,7 +638,7 @@ footer {
   background-color: var(--sidebar-background);
   color: var(--foreground);
   width: 100vw;
-  text-align: center left;
+  text-align: center;
   padding: 10px;
   margin-top: auto;
 }
@@ -648,5 +648,6 @@ footer img {
   height: 20px;     /* force same height */
   object-fit: contain; /* keeps the logo’s proportions */
   margin: 224 5px;    /* space between icons */
-  vertical-align: right; /* aligns icons nicely with text */
+  vertical-align: center; /* aligns icons nicely with text */
+  float: right;
 }
