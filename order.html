@@ -37,64 +37,77 @@
 
   <!-- Milk Bubble Tea Section -->
   <h2>Milk Bubble Tea</h2> 
-    <button type="button" class="drink-option" onclick="toggleCustomization('original')">Original</button> 
+
+  <!--ORIGINAL-->
+    <button class="collapsible">Original</button> 
     <div id="original-customization" class="customization"> 
       <label>Size: <span style="color:red">*</span> 
         <select required> 
           <option value="">-- Select Size --</option> 
-          <option>Small</option><option>Medium</option>
+          <option>Small</option>
+          <option>Medium</option>
           <option>Large</option> 
+          <option>Extra Large</option> 
         </select> 
       </label> 
-          <button type="button" class="collapsible">Cold Foam</button> 
-          <div class="content"> 
-            <select> 
-              <option>None</option>
-               <option>Vanilla</option> 
-               <option>Matcha</option> 
-               <option>Brown Sugar</option> 
-               <option>Chocolate</option> 
-               <option>Raspberry</option> 
-               <option>Salted Caramel</option> 
-               <option>Strawberry</option> 
-              </select> 
-            </div> 
-              <button type="button" class="collapsible">Toppings</button> 
-              <div class="content"> <label><input type="checkbox" value="chocolate"> Chocolate Drizzle</label> 
-                <label><input type="checkbox" value="caramel"> Caramel Drizzle</label> 
-                <label><input type="checkbox" value="white-chocolate"> White Chocolate Drizzle</label> 
-                <label><input type="checkbox" value="whipped-cream"> Whipped Cream</label> 
-                <label><input type="checkbox" value="tapioca"> Tapioca Boba</label> 
-                <label><input type="checkbox" value="mango"> Mango Boba</label> 
-                <label><input type="checkbox" value="peach"> Peach Boba</label> 
-                <label><input type="checkbox" value="lychee"> Lychee Boba</label> 
-                <label><input type="checkbox" value="strawberry"> Strawberry Boba</label> 
-                <label><input type="checkbox" value="passionfruit"> Passionfruit Boba</label> 
-                <label><input type="checkbox" value="kiwi"> Kiwi Boba</label> 
-                <label><input type="checkbox" value="blueberry"> Blueberry Boba</label> 
-              </div> 
-              <button type="button" class="collapsible">Sweetness</button> 
-              <div class="content"> 
-                <select> 
-                  <option>100%</option>
-                  <option>75%</option> 
-                  <option>50%</option>
-                  <option>25%</option>
-                  <option>0%</option> 
-                </select> 
-              </div> 
-              <button type="button" class="collapsible">Ice</button> 
-              <div class="content"> 
-                <select> 
-                  <option>Regular Ice</option> 
-                  <option>No Ice</option> 
-                  <option>Light Ice</option> 
-                  <option>Extra Ice</option> 
-                </select> 
-              </div> 
-            </div> 
+      
+      <button class="collapsible">Ice</button> 
+      <div class="content"> 
+        <select> 
+          <option>Regular Ice</option> 
+          <option>No Ice</option> 
+          <option>Light Ice</option> 
+          <option>Extra Ice</option> 
+        </select> 
+      </div> 
+
+      <button class="collapsible">Sweetness</button> 
+        <div class="content"> 
+          <select> 
+            <option>100%</option>
+            <option>75%</option> 
+            <option>50%</option>
+            <option>25%</option>
+            <option>0%</option> 
+          </select> 
+        </div> 
+
+        <button class="collapsible">Cold Foam</button> 
+        <div class="content"> 
+          <select> 
+            <option>None</option>
+            <option>Vanilla</option> 
+            <option>Matcha</option> 
+            <option>Brown Sugar</option> 
+            <option>Chocolate</option> 
+            <option>Raspberry</option> 
+            <option>Salted Caramel</option> 
+            <option>Strawberry</option> 
+          </select> 
+        </div> 
+
+        <button type="button" class="collapsible">Toppings</button> 
+        <div class="content"> 
+          <label><input type="checkbox" value="chocolate"> Chocolate Drizzle</label> 
+          <label><input type="checkbox" value="caramel"> Caramel Drizzle</label> 
+          <label><input type="checkbox" value="white-chocolate"> White Chocolate Drizzle</label> 
+          <label><input type="checkbox" value="whipped-cream"> Whipped Cream</label> 
+          <label><input type="checkbox" value="tapioca"> Tapioca Boba</label> 
+          <label><input type="checkbox" value="mango"> Mango Boba</label> 
+          <label><input type="checkbox" value="peach"> Peach Boba</label> 
+          <label><input type="checkbox" value="lychee"> Lychee Boba</label> 
+          <label><input type="checkbox" value="strawberry"> Strawberry Boba</label> 
+          <label><input type="checkbox" value="passionfruit"> Passionfruit Boba</label> 
+          <label><input type="checkbox" value="kiwi"> Kiwi Boba</label> 
+          <label><input type="checkbox" value="blueberry"> Blueberry Boba</label> 
+        </div> 
+      </div> 
             
-            <!-- Repeat structure for Jasmine Green, Oolong, Rose Oolong, White Peach Oolong, Sakura Oolong, Taro, Matcha --> <!-- Coffee Section --> <h2>Coffee</h2> <button type="button" class="drink-option" onclick="toggleCustomization('latte')">Latte</button> <div id="latte-customization" class="customization"> <label>Size: <span style="color:red">*</span> <select required> <option value="">-- Select Size --</option> <option>Small</option><option>Medium</option><option>Large</option> </select> </label> <button type="button" class="collapsible">Espresso Options</button> <div class="content"> <select> <option>Signature Espresso</option> <option>Blonde Espresso</option> <option>Decaf</option> <option>1/2 Decaf</option> <option>1/3 Decaf</option> <option>2/3 Decaf</option> </select> </div> <button type="button" class="collapsible">Milk</button> <div class="content"> <select> <option>2%</option><option>Whole</option><option>Nonfat</option> <option>Almond</option><option>Coconut</option> <option>Oatmilk</option><option>Soy</option> <option>Heavy Cream</option> </select> </div> <!-- Cold Foam, Toppings, Sweetness, Ice (same as Milk Tea) --> </div> <!-- Repeat for Cappuccino, Mocha, Espresso Macchiato, Caramel Macchiato --> <!-- Tea Section --> <h2>Tea</h2> <!-- Similar customization as Milk Bubble Tea but without espresso/milk --> <!-- Refreshers Section --> <h2>Refreshers</h2> <!-- Similar customization --> <!-- Treat Section --> <h2>Treats</h2> <ul> <li>Bagel</li> <li>Marble Loaf</li> <li>Chocolate Croissant</li> <li>Cheese Danish</li> </ul>
+            <!-- Repeat structure for Jasmine Green, Oolong, Rose Oolong, White Peach Oolong, Sakura Oolong, Taro, Matcha --> 
+             
+            <!-- Coffee Section --> 
+             
+            <h2>Coffee</h2> <button type="button" class="drink-option" onclick="toggleCustomization('latte')">Latte</button> <div id="latte-customization" class="customization"> <label>Size: <span style="color:red">*</span> <select required> <option value="">-- Select Size --</option> <option>Small</option><option>Medium</option><option>Large</option> </select> </label> <button type="button" class="collapsible">Espresso Options</button> <div class="content"> <select> <option>Signature Espresso</option> <option>Blonde Espresso</option> <option>Decaf</option> <option>1/2 Decaf</option> <option>1/3 Decaf</option> <option>2/3 Decaf</option> </select> </div> <button type="button" class="collapsible">Milk</button> <div class="content"> <select> <option>2%</option><option>Whole</option><option>Nonfat</option> <option>Almond</option><option>Coconut</option> <option>Oatmilk</option><option>Soy</option> <option>Heavy Cream</option> </select> </div> <!-- Cold Foam, Toppings, Sweetness, Ice (same as Milk Tea) --> </div> <!-- Repeat for Cappuccino, Mocha, Espresso Macchiato, Caramel Macchiato --> <!-- Tea Section --> <h2>Tea</h2> <!-- Similar customization as Milk Bubble Tea but without espresso/milk --> <!-- Refreshers Section --> <h2>Refreshers</h2> <!-- Similar customization --> <!-- Treat Section --> <h2>Treats</h2> <ul> <li>Bagel</li> <li>Marble Loaf</li> <li>Chocolate Croissant</li> <li>Cheese Danish</li> </ul>
   
   <script> function toggleCustomization(drink) { const el = document.getElementById(drink + "-customization"); el.style.display = (el.style.display === "block") ? "none" : "block"; } // Collapsible menus document.addEventListener("click", function(e) { if (e.target.classList.contains("collapsible")) { e.target.classList.toggle("active"); let content = e.target.nextElementSibling; if (content.style.maxHeight) { content.style.maxHeight = null; } else { content.style.maxHeight = content.scrollHeight + "px"; } } }); </script>
             <!--FOOTER-->

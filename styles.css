@@ -91,11 +91,9 @@ nav {
   justify-content: center;
   align-items: center;
   width: 100%;
-  margin: 0;
-  left: 0;
-  right: 0;
   height: var(--nav-height);
   position: relative;
+  padding: 10px 20px;
 }
 
 nav a {
@@ -182,6 +180,7 @@ nav input[type="checkbox"], nav label {
   left: var(--hamburger-margin);
   z-index: 100;
   cursor: pointer;
+  border-radius: 6px;
 
   background-color: var(--sidebar-background);
   border-radius: 5px;
@@ -246,23 +245,7 @@ nav input[type="checkbox"], nav label {
   display: none;
 }
 
-#menu-toggle {
-  display: none;
-}
-
-#menu-toggle:checked + .hamburger-menu {
-  background: transparent;
-}
-
-#menu-toggle:checked + .hamburger::before {
-  transform: rotate(45deg) translate(6px, 6px);
-}
-
-#menu-toggle:checked + .hamburger::after {
-  transform: rotate(-45deg) translate(6px, -6px);
-}
-
-/*.bar1, .bar2, .bar3 { 
+.bar1, .bar2, .bar3 { 
   width: var(--bar-width);
   height: var(--bar-height);
   background-color: var(--foreground); 
@@ -281,7 +264,7 @@ nav input[type="checkbox"], nav label {
 
 .hamburger-menu input:checked ~ .bar3 {
   transform: rotate(-45deg) translate(6px, -6px);
-}*/
+}
 
 .sidebar {
   position: fixed;
@@ -388,7 +371,7 @@ nav input[type="checkbox"], nav label {
 .images {
   display: flex;
   justify-content: flex-start;
-  gap: 20px;
+  gap: 15px;
   margin-top: 20px;
 }
 
@@ -506,10 +489,10 @@ button:hover {
 }
 
 .collapsible {
-  background-color: var(--sidebar-background, #333);
+  background-color: #777;
   color: var(--foreground);
   cursor: pointer;
-  padding: 8px;
+  padding: 14px;
   width: 100%;
   border: none;
   text-align: left;
@@ -520,17 +503,26 @@ button:hover {
 }
 
 .collapsible.active, .collapsible:hover {
-  background-color: (var(--background));
+  background-color: (var(--sidebar-background));
+}
+
+.collapsible:after {
+  content: '\002B';
+  color: var(--foreground);
+  font-weight: bolder;
+  float: right;
+  margin-left: 5px;
+}
+.active:after {
+  content: "\2212"
 }
 
 .content {
-  padding: 0 12px;
+  padding: 0 16px;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-in-out;
-  background-color: var(--foreground);
-  border-left: 2px solid var(--sidebar-background);
-  margin-top: 6px;
+  background-color: #777;
   padding: 0 8px;
   border-radius: 4px;
 }
@@ -544,7 +536,7 @@ button:hover {
   max-height: 224;
   overflow: hidden;
   transition: max-height 0.2 ease-in-out;
-  background-color: var(--background);
+  background-color: #777;
   color: var(--foreground);
   padding: 224 10px;
   border-radius: 4px;
@@ -645,7 +637,7 @@ footer {
   background-color: var(--sidebar-background);
   color: var(--foreground);
   width: 100vw;
-  text-align: center;
+  text-align: center left;
   padding: 10px;
   margin-top: auto;
 }
@@ -655,5 +647,5 @@ footer img {
   height: 20px;     /* force same height */
   object-fit: contain; /* keeps the logo’s proportions */
   margin: 224 5px;    /* space between icons */
-  vertical-align: middle; /* aligns icons nicely with text */
+  vertical-align: right; /* aligns icons nicely with text */
 }
