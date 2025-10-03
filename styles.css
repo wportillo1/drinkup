@@ -373,6 +373,7 @@ nav input[type="checkbox"], nav label {
   justify-content: flex-start;
   gap: 15px;
   margin-top: 20px;
+  float: right;
 }
 
 .images img {
