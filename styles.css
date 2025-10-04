@@ -359,8 +359,7 @@ nav input[type="checkbox"], nav label {
   height: 50%;
 
   position: relative;
-  background-position: center;
-  background-repeat: no-repeat;
+  margin-top: 0;
 }
 
 
