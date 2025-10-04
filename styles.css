@@ -280,7 +280,7 @@ nav input[type="checkbox"], nav label {
 }
 
 .hamburger-menu input:checked ~ .bar1 {
-  transform: rotate(45deg) translate(5px, 5px);
+  transform: rotate(45deg) translate(6px, 6px);
 }
 
 .hamburger-menu input:checked ~ .bar2 {
@@ -289,7 +289,7 @@ nav input[type="checkbox"], nav label {
 }
 
 .hamburger-menu input:checked ~ .bar3 {
-  transform: rotate(-45deg) translate(5px, -5px);
+  transform: rotate(-45deg) translate(6px, -6px);
 }
 
 .sidebar {
@@ -360,7 +360,7 @@ nav input[type="checkbox"], nav label {
 }
 
 
-.bobatwo {
+/*.bobatwo {
   background-image: url();
   position: relative;
   height: 50%;
@@ -373,14 +373,15 @@ nav input[type="checkbox"], nav label {
   background-repeat: no-repeat;
   background-size: cover;
 }
+*/
 
-.bobatwo img {
+.boba-banner img {
   width:100%;
   height: auto;
   display: block;
 }
 
-.bobatwo .btn {
+.boba-banner .btn {
   position: absolute;
   top: 70%;
   left: 10%;
@@ -397,7 +398,7 @@ nav input[type="checkbox"], nav label {
   border: solid var(--foreground);
 }
 
-.bobatwo .btn:hover {
+.boba-banner .btn:hover {
   box-shadow: var(--button-box-shadow);
 }
 
