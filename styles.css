@@ -601,6 +601,7 @@ footer {
   padding: 10px;
   margin-top: auto;
   margin-bottom: 0%;
+  justify-content: space-evenly;
 }
 
 footer img {
@@ -610,4 +611,5 @@ footer img {
   margin: 0 5px;    /* space between icons */
   vertical-align: center; /* aligns icons nicely with text */
   float: right;
+  gap: 5px;
 }
