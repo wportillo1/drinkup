@@ -270,8 +270,9 @@ nav input[type="checkbox"], nav label {
   transition: 0.3s ease-in; 
   transform-origin: center;
 }
+
 .hamburger-menu input:checked ~ .bar1 {
-  transform: rotate(45deg) translate(6px, 6px);
+  transform: rotate(45deg) translate(5px, 5px);
 }
 
 .hamburger-menu input:checked ~ .bar2 {
@@ -280,7 +281,7 @@ nav input[type="checkbox"], nav label {
 }
 
 .hamburger-menu input:checked ~ .bar3 {
-  transform: rotate(-45deg) translate(6px, -6px);
+  transform: rotate(-45deg) translate(5px, -5px);
 }
 
 .sidebar {
