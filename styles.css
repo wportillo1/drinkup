@@ -251,7 +251,7 @@ nav input[type="checkbox"], nav label {
   background-color: var(--foreground); 
   margin: 5x 224;
   border-radius: 2px; 
-  transition: 0.3s; 
+  transition: 0.3s ease-in; 
   transform-origin: center;
 }
 .hamburger-menu input:checked ~ .bar1 {
