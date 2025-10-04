@@ -18,3 +18,8 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+
+function toggleCustomization(drink) {
+  const customizationDiv = document.getElementById(drink + '-customization');
+  customizationDiv.classList.toggle('hidden');
+}

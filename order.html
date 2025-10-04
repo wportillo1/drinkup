@@ -37,29 +37,30 @@
 
   <form action="/checkout" method="POST">
   <!-- Example drink -->
-  <button type="button" class="drink-option" onclick="toggleCustomization('latte')">Latte</button>
-  <div id="latte-customization" class="customization hidden">
-    <label>
-      Size:
-      <select name="latte-size" required>
-        <option value="">-- Select Size --</option>
-        <option>Small</option>
-        <option>Medium</option>
-        <option>Large</option>
-      </select>
-    </label>
 
-    <!-- Collapsible options -->
-    <button type="button" class="collapsible">Toppings</button>
-    <div class="content">
-      <label><input type="checkbox" name="latte-toppings[]" value="whipped-cream"> Whipped Cream</label>
-      <label><input type="checkbox" name="latte-toppings[]" value="tapioca"> Tapioca Boba</label>
-    </div>
+   
+  <button type="button" class="drink-option" onclick="toggleCustomization('latte')">
+  Latte
+</button>
+
+<div id="latte-customization" class="customization hidden">
+  <label>
+    Size:
+    <select name="latte-size" required>
+      <option value="">-- Select Size --</option>
+      <option>Small</option>
+      <option>Medium</option>
+      <option>Large</option>
+    </select>
+  </label>
+
+  <!-- Collapsible options -->
+  <button type="button" class="collapsible">Toppings</button>
+  <div class="content hidden">
+    <label><input type="checkbox" name="latte-toppings[]" value="whipped-cream"> Whipped Cream</label>
+    <label><input type="checkbox" name="latte-toppings[]" value="tapioca"> Tapioca Boba</label>
   </div>
-
-  <!-- At the end -->
-  <button type="submit">Place Order</button>
-</form>
+</div>
 
             <!--FOOTER-->
   <footer> 
