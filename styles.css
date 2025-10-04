@@ -356,7 +356,11 @@ nav input[type="checkbox"], nav label {
   background: url(https://thumbs.dreamstime.com/b/two-friends-sharing-colorful-bubble-tea-tapioca-pearls-sunny-day-against-vibrant-blue-sky-perfect-summer-refreshment-330037590.jpg);
   background-size: cover;
   width: 100%;
-  height: 250px;
+  height: 50%;
+
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 
@@ -411,7 +415,7 @@ nav input[type="checkbox"], nav label {
 }
 
 .images img {
-  max-width: 150px;
+  max-width: 200px;
   height: auto;
   float: right;
 }
