@@ -381,6 +381,7 @@ nav input[type="checkbox"], nav label {
 .images img {
   max-width: 150px;
   height: auto;
+  float: right;
 }
 
 table {
@@ -548,86 +549,6 @@ button:hover {
 .content-inner { 
   padding: 10px 0; 
 } 
-.add-cart { 
-  margin-top: 10px; 
-  padding: 8px 12px; 
-  background: var(--foreground); 
-  color: var(--background); 
-  border-radius: 6px; 
-  border: none; 
-  cursor: pointer; 
-} 
-
-.cart { 
-  position: fixed; 
-  right: 18px; 
-  top: 18px; 
-  width: 320px; 
-  max-height: calc(100vh - 36px); 
-  overflow: auto; 
-  background: #0e0e0e; 
-  border: 1px solid rgba(224,224,224,0.04); 
-  padding: 12px; 
-  border-radius: 8px; 
-  box-shadow: 0 8px 30px rgba(0,0,0,0.6); 
-} 
-
-.cart h3 { 
-  margin: 0 0 8px 0; 
-  font-size: 16px; 
-} 
-
-.cart-item { 
-  padding: 8px; 
-  border-bottom: 1px dashed rgba(224,224,224,0.04); 
-  font-size: 14px; 
-} 
-
-.cart-item small { 
-  display: block; 
-  color: rgba(224,224,224,0.6); 
-  margin-top: 6px; 
-} 
-
-.cart-actions { 
-  display:flex; 
-  gap:8px; 
-  margin-top:8px; 
-} 
-
-.cart .btn { 
-  padding:6px 8px; 
-  border-radius:6px; 
-  border:none; 
-  cursor:pointer; 
-} 
-
-.cart .remove { 
-  background:#8b2a2a; 
-  color:white; 
-} 
-
-.cart .clear { 
-  background:#444; 
-  color:white; 
-} 
-
-/* Responsive tweaks */
- @media (max-width: 900px) { 
-  .cart { 
-    position: static; 
-    width: 100%; 
-    margin-top: 16px; 
-  } 
-} 
-
-/* little helper for checkbox lists */ 
-.checkbox-grid { 
-  display:grid; 
-  grid-template-columns: repeat(auto-fit, 
-    minmax(180px, 1fr)); 
-  gap:6px; 
-} 
 
 fieldset { 
   border: 1px solid rgba(224,224,224,0.06); 
@@ -650,7 +571,7 @@ footer img {
   width: 20px;      /* pick a consistent size */
   height: 20px;     /* force same height */
   object-fit: contain; /* keeps the logo’s proportions */
-  margin: 224 5px;    /* space between icons */
+  margin: 0 5px;    /* space between icons */
   vertical-align: center; /* aligns icons nicely with text */
   float: right;
   padding: 5px;
