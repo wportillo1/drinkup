@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Thank You</title>
+  <style>
+    
+  </style>
+</head>
+<body>
+  <h1>Thank You for Your Order!</h1>
+  <p>Here’s what you ordered:</p>
+  <div class="summary" id="orderSummary"></div>
+
+  <a href="index.html">Back to Home</a>
+
+  <script>
+    document.getElementById("orderSummary").textContent = localStorage.getItem("orderSummary");
+  </script>
+</body>
+</html>
