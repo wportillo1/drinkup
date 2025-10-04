@@ -216,7 +216,7 @@ nav input[type="checkbox"], nav label {
     background-color var(--animation-timing);
 }*/
 
-.hamburger-menu::before,
+/*.hamburger-menu::before,
 .hamburger-menu::after {
   content: "";
   position: absolute;
@@ -234,7 +234,7 @@ nav input[type="checkbox"], nav label {
 
 .hamburger-menu::after {
   top: calc((var(--hamburger-gap) + var(--hamburger-height)));
-}
+}*/
 
 .hamburger-menu input {
   appearance: none;
@@ -260,6 +260,7 @@ nav input[type="checkbox"], nav label {
 
 .hamburger-menu input:checked ~ .bar2 {
   opacity: 0;
+  transition: 0s;
 }
 
 .hamburger-menu input:checked ~ .bar3 {
