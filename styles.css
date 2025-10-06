@@ -402,8 +402,8 @@ nav input[type="checkbox"], nav label {
 
 .bobabg .btn {
   position: absolute;
-  bottom: 35%;
-  left: 35%;
+  bottom: 45%;
+  left: 45%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   background-color: var(--foreground, 0.5);
