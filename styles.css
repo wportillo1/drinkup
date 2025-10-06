@@ -1,3 +1,4 @@
+/*BASICS*/
 
 :root {
     --bar-width: 30px;
@@ -176,14 +177,30 @@ nav input[type="checkbox"], nav label {
     padding: 0.5em;
   }
 
+  /*checkout*/
+
   .row {
     flex-direction: column-reverse;
   }
   .col-25 {
     margin-bottom: 20px;
   }
+
+  .col {
+    width: 100%;
+    margin-top: 0;
+  }
+  .vl {
+    display: none;
+  }
+  .hide-md-lg {
+    display: block;
+    text-align: center;
+  }
      
 }
+
+/*hamburger icon*/
 
 .hamburger-menu {
  /* --x-width: calc(var(--hamburger-height) * 1.41421356237);*/
@@ -302,6 +319,8 @@ nav input[type="checkbox"], nav label {
   transform: rotate(-45deg) translate(6px, -6px);
 }
 
+/*SIDE BAR*/
+
 .sidebar {
   position: fixed;
   top: 0;
@@ -362,6 +381,8 @@ nav input[type="checkbox"], nav label {
   left: 0;
 }
 
+/*BOBA IMAGE*/
+
 /*.boba-banner {
   background-size: cover;
   width: 100%;
@@ -420,6 +441,8 @@ button {
   z-index: 10;
 }
 
+/*TREATS for sign up thingy*/
+
 img, .menu-item {
   z-index: 1;
 }
@@ -437,6 +460,8 @@ img, .menu-item {
   height: auto;
   float: right;
 }
+
+/*location and hours thingy*/
 
 table {
   border: none;
@@ -456,6 +481,8 @@ table {
 
   display: block;
   }
+
+  /*ordder*/
 
 form {
    border: none;
@@ -605,10 +632,71 @@ fieldset {
   border-radius: 6px; 
 }
 
-.summary { 
-  margin-top: 20px; 
-  white-space: pre-line; 
+
+/*sign up html*/
+
+#regForm {
+  background-color: var(--background);
+  margin: 100px auto;
+  padding: 40px;
+  width: 70%;
+  min-width: 300px;
 }
+
+input {
+  padding: 10px;
+  width: 100%;
+}
+
+/* Mark input boxes that gets an error on validation: */
+input.invalid {
+  background-color: #04AA6D;
+}
+
+/* Hide all steps by default: */
+.tab {
+  display: none;
+}
+
+button {
+  background-color: var(--sidebar-background);
+  color: var(--foreground);
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+#prevBtn {
+  background-color: var(--hover-color);
+}
+
+/* Make circles that indicate the steps of the form: */
+.step {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: var(--background);
+  border: none;  
+  border-radius: 50%;
+  display: inline-block;
+  opacity: 0.5;
+}
+
+.step.active {
+  opacity: 1;
+}
+
+/* Mark the steps that are finished and valid: */
+.step.finish {
+  background-color: var(--sidebar-background);
+}
+
+/*check out*/
 
 .row {
   display: -ms-flexbox;
@@ -693,6 +781,8 @@ span.price {
   float: right;
   color: var(--foreground);
 }
+
+/*footer*/
 
 footer {
   font-size: xx-small;
