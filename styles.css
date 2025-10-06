@@ -643,7 +643,7 @@ input.invalid {
   display: none;
 }
 
-button {
+.tab button {
   background-color: var(--sidebar-background);
   color: var(--foreground);
   border: none;
