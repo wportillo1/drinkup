@@ -197,7 +197,13 @@ nav input[type="checkbox"], nav label {
     display: block;
     text-align: center;
   }
-     
+
+  /*CAREERS MOBILEEE*/
+  .jobs {
+    width: 100%;
+    display: block;
+  }
+    
 }
 
 /*hamburger icon*/
@@ -765,6 +771,45 @@ hr {
 span.price {
   float: right;
   color: var(--foreground);
+}
+
+/*CAREERSSSSS*/
+
+.careers {
+  float: left;
+  width: 25%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.jobs {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.title {
+  padding: 0 16px;
+}
+
+.title::after, .postings::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.contact {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: var(--foreground);
+  background-color: var(--sidebar-background);
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.contact:hover {
+  background-color: var(--hover-color)
 }
 
 /*footer*/
