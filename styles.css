@@ -799,6 +799,7 @@ footer {
   text-decoration: none;
   margin: 5px 2px;
   border-radius: 50%;
+  float: right;
 }
 
 .fa:hover {
