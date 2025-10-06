@@ -383,6 +383,19 @@ nav input[type="checkbox"], nav label {
 
 /*BOBA IMAGE*/
 
+.bobabg {
+  background-image: url(https://thumbs.dreamstime.com/b/two-friends-sharing-colorful-bubble-tea-tapioca-pearls-sunny-day-against-vibrant-blue-sky-perfect-summer-refreshment-330037590.jpg);
+
+  height: 50%;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+
+
 /*.boba-banner {
   background-size: cover;
   width: 100%;
@@ -393,7 +406,7 @@ nav input[type="checkbox"], nav label {
 }*/
 
 
-.boba-banner {
+/*.boba-banner {
   background: url(https://thumbs.dreamstime.com/b/two-friends-sharing-colorful-bubble-tea-tapioca-pearls-sunny-day-against-vibrant-blue-sky-perfect-summer-refreshment-330037590.jpg) no-repeat top center/cover;
   position: relative;
   height: 50%;
@@ -405,9 +418,9 @@ nav input[type="checkbox"], nav label {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-}
+}*/
 
-.boba-banner img {
+.bobabg img {
   width:100%;
   height: auto;
   display: block;
