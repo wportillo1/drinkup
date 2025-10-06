@@ -391,68 +391,41 @@ nav input[type="checkbox"], nav label {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-}
 
-
-
-
-/*.boba-banner {
-  background-size: cover;
-  width: 100%;
-  height: 300px;
-
-  position: absolute;
-  margin-top: 0;
-}*/
-
-
-/*.boba-banner {
-  background: url(https://thumbs.dreamstime.com/b/two-friends-sharing-colorful-bubble-tea-tapioca-pearls-sunny-day-against-vibrant-blue-sky-perfect-summer-refreshment-330037590.jpg) no-repeat top center/cover;
   position: relative;
-  height: 50%;
-  margin: 0px;
-  margin-top: 0;
-  padding: 0px;
-  border: 0px;
-
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}*/
+  width: 100%;
+}
 
 .bobabg img {
-  width:100%;
+  width: 100%;
   height: auto;
-  display: block;
 }
 
-.boba-banner .btn {
+.bobabg .btn {
   position: absolute;
-  bottom:20px;
-  left: 20px;
-  background-color: transparent;
-  color: var(--foreground);
-  font-size: 16px;
-  padding: 12px 20px;
-  border: 2x solid var(--foreground);
-  cursor: pointer;
-  border-radius: 15px;
-  text-align: center;
-
-/*
+  bottom: 35%;
+  left: 35%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
-  */
+  background-color: var(--foreground, 0.5);
+  color: var(--foreground);
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
 }
 
-.boba-banner .btn:hover {
+.bobabg .btn:hover {
   box-shadow: var(--button-box-shadow);
 }
 
-button {
+
+/*button {
   position: relative;
   z-index: 10;
-}
+} */
 
 /*TREATS for sign up thingy*/
 
