@@ -406,11 +406,11 @@ nav input[type="checkbox"], nav label {
   left: 45%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
-  background-color: var(--foreground, 0.5);
+  background-color: transparent;
   color: var(--foreground);
   font-size: 16px;
   padding: 12px 24px;
-  border: none;
+  border: 2px solid white;
   cursor: pointer;
   border-radius: 5px;
   text-align: center;
