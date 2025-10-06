@@ -781,12 +781,46 @@ footer {
   justify-content: space-evenly;
 }
 
-footer img {
-  width: 20px;      /* pick a consistent size */
-  height: 20px;     /* force same height */
-  object-fit: contain; /* keeps the logo’s proportions */
-  margin: 0 5px;    /* space between icons */
-  vertical-align: center; /* aligns icons nicely with text */
-  float: right;
+/*footer img {
+  width: 20px;  */    /* pick a consistent size */
+ /* height: 20px;     /* force same height */
+ /* object-fit: contain; /* keeps the logo’s proportions */
+ /* margin: 0 5px;    /* space between icons */
+ /* vertical-align: center; /* aligns icons nicely with text */
+ /* float: right;
   gap: 5px;
+} */
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-facebook {
+  background: transparent;
+  color: var(--foreground);
+}
+
+.fa-twitter {
+  background: transparent;
+  color: var(--foreground);
+}
+
+.fa-youtube {
+  background: transparent;
+  color: var(--foreground);
+}
+
+.fa-instagram {
+  background: transparent;
+  color: var(--foreground);
 }
