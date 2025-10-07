@@ -38,54 +38,60 @@
     <p>Question, suggestion or comment to leave? Please let us know! Someone from our team will reach out to you soon!</p>
     <!--FORM-->
 
-    <div class="contact">
+    <div class="comment">
       <div style="text-align: center;">
         <h2>Contact Us</h2>
         <p>Leave us a message!</p>
       </div>
-      <div class="message">
+
+
+      <div class="subject">
         <!--FAQ AND PICTURE-->
-        <div class="us">
-          <img src="">
+        <div class="matter">
+          <img src="pexels-nout-gons-80280-378570.jpg" style="width: 100%">
+        </div>
+
+        <div class="subject">
+          <form action="/action_page.php">
+
+            <!--First Name-->
+            <label for="fname">First Name: <span style="color: red;">*</span></label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+            
+            <!--LAST NAME-->
+            <label for="lname">Last Name: <span style="color: red;">*</span></label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
+
+            <!--EMAIL-->
+            <label for="email">Email: <span style="color: red;">*</span></label>
+            <input type="text" id="email" name="email" placeholder="example@example.com.." required>
+
+            <!--PHONE NUMBER-->
+            <label for="phnum">Phone Number: <span style="color: red;">*</span></label>
+            <input type="number" id="phnum" name="phnum" placeholder="(111)222-3333.." required>
+            
+            <!--COUNTRY-->
+            <label for="country">Country <span style="color: red;">*</span></label>
+            <select id="country" name="country" required>
+              <option value="australia">Australia</option>
+              <option value="canada">Canada</option>
+              <option value="usa">USA</option>
+              <option value="mexico">Mexico</option>
+              <option value="honduras">Honduras</option>
+              <option value="usa">USA</option>
+              <option value="china">China</option>
+            </select>
+
+            <!--MESSAGE-->
+            <label for="message">Message: <span style="color: red;">*</span></label>
+            <textarea id="message" name="message" placeholder="Write something.." style="height:170px" required></textarea>
+            
+            <!--SUBMIT BUTTON-->
+            <input type="submit" value="Submit">
+          </form>
         </div>
       </div>
     </div>
-
-    <form action="my_account.html" method="post">
-
-    <p>
-      <label for="name">First Name:<span style="color: red;">*</span></label>
-      <input type="text" name="firstName" id="firstName" maxlength="50" required>
-    </p>
-
-    <p>
-      <label for="name">Last Name:<span style="color: red;">*</span></label>
-      <input type="text" name="lastName" id="firstName" maxlength="50" required>
-    </p>
-
-    <p>
-      <label for="emailAddr">Email Address:<span style="color: red;">*</span></label>
-      <input type="email" name="emailAddr" id="emailAddr" required>
-    </p>
-    <p> 
-      <label for="message">Message:<span style="color: red;">*</span></label>
-      <textarea id="message" name="message" rows="4" cols="50" placeholder="Tell us what's on your mind..."></textarea>
-    </p>
-    <p>
-    <input type="submit">
-    </p>
-  </form>
-    <!--first name-->
-    <!--last name-->
-    <!--reason-->
-    <!--email-->
-    <!--phone number-->
-    <!--store (location)-->
-    <!--subject-->
-
-    <!--FAQ-->
-
-
 
 <!--FOOTER-->
   <footer> 
