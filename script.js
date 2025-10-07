@@ -1,28 +1,60 @@
-function toggleCustomization(drinkId) {
-  const section = document.getElementById(drinkId + "-customization");
-  section.classList.toggle("hidden");
+//order.html
+    function toggleCustomization(drinkId) {
+        const section = document.getElementById(drinkId + "-customization");
+        section.classList.toggle("hidden");
 }
 
-// For collapsibles inside customizations
-document.addEventListener("DOMContentLoaded", () => {
-  let coll = document.querySelectorAll(".collapsible");
-  coll.forEach(button => {
-    button.addEventListener("click", function() {
-      this.classList.toggle("active");
-      let content = this.nextElementSibling;
-      if (content.style.maxHeight) {
-        content.style.maxHeight = null;
-      } else {
-        content.style.maxHeight = content.scrollHeight + "px";
-      }
+    document.querySelectorAll('.customization .btn').forEach(button => {
+        button.addEventListener('click', (e) => {
+            e.preventDefault();
+
+             // Find which drink section this button belongs to
+            const drinkSection = button.closest('.customization');
+            const drinkType = drinkSection.id.replace('-customization', '');
+
+            // Collect options
+            const formData = new FormData(document.querySelector('form'));
+            const order = {};
+            formData.forEach((value, key) => {
+                if (key.startsWith(drinkType)) {
+                    order[key] = value;
+                }
+             });
+
+            // Save to localStorage
+            let orders = JSON.parse(localStorage.getItem('orders')) || [];
+            orders.push({ drinkType, ...order });
+            localStorage.setItem('orders', JSON.stringify(orders));
+
+            // Redirect to checkout
+            window.location.href = 'checkout.html';
+        });
     });
-  });
+
+//CHECK OUT DOT HTML
+
+    window.addEventListener('DOMContentLoaded', () => {
+        const orders = JSON.parse(localStorage.getItem('orders')) || [];
+        const container = document.querySelector('.col-25');
+
+    if (orders.length === 0) {
+        container.innerHTML = '<p>No items in your cart yet.</p>';
+        return;
+    }
+
+    container.innerHTML = orders.map(order => `
+        <div class="order-item">
+            <h4>${order.drinkType}</h4>
+            <ul>
+                ${Object.entries(order)
+                    .filter(([key]) => key !== 'drinkType')
+                    .map(([key, val]) => `<li>${key.replace(/_/g, ' ')}: ${val}</li>`)
+                    .join('')}
+            </ul>
+         </div>
+    `).join('');
 });
 
-function toggleCustomization(drink) {
-  const customizationDiv = document.getElementById(drink + '-customization');
-  customizationDiv.classList.toggle('hidden');
-}
 
 // sign up html
 
