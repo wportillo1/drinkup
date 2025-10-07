@@ -34,6 +34,10 @@ html, body {
 }
 
 body {
+  margin: 0;
+  padding-top: var(--nav-height);
+  padding-bottom: 50px;
+
   font-family: 'Poppins',
   sans-serif;
   max-width: 100%;
@@ -91,12 +95,14 @@ a::after {
   content: "";
 }
 
-/*navigation bar*/
+/*NAV BAR*/
 
 nav {
-  position: absolute;
+  position: fixed;
   top: 0;
+  left: 0;
   width: 100%;
+  margin: 0%;
   z-index: 1000;
 
   background-color: var(--sidebar-background);
@@ -104,11 +110,11 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
   height: var(--nav-height);
+  justify-content: center;
   
-  padding: 10px 20px;
-  margin-top: 0;
+  padding: 0px 20px;
+  /*margin-top: 0;*/
 }
 
 nav a {
@@ -635,14 +641,71 @@ fieldset {
   min-width: 300px;
 }
 
+/*ALL INPUT FIELDS*/
+
 input {
-  padding: 10px;
+  padding: 12px;
   width: 100%;
+
+  border: 1 solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
 }
 
 /* Mark input boxes that gets an error on validation: */
 input.invalid {
   background-color: #04AA6D;
+}
+
+/*submit button*/
+input[type=submit] {
+  background-color: var(--sidebar-background);
+  color: var(--foreground);
+}
+
+/*style for input*/
+.signin {
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+/*message shown during password*/
+#message {
+  display: none;
+  background: var(--background);
+  color: var(--foreground);
+  position: relative;
+  padding: 20px;
+  margin-top: 10px;
+}
+
+#message p {
+  padding: 10px 35px;
+  font-size: 18px;
+}
+
+/*add checkmark when requirements are met*/
+.valid {
+  color: green;
+}
+
+.valid:before {
+  position: relative;
+  left: -35px;
+  content: "✔";
+}
+
+/* Add a red text color and an "x" when the requirements are wrong */
+.invalid {
+  color: red;
+}
+
+.invalid:before {
+  position: relative;
+  left: -35px;
+  content: "✖";
 }
 
 /* Hide all steps by default: */
@@ -816,18 +879,18 @@ span.price {
 /*footer*/
 
 footer {
-  position: absolute;
+  position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;
+  margin: 0;
 
   font-size: xx-small;
   background-color: var(--sidebar-background);
   color: var(--foreground);
-  /*text-align: center;*/
+  align-items: center;
   padding: 10px;
   /*margin-top: auto;*/
-  margin-bottom: 0;
   justify-content: space-evenly;
 }
 
@@ -843,6 +906,11 @@ footer {
 
 footer a {
   float: right;
+}
+
+.socials a {
+  color: var(--foreground);
+  margin: 0 8px;
 }
 
 .fa {
