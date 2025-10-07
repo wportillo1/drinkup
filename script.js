@@ -158,3 +158,46 @@ function fixStepIndicator(n) {
         length.classList.remove("valid");
         length.classList.add("invalid");
     }
+
+    //submit for to account.html
+
+    // Store user info in localStorage before redirecting
+    document.getElementById('regForm').addEventListener('submit', function(e) {
+        const password = document.getElementById('password').value;
+        const regex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#\$%\^&\*])[A-Za-z\d!@#\$%\^&\*]{8,}$/;
+
+    if (!regex.test(password)) {
+        e.preventDefault();
+        alert('Password must have at least 8 characters, including uppercase, lowercase, number, and special character.');
+        return;
+    }
+
+    // Save form info
+    const formData = {
+        fname: this.fname.value,
+        lname: this.lname.value,
+        email: this.email.value,
+        phone: this.phone.value,
+        dd: this.dd.value,
+        mm: this.mm.value,
+        yyyy: this.yyyy.value,
+        uname: this.uname.value
+    };
+
+    localStorage.setItem('userProfile', JSON.stringify(formData));
+    });
+
+//account.html
+
+    // Load user info from localStorage
+    const userProfile = JSON.parse(localStorage.getItem('userProfile')); 
+    if (userProfile) { 
+        document.getElementById('userName').textContent = userProfile.uname; 
+        document.getElementById('fullName').textContent = userProfile.fname + ' ' + userProfile.lname; 
+        document.getElementById('email').textContent = userProfile.email; 
+        document.getElementById('phone').textContent = userProfile.phone; 
+        document.getElementById('birthday').textContent = `${userProfile.dd}/${userProfile.mm}/${userProfile.yyyy}`; 
+    } else { 
+        // If someone opens account.html directly without signing up 
+        document.querySelector('main').innerHTML = "<h2>Please sign up first.</h2><a href='sign_up.html'>Go to Sign Up</a>"; 
+    }

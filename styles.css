@@ -656,7 +656,7 @@ input {
 
 /* Mark input boxes that gets an error on validation: */
 input.invalid {
-  background-color: #04AA6D;
+  background-color: red;
 }
 
 /*submit button*/
@@ -913,7 +913,7 @@ footer a {
   margin: 0 8px;
 }
 
-.fa {
+/*.fa {
   padding: 20px;
   font-size: 50px;
   width: 50px;
@@ -946,4 +946,4 @@ footer a {
 .fa-instagram {
   background: transparent;
   color: var(--foreground);
-}
+}*/
