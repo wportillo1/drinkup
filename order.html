@@ -34,164 +34,170 @@
   </aside>
 </nav>
 
+<!--FORM ACTION TO CHECKOUT-->
+<form action="checkout.html" method="GET" target="_blank">
 
-  <h1>Order Menu</h1>
 
-  <form action="thankyou.html" target="_blank" method="POST">
+<!--MILK BUBBLE TEA-->
+ <h2>Milk Bubble Tea</h2>
 
-    <h2>Milk Bubble Tea </h2>
+ <!--ORIGINAL-->
+<button type="button" class="drink-option" onclick="toggleCustomization('original')">Original</button> 
+<div id="original-customization" class="customization"> 
 
-    <button class="collapsible">Original</button>
+  <!--SIZE-->
+  <button class="collapsible">Size: <span style="color: red;">*</span></button>
+  <div class="content">
+    <div><input type="radio" name="original_size" value="small" id="sm"><label for="sm">Small</label></div>
+    <div><input type="radio" name="original_size" value="medium" id="med"><label for="med">Medium</label></div>
+    <div><input type="radio" name="original_size" value="large" id="lg"><label for="lg">Large</label></div>
+    <div><input type="radio" name="original_size" value="extra-large" id="xl"><label for="xl">Extra Large</label></div>
+  </div>
+
+  <!--ICE-->
+  <button class="collapsible">Ice:</button>
+  <div class="content">
+    <div><input type="radio" name="original_ice" value="regular" id="reg"><label for="reg">Regular Ice</label></div>
+    <div><input type="radio" name="original_ice" value="no" id="no"><label for="no">No Ice</label></div>
+    <div><input type="radio" name="original_ice" value="less" id="less"><label for="less">Less Ice</label></div>
+    <div><input type="radio" name="original_ice" value="xtr" id="xtr"><label for="xtr">Extra Ice</label></div>
+  </div>
+
+  <!--SWEETNESS-->
+  <button class="collapsible">Sweetness:</button>
+  <div class="content">
+    <div><input type="radio" name="original_sweetness" value="hundred" id="hnd"><label for="hnd">100%</label></div>
+    <div><input type="radio" name="original_sweetness" value="seventyfive" id="svt"><label for="svt">75%</label></div>
+    <div><input type="radio" name="original_sweetness" value="fifty" id="fft"><label for="fft">50%</label></div>
+    <div><input type="radio" name="original_sweetness" value="twentyfive" id="ttf"><label for="ttf">25%</label></div>
+    <div><input type="radio" name="original_sweetness" value="zero" id="zero"><label for="zero">0%</label></div>
+  </div>
+
+  <!--COLD FOAM-->
+  <button class="collapsible">Cold Foam:</button>
+  <div class="content">
+    <div><input type="radio" name="original_cold_foam" value="none" id="no"><label for="no">No Cold Foam</label></div>
+    <div><input type="radio" name="original_cold_foam" value="vanilla" id="van"><label for="van">Vanilla Cold Foam</label></div>
+    <div><input type="radio" name="original_cold_foam" value="matcha" id="mtc"><label for="mtc">Matcha Cold Foam</label></div>
+    <div><input type="radio" name="original_cold_foam" value="brown-sugar" id="brnsg"><label for="brnsg">Brown Sugar Cold Foam</label></div>
+    <div><input type="radio" name="original_cold_foam" value="chocolate" id="chc"><label for="chc">Chocolate Cold Foam</label></div>
+    <div><input type="radio" name="original_cold_foam" value="raspberry" id="rsp"><label for="rsp">Raspberry Cold Foam</label></div>
+    <div><input type="radio" name="original_cold_foam" value="salted-caramel" id="sltc"><label for="sltc">Salted Caramel Cold Foam</label></div>
+    <div><input type="radio" name="original_cold_foam" value="strawberry" id="str"><label for="str">Strawberry Cold Foam</label></div>
+  </div>
+
+  <!--Toppings-->
+  <button class="collapsible">Toppings</button>
+  <div class="content">
+    <label><input type="checkbox" name="original_toppings" value="tapioca"> Tapioca Boba</label>
+    <label><input type="checkbox" name="original_toppings" value="mango"> Mango Boba</label>
+    <label><input type="checkbox" name="original_toppings" value="peach"> Peach Boba</label>
+    <label><input type="checkbox" name="original_toppings" value="lychee"> Lychee Boba</label>
+    <label><input type="checkbox" name="original_toppings" value="strawberry"> Strawberry Boba</label>
+    <label><input type="checkbox" name="original_toppings" value="passionfruit"> Passionfruit Boba</label>
+    <label><input type="checkbox" name="original_toppings" value="kiwi"> Kiwi Boba</label>
+    <label><input type="checkbox" name="original_toppings" value="blueberry"> Blueberry Boba</label>
+    <label><input type="checkbox" name="original_toppings" value="chocolate"> Chocolate Drizzle</label>
+    <label><input type="checkbox" name="original_toppings" value="caramel"> Caramel Drizzle</label>
+    <label><input type="checkbox" name="original_toppings" value="white-chocolate"> White Chocolate Drizzle</label>
+  </div>
+
+  <input type="submit" value="Checkout" class="btn">
+</div>
+
+<!--COFFEE-->
+  <h2>Coffee</h2>
+
+  <!--LATTE-->
+  <button type="button" class="drink-option" onclick="toggleCustomization('latte')">Latte</button> 
+  <div id="latte-customization" class="customization"> 
+
+    <!--SIZE-->
+    <button class="collapsible">Size: <span style="color: red;">*</span></button>
     <div class="content">
-
-    <p>Select Size: <span style="color: red">*</span> </p>
-      <div>
-        <input type="radio" name="size" value="small" id="sm">
-        <label for="sm">Small</label>
-      </div>
-      <div>
-        <input type="radio" name="size" value="medium" id="med">
-        <label for="med">Medium</label>
-       </div>
-      <div>
-        <input type="radio" name="size" value="large" id="lg">
-        <label for="small">Large</label>
-      </div>
-      <div>
-        <input type="radio" name="size" value="extra-large" id="xl">
-        <label for="small">Extra Large</label>
-       </div>
-    
-
-
-
+      <div><input type="radio" name="latte_size" value="small" id="sm"><label for="sm">Small</label></div>
+      <div><input type="radio" name="latte_size" value="medium" id="med"><label for="med">Medium</label></div>
+      <div><input type="radio" name="latte_size" value="large" id="lg"><label for="lg">Large</label></div>
+      <div><input type="radio" name="latte_size" value="extra-large" id="xl"><label for="xl">Extra Large</label></div>
     </div>
 
-
-  <!-- Example drink -->
-  <!-- Milk Bubble Tea Section -->
-  <h2>Milk Bubble Tea</h2> 
-
-<!--ORIGINAL-->
-
-    <button type="button" class="drink-option" onclick="toggleCustomization('original')">Original</button> 
-    <div id="original-customization" class="customization"> 
-      <button class="collapsible">Size: <span style="color: red;">*</span></button>
-      <div class="content">
-        <div>
-          <input type="radio" name="size" value="small" id="sm">
-          <label for="sm">Small</label>
-        </div>
-        <div>
-          <input type="radio" name="size" value="medium" id="med">
-          <label for="med">Medium</label>
-        </div>
-        <div>
-          <input type="radio" name="size" value="large" id="lg">
-          <label for="small">Large</label>
-        </div>
-        <div>
-          <input type="radio" name="size" value="extra-large" id="xl">
-          <label for="small">Extra Large</label>
-        </div>
-      </div>
-
+    <!--ICE-->
     <button class="collapsible">Ice:</button>
-      <div class="content">
-        <div>
-          <input type="radio" name="ice" value="regular" id="reg">
-          <label for="reg">Regular Ice</label>
-        </div>
-        <div>
-          <input type="radio" name="ice" value="no" id="no">
-          <label for="no">No Ice</label>
-        </div>
-        <div>
-          <input type="radio" name="ice" value="less" id="less">
-          <label for="less">Less Ice</label>
-        </div>
-        <div>
-          <input type="radio" name="ice" value="extra" id="xt">
-          <label for="xt">Extra Ice</label>
-        </div>
-      </div>
+    <div class="content">
+      <div><input type="radio" name="latte_ice" value="regular" id="reg"><label for="reg">Regular Ice</label></div>
+      <div><input type="radio" name="latte_ice" value="no" id="no"><label for="no">No Ice</label></div>
+      <div><input type="radio" name="latte_ice" value="less" id="less"><label for="less">Less Ice</label></div>
+      <div><input type="radio" name="latte_ice" value="xtr" id="xtr"><label for="xtr">Extra Ice</label></div>
+    </div>
 
-      <button class="collapsible">Sweetness:</button>
-      <div class="content">
-        <div>
-          <input type="radio" name="sweetness" value="hundred" id="hnd">
-          <label for="hnd">100%</label>
-        </div>
-        <div>
-          <input type="radio" name="sweetness" value="seventyfive" id="svf">
-          <label for="svf">75%</label>
-        </div>
-        <div>
-          <input type="radio" name="sweetness" value="fifty" id="fft">
-          <label for="fft">50%</label>
-        </div>
-        <div>
-          <input type="radio" name="sweetness" value="twentyfive" id="ttf">
-          <label for="ttf">25%</label>
-        </div>
-        <div>
-          <input type="radio" name="sweetness" value="zero" id="zero">
-          <label for="zero">0%</label>
-        </div>
-      </div>
-      
-      <button class="collapsible">Cold Foam:</button>
-      <div class="content">
-        <div>
-          <input type="radio" name="cold-foam" value="none" id="non">
-          <label for="non">None</label>
-        </div>
-        <div>
-          <input type="radio" name="cold-foam" value="vanilla" id="van">
-          <label for="van">Vanilla Cold Foam</label>
-        </div>
-        <div>
-          <input type="radio" name="cold-foam" value="matcha" id="mtc">
-          <label for="mtc">Matcha Cold Foam</label>
-        </div>
-        <div>
-          <input type="radio" name="cold-foam" value="brown-sugar" id="bsg">
-          <label for="bsg">Brown Sugar Cold Foam</label>
-        </div>
-        <div>
-          <input type="radio" name="cold-foam" value="chocolate" id="chcl">
-          <label for="chcl">Chocolate Cold Foam</label>
-        </div>
-        <div>
-          <input type="radio" name="cold-foam" value="raspberry" id="rasp">
-          <label for="rasp">Raspberry Cold Foam</label>
-        </div>
-        <div>
-          <input type="radio" name="cold-foam" value="salted-caramel" id="sltc">
-          <label for="sltc">Salted Caramel Cold Foam</label>
-        </div>
-        <div>
-          <input type="radio" name="cold-foam" value="strawberry" id="str">
-          <label for="str">Strawberry Cold Foam</label>
-        </div>
-      </div>
+    <!--SWEETNESS-->
+    <button class="collapsible">Sweetness:</button>
+    <div class="content">
+      <div><input type="radio" name="latte_sweetness" value="hundred" id="hnd"><label for="hnd">100%</label></div>
+      <div><input type="radio" name="latte_sweetness" value="seventyfive" id="svt"><label for="svt">75%</label></div>
+      <div><input type="radio" name="latte_sweetness" value="fifty" id="fft"><label for="fft">50%</label></div>
+      <div><input type="radio" name="latte_sweetness" value="twentyfive" id="ttf"><label for="ttf">25%</label></div>
+      <div><input type="radio" name="latte_sweetness" value="zero" id="zero"><label for="zero">0%</label></div>
+    </div>
 
-        <button type="button" class="collapsible">Toppings</button> 
-        <div class="content"> 
-          <label><input type="checkbox" value="chocolate"> Chocolate Drizzle</label> 
-          <label><input type="checkbox" value="caramel"> Caramel Drizzle</label> 
-          <label><input type="checkbox" value="white-chocolate"> White Chocolate Drizzle</label> 
-          <label><input type="checkbox" value="whipped-cream"> Whipped Cream</label> 
-          <label><input type="checkbox" value="tapioca"> Tapioca Boba</label> 
-          <label><input type="checkbox" value="mango"> Mango Boba</label> 
-          <label><input type="checkbox" value="peach"> Peach Boba</label> 
-          <label><input type="checkbox" value="lychee"> Lychee Boba</label> 
-          <label><input type="checkbox" value="strawberry"> Strawberry Boba</label> 
-          <label><input type="checkbox" value="passionfruit"> Passionfruit Boba</label> 
-          <label><input type="checkbox" value="kiwi"> Kiwi Boba</label> 
-          <label><input type="checkbox" value="blueberry"> Blueberry Boba</label> 
-        </div> 
-      </div>
+    <!--COLD FOAM-->
+    <button class="collapsible">Cold Foam:</button>
+    <div class="content">
+      <div><input type="radio" name="latte_cold_foam" value="none" id="no"><label for="no">No Cold Foam</label></div>
+      <div><input type="radio" name="latte_cold_foam" value="vanilla" id="van"><label for="van">Vanilla Cold Foam</label></div>
+      <div><input type="radio" name="latte_cold_foam" value="matcha" id="mtc"><label for="mtc">Matcha Cold Foam</label></div>
+      <div><input type="radio" name="latte_cold_foam" value="brown-sugar" id="brnsg"><label for="brnsg">Brown Sugar Cold Foam</label></div>
+      <div><input type="radio" name="latte_cold_foam" value="chocolate" id="chc"><label for="chc">Chocolate Cold Foam</label></div>
+      <div><input type="radio" name="latte_cold_foam" value="raspberry" id="rsp"><label for="rsp">Raspberry Cold Foam</label></div>
+      <div><input type="radio" name="latte_cold_foam" value="salted-caramel" id="sltc"><label for="sltc">Salted Caramel Cold Foam</label></div>
+      <div><input type="radio" name="latte_cold_foam" value="strawberry" id="str"><label for="str">Strawberry Cold Foam</label></div>
+    </div>
+
+    <!--MILK-->
+    <button class="collapsible">Milk:</button>
+    <div class="content">
+      <div><input type="radio" name="latte_milk" value="twopercent" id="two"><label for="two">2% Milk</label></div>
+      <div><input type="radio" name="latte_milk" value="almond" id="alm"><label for="alm">Almond Milk</label></div>
+      <div><input type="radio" name="latte_milk" value="coconut" id="ccn"><label for="ccn">Coconut Milk</label></div>
+      <div><input type="radio" name="latte_milk" value="heavy-cream" id="hvc"><label for="hvc">Heavy Cream</label></div>
+      <div><input type="radio" name="latte_milk" value="nonfat" id="nnf"><label for="nnf">Nonfat Milk</label></div>
+      <div><input type="radio" name="latte_milk" value="oatmilk" id="otm"><label for="otm">Oatilk</label></div>
+      <div><input type="radio" name="latte_milk" value="soy" id="soy"><label for="soy">Soy Milk</label></div>
+      <div><input type="radio" name="latte_milk" value="whole" id="whl"><label for="whl">Whole Milk</label></div>
+    </div>
+
+    <!--ESPRESSO OPTIONS-->
+    <button class="collapsible">Espresso Options:</button>
+    <div class="content">
+      <div><input type="radio" name="latte_espresso" value="signature" id="sig"><label for="sig">Signature Espresso</label></div>
+      <div><input type="radio" name="latte_espresso" value="halfdecaf" id="hdc"><label for="hdc">Half Decaf</label></div>
+      <div><input type="radio" name="latte_espresso" value="thirddecaf" id="tdc"><label for="tdc">Third Decaf</label></div>
+      <div><input type="radio" name="latte_espresso" value="twothirdsdecaf" id="ttdc"><label for="ttdc">Two Thirds Decaf</label></div>
+      <div><input type="radio" name="latte_espresso" value="blonde" id="bld"><label for="bld">Blonde Espresso</label></div>
+      <div><input type="radio" name="latte_espresso" value="decaf-espresso-raost" id="dcer"><label for="dcer">Decaf Espresso Roast</label></div>
+    </div>
+
+    <!--Toppings-->
+    <button class="collapsible">Toppings</button>
+    <div class="content">
+      <label><input type="checkbox" name="original_toppings" value="tapioca"> Tapioca Boba</label>
+      <label><input type="checkbox" name="original_toppings" value="mango"> Mango Boba</label>
+      <label><input type="checkbox" name="original_toppings" value="peach"> Peach Boba</label>
+      <label><input type="checkbox" name="original_toppings" value="lychee"> Lychee Boba</label>
+      <label><input type="checkbox" name="original_toppings" value="strawberry"> Strawberry Boba</label>
+      <label><input type="checkbox" name="original_toppings" value="passionfruit"> Passionfruit Boba</label>
+      <label><input type="checkbox" name="original_toppings" value="kiwi"> Kiwi Boba</label>
+      <label><input type="checkbox" name="original_toppings" value="blueberry"> Blueberry Boba</label>
+      <label><input type="checkbox" name="original_toppings" value="chocolate"> Chocolate Drizzle</label>
+      <label><input type="checkbox" name="original_toppings" value="caramel"> Caramel Drizzle</label>
+      <label><input type="checkbox" name="original_toppings" value="white-chocolate"> White Chocolate Drizzle</label>
+    </div>
+
+    <input type="submit" value="Checkout" class="btn">
+</div>
+</form>
+
+
 
 <!--FOOTER-->
   <footer> 
