@@ -406,19 +406,29 @@ nav input[type="checkbox"], nav label {
   background-size: cover;
 
   width: 100%;
+
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
 }
 
 .bobabg img {
   width: 100%;
   height: auto;
+
+  display: block;
+  margin: 0;
+  padding: 0;
 }
 
+/*BOBA ORDER NOW BUTTON*/
 .bobabg .btn {
   position: absolute;
-  bottom: 45%;
-  left: 45%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
+  bottom: 20px;
+  left: 20px;
+  /*transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);*/
   background-color: transparent;
   color: var(--foreground);
   font-size: 16px;
@@ -427,36 +437,55 @@ nav input[type="checkbox"], nav label {
   cursor: pointer;
   border-radius: 5px;
   text-align: center;
+
+  transition: all 0.3s ease;
 }
 
 .bobabg .btn:hover {
+  background-color: rgba(0, 0, 0, 0.2);
   box-shadow: var(--button-box-shadow);
 }
 
-
-/*button {
-  position: relative;
-  z-index: 10;
-} */
-
-/*TREATS for sign up thingy*/
-
-img, .menu-item {
-  z-index: 1;
-}
-
-.images {
+/*REWARDS SECTION*/
+.rewards-section {
   display: flex;
-  justify-content: flex-start;
-  gap: 15px;
-  margin-top: 20px;
-  float: right;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  margin: 50px 0;
+  padding: 20px;
 }
 
 .images img {
-  max-width: 200px;
+  max-width: 180px;
   height: auto;
-  float: right;
+}
+
+.rewards {
+  flex: 1;
+  text-align: right;
+}
+
+.rewards h1 {
+  margin-bottom: 10px;
+}
+
+.rewards p {
+  margin-bottom: 20px;
+}
+
+.rewards .btn {
+  background-color: var(--sidebar-background);
+  border: 2px solid black;
+  color: var(--foreground);
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.rewards .btn:hover {
+  background-color: var(--hover-color);
 }
 
 /*location and hours thingy*/
