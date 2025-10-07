@@ -650,6 +650,29 @@ fieldset {
   border-radius: 6px; 
 }
 
+/*MENU DOT HTML*/
+.tablink {
+  background-color: lightgrey;
+  color: var(--foreground);
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 18px;
+  width: 25%;
+}
+
+.tablink:hover {
+  background-color: var(--hover-color);
+}
+
+.tabcontent {
+  color: var(--foreground);
+  display: none;
+  padding: 100px 20px;
+  height: 100%;
+}
 
 /*sign up html*/
 

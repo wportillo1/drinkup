@@ -31,6 +31,21 @@
         });
     });
 
+//MENU DOT HTML
+
+function openDrink(openDrink) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tablinks.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablink");
+    document.getElementById(pageName).style.display = "block";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+
 //CHECK OUT DOT HTML
 
     window.addEventListener('DOMContentLoaded', () => {
