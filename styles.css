@@ -98,7 +98,7 @@ a::after {
 /*NAV BAR*/
 
 nav {
-  position: fixed;
+  position: static;
   top: 0;
   left: 0;
   width: 100%;
@@ -108,10 +108,9 @@ nav {
   background-color: var(--sidebar-background);
   color: var(--foreground);
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   height: var(--nav-height);
-  justify-content: center;
   
   padding: 0px 20px;
   /*margin-top: 0;*/
@@ -405,7 +404,7 @@ nav input[type="checkbox"], nav label {
 .bobabg {
   background-image: url(https://thumbs.dreamstime.com/b/two-friends-sharing-colorful-bubble-tea-tapioca-pearls-sunny-day-against-vibrant-blue-sky-perfect-summer-refreshment-330037590.jpg);
 
-  height: 50%;
+  max-height: none;
 
   background-position: center;
   background-repeat: no-repeat;
@@ -961,7 +960,7 @@ input[type=submit]:hover {
 /*footer*/
 
 footer {
-  position: fixed;
+  position: static;
   left: 0;
   bottom: 0;
   width: 100%;
@@ -970,7 +969,6 @@ footer {
   font-size: xx-small;
   background-color: var(--sidebar-background);
   color: var(--foreground);
-  align-items: center;
   padding: 10px;
   /*margin-top: auto;*/
   justify-content: space-evenly;
